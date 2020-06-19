@@ -58,7 +58,7 @@ class PostController extends Controller
 
         //Storing
         Post::create($data);
-        return redirect(route('post.index'));
+        return redirect(route('post.index'))->with('success','Post added successfully!');;
 
 
     }
@@ -119,7 +119,7 @@ class PostController extends Controller
 
         //updating
         $post->update($data);
-        return redirect(route('post.index'));
+        return redirect(route('post.index'))->with('success','Post updated successfully!');;
 
     }
 
@@ -140,6 +140,6 @@ class PostController extends Controller
         }
         //deleting
         $post->delete();
-        return redirect(route('post.index'));
+        return back()->with('success','Post deleted successfully!');
     }
 }
