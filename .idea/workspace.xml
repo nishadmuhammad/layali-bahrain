@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="8391" />
+    <option name="totalTimeSeconds" value="8873" />
     <option name="autoCountIdleSeconds" value="120" />
   </component>
   <component name="Git.Settings">
@@ -133,7 +133,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sybuAdmin" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -171,10 +171,10 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="416" y="136" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.704@0.27.1366.704" timestamp="1592524484283" />
-    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl" timestamp="1592494750901">
+    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl" timestamp="1592526745632">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.704@0.27.1366.704" timestamp="1592494750901" />
+    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.704@0.27.1366.704" timestamp="1592526745632" />
     <state width="1320" height="163" key="GridCell.Tab.0.bottom" timestamp="1592462711668">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
