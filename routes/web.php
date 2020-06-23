@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::resource('post','PostController')->only(['index','create','store','destroy','edit','update']);
+Route::resource('enquiry','EnquiryController')->only(['index','destroy']);

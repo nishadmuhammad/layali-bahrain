@@ -100,6 +100,14 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{route('enquiry.index')}}" class="nav-link">
+                            <i class="nav-icon fas fa-mail-bulk"></i>
+                            <p>
+                                Enquiry
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

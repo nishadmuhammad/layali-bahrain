@@ -22,6 +22,15 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        // Insert some stuff
+        $password=Hash::make('123');
+        DB::table('users')->insert(
+            array(
+                'name' => 'Administrator',
+                'email' => 'info@spadika.com',
+                'password'=>$password
+            )
+        );
     }
 
     /**
