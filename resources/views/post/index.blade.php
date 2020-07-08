@@ -10,7 +10,6 @@
     <th>Photo</th>
     <th>Status</th>
     <th>Action</th>
-    <th>Description</th>
 @endsection
 @section('tableBody')
     @foreach($posts->sortByDesc('id') as $post)
@@ -27,7 +26,6 @@
                 </form>
                 <a href="{{route('post.edit',$post->id)}}"><i class="fa fa-edit"></i> </a>
             </td>
-            <td>{{ $post->description }}</td>
         </tr>
     @endforeach
 @endsection

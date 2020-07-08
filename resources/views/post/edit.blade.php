@@ -1,5 +1,6 @@
 @extends('layouts.form')
 @section('additionalStyles')
+    <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
 @endsection
 @section('title','Edit Post')
 @section('actionUrl')
@@ -45,11 +46,11 @@
         </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-12">
         <div class="form-group">
             <label for="description" class="control-label">Description <small>(Do not capitalise entire sentence)</small></label>
             <textarea id="description" name="description"
-                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}">{{$post->description}}
+                      class="form-control textarea {{$errors->has('description') ? 'is-invalid' : ''}}">{{$post->description}}
             </textarea>
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
@@ -74,5 +75,12 @@
         $(document).ready(function () {
             bsCustomFileInput.init();
         });
+    </script>
+    <script src="{{asset('plugins/summernote/summernote-bs4.min.js')}}"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('.textarea').summernote()
+        })
     </script>
 @endsection

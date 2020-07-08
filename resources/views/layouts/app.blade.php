@@ -100,6 +100,12 @@
                                     <p>View all</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{route('post.create')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Add New</p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
