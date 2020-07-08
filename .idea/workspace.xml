@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Enquiry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EnquiryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_23_080315_create_enquiries_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/enquiry/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="12689" />
+    <option name="totalTimeSeconds" value="14640" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -209,9 +198,9 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="172" y="27" width="1012" height="704" key="SettingsEditor/0.27.1366.704@0.27.1366.704" timestamp="1592899286984" />
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1592899111003">
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1594206152570">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1592899111003" />
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1594206152570" />
   </component>
 </project>

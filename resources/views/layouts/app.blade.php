@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="{{asset('plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
 
 
 </head>
@@ -128,7 +130,11 @@
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
                             @if(request()->segment(1))
-                                <li class="breadcrumb-item"><a href="{{route(request()->segment(1).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
+                                @if(Route::has(request()->segment(1).".index"))
+                                    <li class="breadcrumb-item"><a href="{{route(request()->segment(1).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
+                                @else
+                                    <li class="breadcrumb-item active">{{ucfirst(request()->segment(1))}}</li>
+                                @endif
                             @endif
                             @if(request()->segment(2))
                                 <li class="breadcrumb-item active">{{ucfirst(request()->segment(2))}}</li>
@@ -141,43 +147,6 @@
                 </div>
             </div><!-- /.container-fluid -->
         </section>
-
-        <!-- Alert section -->
-        <section class="content">
-            @if ($message = Session::get('success'))
-                <div class="alert alert-success alert-block">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>{{ $message }}</strong>
-                </div>
-            @endif
-            @if ($message = Session::get('error'))
-                <div class="alert alert-danger alert-block">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>{{ $message }}</strong>
-                </div>
-            @endif
-
-            @if ($message = Session::get('warning'))
-                <div class="alert alert-warning alert-block">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>{{ $message }}</strong>
-                </div>
-            @endif
-
-            @if ($message = Session::get('info'))
-                <div class="alert alert-info alert-block">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>{{ $message }}</strong>
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    Please check the form below for errors
-                </div>
-        @endif
-        <!-- alerts -->
 
         <!-- Main content -->
         <section class="content">
@@ -197,6 +166,8 @@
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- SweetAlert2 -->
+<script src="{{asset('/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
@@ -212,6 +183,35 @@
     $('ul.nav-treeview a').filter(function() {
         return this.href == url;
     }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
+</script>
+<script type="text/javascript">
+    $(function() {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000
+            });
+
+        @if ($message = Session::get('success'))
+                Toast.fire({
+                    icon: 'success',
+                    title: '{{$message}}.'
+                })
+           @endif
+           @if ($message = Session::get('error'))
+           Toast.fire({
+               icon: 'error',
+               title: '{{$message}}.'
+           })
+        @endif
+        @if ($message = Session::get('warning'))
+        Toast.fire({
+            icon: 'warning',
+            title: '{{$message}}.'
+        })
+        @endif
+        });
 </script>
 @yield('additionalScripts')
 </body>
