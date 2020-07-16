@@ -1,4 +1,4 @@
-@extends('layouts.datatable')
+@extends('admin.layouts.datatable')
 @section('title','Posts')
 @section('tableTitle','Posts')
 @section('createRoute')

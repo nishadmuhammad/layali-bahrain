@@ -11,8 +11,16 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+//Front end routes
+Route::get('/', function (){return view('front.welcome');})->name('home');
+Route::post('/enquiry','front\EnquiryController@store');
+
+//Auth Routes
 Auth::routes();
 
-Route::resource('post','PostController')->only(['index','create','store','destroy','edit','update']);
-Route::resource('enquiry','EnquiryController')->only(['index','destroy']);
+//Admin End Routes
+Route::get('/admin', 'admin\HomeController@index')->name('home');
+Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
+Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
+
+

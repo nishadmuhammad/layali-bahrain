@@ -1,4 +1,4 @@
-@extends('layouts.datatable')
+@extends('admin.layouts.datatable')
 @section('title','Enquiry')
 @section('tableTitle','Enquiry')
 @section('tableHead')

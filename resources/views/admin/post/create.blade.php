@@ -1,4 +1,4 @@
-@extends('layouts.form')
+@extends('admin.layouts.form')
 @section('additionalStyles')
     <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
 @endsection

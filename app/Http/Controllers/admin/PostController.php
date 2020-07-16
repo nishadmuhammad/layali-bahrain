@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\admin;
+use App\Http\Controllers\AdminController;
 use App\Post;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
-class PostController extends Controller
+class PostController extends AdminController
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class PostController extends Controller
     public function index()
     {
         $posts=Post::all();
-        return view('post.index',['posts'=>$posts]);
+        return view('admin.post.index',['posts'=>$posts]);
     }
 
     /**
@@ -26,7 +26,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('post.create');
+        return view('admin.post.create');
     }
 
     /**
@@ -83,7 +83,7 @@ class PostController extends Controller
     public function edit($id)
     {
         $post=Post::findOrFail($id);
-        return view('post.edit',['post'=>$post]);
+        return view('admin.post.edit',['post'=>$post]);
     }
 
     /**

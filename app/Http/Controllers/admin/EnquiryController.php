@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
 use App\Enquiry;
+use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 
-class EnquiryController extends Controller
+class EnquiryController extends AdminController
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class EnquiryController extends Controller
     public function index()
     {
         $enquireis=Enquiry::all();
-        return view('enquiry.index',['enquiries'=>$enquireis]);
+        return view('admin.enquiry.index',['enquiries'=>$enquireis]);
     }
 
     /**
