@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\AdminController;
 use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
 
 class PostController extends AdminController
@@ -40,10 +41,13 @@ class PostController extends AdminController
         $data=$request->validate([
             'title' => 'required|max:255',
             'cover_photo' =>'required|image',
-            'description' =>'nullable'
+            'description' =>'nullable',
+            'content' =>'nullable',
+            'keywords'=>'nullable'
         ]);
         //add additional fields here
         $data['status']='Published';
+        $data['slug']=Str::slug($data['title'], '-');
         //Uploading and saving Cover
         if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/posts/cover', 'public');
@@ -54,6 +58,18 @@ class PostController extends AdminController
         }
         else{
             $data['cover_photo']='';
+        }
+
+        //thumbnail
+        if($request->cover_photo) {
+            $image_path = request('cover_photo')->store('uploads/posts/thumbnail', 'public');
+            $naked_path = env('IMAGE_PATH') . $image_path;
+            $photo = Image::make($naked_path)->fit(398,194);
+            $photo->save();
+            $data['thumbnail']=$image_path;
+        }
+        else{
+            $data['thumbnail']='';
         }
 
         //Storing
@@ -100,8 +116,11 @@ class PostController extends AdminController
             'title' => 'required|max:255',
             'cover_photo' =>'nullable|image',
             'description' =>'nullable',
+            'content'=>'nullable',
             'status' =>'required',
+            'keywords'=>'nullable'
         ]);
+        $data['slug']=Str::slug($data['title'], '-');
         //Uploading and saving Cover
         if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/posts/cover', 'public');
@@ -113,6 +132,19 @@ class PostController extends AdminController
             $file_path=env('IMAGE_PATH').$post->cover_photo;
             if(file_exists($file_path))
             {
+                @unlink($file_path);
+            }
+        }
+        //thumbnail
+        if($request->cover_photo) {
+            $image_path = request('cover_photo')->store('uploads/posts/thumbnail', 'public');
+            $naked_path = env('IMAGE_PATH') . $image_path;
+            $photo = Image::make($naked_path)->fit(398, 194);
+            $photo->save();
+            $data['thumbnail'] = $image_path;
+            //removing old image
+            $file_path = env('IMAGE_PATH') . $post->thumbnail;
+            if (file_exists($file_path)) {
                 @unlink($file_path);
             }
         }

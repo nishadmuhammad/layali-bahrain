@@ -50,11 +50,37 @@
         <div class="form-group">
             <label for="description" class="control-label">Description <small>(Do not capitalise entire sentence)</small></label>
             <textarea id="description" name="description"
-                      class="form-control textarea {{$errors->has('description') ? 'is-invalid' : ''}}">{{$post->description}}
+                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}">{{$post->description}}
             </textarea>
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('description')}}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="keywords" class="control-label">Keywords <small>(Do not capitalise entire sentence)</small></label>
+            <textarea id="keywords" name="keywords"
+                      class="form-control  {{$errors->has('keywords') ? 'is-invalid' : ''}}">{{$post->keywords}}
+            </textarea>
+            @if($errors->has('keywords'))
+                <span class="help-block error invalid-feedback">
+                    <strong>{{$errors->first('keywords')}}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label for="content" class="control-label">Content <small>(Do not capitalise entire sentence)</small></label>
+            <textarea id="content" name="content"
+                      class="form-control textarea {{$errors->has('content') ? 'is-invalid' : ''}}" >{{$post->content}}
+            </textarea>
+            @if($errors->has('content'))
+                <span class="help-block error invalid-feedback">
+                    <strong>{{$errors->first('content')}}</strong>
                 </span>
             @endif
         </div>
