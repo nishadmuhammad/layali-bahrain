@@ -2,10 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/front/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/.sass-cache/630b27002799ad761834061041cf866a1f8377ec/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/.sass-cache/6a9e496bdb3862672e4e37dc498b0914eabd1f3f/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/.sass-cache/a9a42e38f36efb8c82895ac8e38d303cbee8ddc0/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/.sass-cache/d17a1debcae659a448507ca2b257517841038266/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/.sass-cache/ef5c5b32d9f9dc5a705b04e0807ae7bdb705ba2c/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style,css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style,css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/about-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/aby.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/android-ios.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/app-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/app-dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/app01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/app02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-dot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-service.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/blog-list.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/branding.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/branding.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/call-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/client9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/consultation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/digital-marketing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/email-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/email-id.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/fb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/footer-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/footer-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/it-consulting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/it-consulting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/jithin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/joseph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/lets-talk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/list-style.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/location-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/logo-inner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/mobile-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/more-grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/news.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/news2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/news3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/nikhil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/our-services-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/our-services-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/paper-plane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/phone-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/portfolio1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/portfolio2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/project7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/recent-one.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/recent-two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/robin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/rohith.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/sakthi.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/sanal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/search-engine-optimization.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/service-detail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/services.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shape1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shape2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shape3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shape4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shape5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/social-media-marketing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/software.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/software.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/team1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/team2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/team4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/toggle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/web-development-designing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/website.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/who.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/EnquiryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/EnquiryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/enquiry/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/enquiry/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/datatable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/datatable.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +130,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="23588" />
+    <option name="totalTimeSeconds" value="28658" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -141,7 +251,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -190,10 +300,10 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="416" y="136" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.704@0.27.1366.704" timestamp="1594871917522" />
-    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl" timestamp="1592526745632">
+    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595035155850">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.704@0.27.1366.704" timestamp="1592526745632" />
+    <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.704@0.27.1366.704" timestamp="1595035155850" />
     <state width="1320" height="163" key="GridCell.Tab.0.bottom" timestamp="1592462711668">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
@@ -218,9 +328,9 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1594872725634" />
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1594976628315">
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1595043156843">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1594976628315" />
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1595043156843" />
   </component>
 </project>

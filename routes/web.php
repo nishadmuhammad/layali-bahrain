@@ -12,8 +12,8 @@
 */
 
 //Front end routes
-Route::get('/', function (){return view('front.welcome');})->name('home');
-Route::post('/enquiry','front\EnquiryController@store');
+Route::get('/', 'front\HomeController@index')->name('home');
+Route::post('/enquiry','front\EnquiryController@store')->name('enquire');
 
 //Auth Routes
 Auth::routes();
