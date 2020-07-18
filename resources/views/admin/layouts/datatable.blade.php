@@ -12,7 +12,15 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
-                        <h3 class="card-title">@yield('tableTitle') Details</h3><a class="btn btn-primary btn-sm" href="@yield('createRoute')">Add new</a>
+                        <h3 class="card-title">@yield('tableTitle') Details</h3><div class="d-flex justify-content-between">
+                            <a class="btn btn-primary btn-sm mr-2" href="@yield('createRoute')">Add new</a>
+                            <form action="" method="post" id="bulk_form">
+                                <input type="hidden" name="_method" value="get">
+                                <input type="hidden" name="ids" value="" id="ids">
+                                <button type="submit" class="btn btn-danger btn-sm" id="bulk_delete"><small>
+                                        Delete</small></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <!-- /.card-header -->
@@ -69,6 +77,34 @@
                 return false;
             }
         }
+    </script>
+
+    <script type="text/javascript">
+        $('#bulk_delete').click(function () {
+
+            var ids=[];
+            var token = $("meta[name='csrf-token']").attr("content");
+            $('#bulk_chk:checked').each(function () {
+                ids.push($(this).val());
+
+            })
+            if(ids.length > 0) {
+                if (confirm("Are you sure you want to delete selected enquiries?")) {
+
+                    $('#ids').val(ids);
+                    $('#bulk_form').attr('action', function (i, value) {
+                        return "bulkDelete/" + ids;
+                    });
+                    //$('#bulk_form').attr('action','bulkDelete/'+ids);
+                }
+            }
+            else{
+                $('#bulk_form').attr('action','')
+                alert('Please select atleast one checkbox');
+            }
+
+
+        });
     </script>
     @yield('evenMoreScripts')
 @endsection

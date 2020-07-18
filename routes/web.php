@@ -22,5 +22,5 @@ Auth::routes();
 Route::get('/admin', 'admin\HomeController@index')->name('home');
 Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
 Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
-
+Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
 

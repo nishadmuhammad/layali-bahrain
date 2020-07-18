@@ -86,4 +86,12 @@ class EnquiryController extends AdminController
         $enquiry->delete();
         return back()->with('success','Enquiry deleted successfully!');
     }
+
+    public function bulkDelete($id)
+    {
+        //dd($ids);
+        Enquiry::whereIn('id',explode(',',$id))->delete();
+        return back()->with('success','Enquiries deleted successfully!');
+
+    }
 }
