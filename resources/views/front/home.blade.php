@@ -17,7 +17,7 @@
                     <div class="banner-details">
                         <h1>SEO & Digital Marketing</h1>
                         <h5>development</h5>
-                        <a href="">More services</a>
+                        <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     <div class="banner-details">
                         <h1>Web Design</h1>
                         <h5>development</h5>
-                        <a href="">More services</a>
+                        <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
             </div>
@@ -41,9 +41,8 @@
                         <img src="assets/img/business-strategy-2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>Business Strategy</h1>
-                        <h5>development</h5>
-                        <a href="">More services</a>
+                        <h1>It Consulting & Branding</h1>
+                        <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
             </div>
