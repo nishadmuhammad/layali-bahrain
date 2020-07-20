@@ -89,7 +89,7 @@
 
             })
             if(ids.length > 0) {
-                if (confirm("Are you sure you want to delete selected enquiries?")) {
+                if (confirm("Are you sure you want to delete selected items?")) {
 
                     $('#ids').val(ids);
                     $('#bulk_form').attr('action', function (i, value) {
