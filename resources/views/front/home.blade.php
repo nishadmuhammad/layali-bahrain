@@ -489,10 +489,10 @@
                 <div class="col-sm-7">
                     <div class="text-content">
 
-                        <h6>Get a free</h6>
+                        <h6>Get a Free</h6>
                         <h4>30 Minutes<br>
                             Consultation</h4>
-                        <p>Talk to our amazing team of IT Experts who have over 15 years of experience in Digital Marketing , IT Consulting , SEO ,Website development and Content Generation.</p>
+                        <p>Talk to our amazing team of IT Experts who have over 15 years of experience in Digital Marketing , IT Consulting , SEO ,Website development and Branding.</p>
                     </div>
                 </div>
                 <div class="col-sm-5">
