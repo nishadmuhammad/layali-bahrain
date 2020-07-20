@@ -30,10 +30,15 @@ a.call-button {
   top: 50%;
   right: 0;
   background: #FFFFFF;
-  transform: translateY(-50%);
+  transform: translate(179px, -50%);
   z-index: 3;
   padding: 15px 22px;
   box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+a.call-button:hover {
+  transform: translate(0%, -50%);
+  transition: all 0.3s;
 }
 a.call-button img {
   vertical-align: initial;
@@ -53,7 +58,7 @@ a.call-button span:before {
   content: "";
   height: 57px;
   width: 1px;
-  background: #000000;
+  background: #D8D8D8;
 }
 
 .sidenav {
@@ -63,35 +68,37 @@ a.call-button span:before {
   top: 0;
   right: 0;
   background-color: #022640;
-  overflow-x: hidden;
-  transition: all 0.4s ease-in;
+  overflow: auto;
+  transition: all 0.4s ease-in-out;
   box-shadow: #8b8b8b45 0px 8px 7px 0px;
-  padding: 50px 100px;
+  padding: 35px;
   transform: translateX(100%);
+  width: 350px !important;
 }
 .sidenav a.closebtn {
   float: right;
   font-size: 36px !important;
   padding: 0 !important;
-  position: relative;
+  position: absolute;
   color: #FFFFFF;
-  top: -25px;
+  top: 0;
+  right: 15px;
 }
 .sidenav.main-nav {
-  width: 50vw !important;
   transform: translateX(0%);
-  transition: all 0.4s ease-out;
+  transition: all 0.4s ease-in-out;
 }
 .sidenav ul.contact-list {
-  margin-top: 40px;
+  margin: 15px 0;
 }
 .sidenav ul.contact-list li {
-  padding-left: 50px;
-  margin-bottom: 30px;
+  padding-left: 45px;
+  margin-bottom: 5px;
   position: relative;
+  display: block;
 }
 .sidenav ul.contact-list li:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 0;
 }
 .sidenav ul.contact-list li.email:before {
   content: url("../../assets/img/email.png");
@@ -138,8 +145,8 @@ a.call-button span:before {
   text-transform: uppercase;
 }
 .sidenav .get-in-touch {
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 25px;
+  margin-top: 25px;
   border-top: 1px solid #3F596B;
 }
 .sidenav .get-in-touch h3 {
@@ -149,6 +156,7 @@ a.call-button span:before {
 
 .page {
   margin-top: 100px;
+  padding-bottom: 50px;
 }
 
 .free-consultation {
@@ -243,9 +251,6 @@ a.call-button span:before {
 .navbar.inner .navbar-nav li.nav-item a.nav-link {
   color: #7A7A7A;
 }
-.navbar.inner .navbar-nav li.nav-item a.nav-link.contact-link {
-  border: 1px solid #7A7A7A;
-}
 .navbar.inner .navbar-nav li.nav-item a.nav-link img {
   filter: brightness(0);
 }
@@ -269,9 +274,6 @@ a.call-button span:before {
   text-transform: uppercase;
   font-size: 16px;
   padding: 10px 25px;
-}
-.navbar .navbar-nav li.nav-item a.nav-link.contact-link {
-  border: 1px solid #FFFFFF;
 }
 .navbar .navbar-toggler {
   margin-right: 15px;
@@ -431,7 +433,7 @@ footer .footer-bottom span a {
 }
 
 .index .banner {
-  height: 780px;
+  height: 625px;
   width: 100%;
   background: #00257d;
   background: -moz-linear-gradient(90deg, #98f0f9 25%, #1593c3 100%);
@@ -619,8 +621,8 @@ footer .footer-bottom span a {
   padding: 30px 15px;
   background: #FFFFFF;
   border-radius: 17px;
-  box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.1);
-  margin: 20px 5px 0 5px;
+  box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
+  margin: 20px 5px 5px 10px;
   text-align: center;
   transition: all 0.4s;
 }
@@ -645,6 +647,7 @@ footer .footer-bottom span a {
   font-size: 20px;
   margin-top: 10px;
   color: #3E3E3E;
+  text-transform: capitalize;
   transition: all 0.4s;
 }
 .index .our-services .services .owl-item .service p {
@@ -1058,7 +1061,7 @@ footer .footer-bottom span a {
 }
 
 .page .banner-common {
-  height: 588px;
+  height: 500px;
   background-image: url("../../assets/img/about-banner.jpg");
   background-size: cover;
   background-position: center center;
@@ -1069,7 +1072,7 @@ footer .footer-bottom span a {
   color: #FFFFFF;
   text-transform: capitalize;
   font-size: 97px;
-  transform: translateY(350%);
+  transform: translateY(300%);
 }
 
 .about-us .about-inner h4 {
@@ -1144,8 +1147,14 @@ footer .footer-bottom span a {
   transition: all 0.3s;
   opacity: 1;
 }
+.about-us .our-team .team-row .team-item:hover .team-image img {
+  filter: grayscale(0);
+  transition: all 0.3s;
+}
 .about-us .our-team .team-row .team-item .team-image img {
   width: 100%;
+  filter: grayscale(1);
+  transition: all 0.3s;
 }
 .about-us .our-team .team-row .team-item .member-details {
   position: absolute;
@@ -1177,12 +1186,12 @@ footer .footer-bottom span a {
 }
 .services-page .all-services {
   background-image: url("../../assets/img/bg-service.png");
-  background-size: 400px;
+  background-size: 300px;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
 .services-page .all-services .service {
-  padding: 75px 0 75px 50px;
+  padding: 50px 0;
 }
 .services-page .all-services .service .service-image {
   margin-bottom: 25px;
@@ -1205,6 +1214,7 @@ footer .footer-bottom span a {
   left: -50px;
   font-size: 14px;
   color: #000000;
+  display: none;
 }
 .services-page .lets-talk h3 {
   font-size: 97px;
@@ -1491,6 +1501,8 @@ footer .footer-bottom span a {
 .careers .careers-inner .tabs .tab-sec .nav-tabs {
   display: flex;
   border-bottom: none;
+  list-style-image: none;
+  padding-left: 0;
 }
 .careers .careers-inner .tabs .tab-sec .nav-tabs li.nav-item {
   width: 33.333%;
@@ -1672,6 +1684,7 @@ footer .footer-bottom span a {
 
   .page {
     margin-top: 85px;
+    padding-bottom: 25px;
   }
   .page .banner-common {
     height: 250px;
@@ -1688,6 +1701,9 @@ footer .footer-bottom span a {
   .index .banner {
     height: 242px;
     background-image: url("../../assets/img/mobile-banner.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
   }
   .index .banner .shape-one, .index .banner .shape-two, .index .banner .shape-three, .index .banner .shape-four, .index .banner .shape-ap, .index .banner .shape-app {
     display: none;
@@ -1945,15 +1961,15 @@ footer .footer-bottom span a {
   .navbar .navbar-nav .nav-link {
     color: #7A7A7A !important;
   }
-  .navbar .navbar-nav .contact-link {
-    border: 1px solid #7A7A7A !important;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     padding: 0 75px;
   }
 
+  .index .banner h1 {
+    font-size: 70px !important;
+  }
   .index .our-services {
     min-height: auto;
   }
@@ -1984,9 +2000,6 @@ footer .footer-bottom span a {
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
-  .index .banner {
-    height: 700px;
-  }
   .index .banner .shape-app {
     left: 75% !important;
   }
@@ -2008,6 +2021,10 @@ footer .footer-bottom span a {
   }
 }
 @media (min-width: 1600px) {
+  .index .banner {
+    height: 788px !important;
+  }
+
   .container {
     max-width: 1400px;
     padding: 0 75px;
