@@ -27,7 +27,6 @@
                                 </div>
                                 <div class="blog-block-details">
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"><span>{{$blog->author}}</span></li>
                                         <li class="list-inline-item"><span>{{date('d M Y',strtotime($blog->created_at))}}</span></li>
                                     </ul>
                                     {!! $blog->description !!}

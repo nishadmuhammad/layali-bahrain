@@ -16,7 +16,6 @@
                     </div>
                     <div class="banner-details">
                         <h1>SEO & Digital Marketing</h1>
-                        <h5>development</h5>
                         <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
@@ -28,8 +27,7 @@
                         <img src="assets/img/web-design2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>Web Design</h1>
-                        <h5>development</h5>
+                        <h1>Website Development</h1>
                         <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
@@ -56,7 +54,7 @@
                     <div class="col-sm-3">
                         <h2>About</h2>
                         <p>Maple Tech Space</p>
-                        <a href="{{route('about')}}" class="d-none d-sm-block">Read nore</a>
+                        <a href="{{route('about')}}" class="d-none d-sm-block">Read more</a>
                     </div>
                     <div class="col-sm-9">
                         <div class="row">
@@ -65,7 +63,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <p>We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power in human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
-                                <a href="" class="d-block d-sm-none">Read nore</a>
+                                <a href="" class="d-block d-sm-none">Read more</a>
 
                             </div>
                         </div>
