@@ -59,7 +59,7 @@
     <div class="col-6">
         <div class="form-group">
             <label for="expiry_date" class="control-label">Expiry Date </label>
-            <input type="datetime-local" id="expiry_date" name="expiry_date" required class="form-control {{$errors->has('expiry_date') ? 'is-invalid' : ''}}" value="{{old('expiry_date')}}">
+            <input type="date" id="expiry_date" name="expiry_date" required class="form-control {{$errors->has('expiry_date') ? 'is-invalid' : ''}}" value="{{old('expiry_date')}}">
             @if($errors->has('expiry_date'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('expiry_date')}}</strong>

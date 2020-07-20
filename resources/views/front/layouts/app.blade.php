@@ -122,7 +122,7 @@
                     <a class="nav-link" href="{{route('portfolio')}}">portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('blog')}}">careers</a>
+                    <a class="nav-link" href="{{route('careers')}}">careers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('blog')}}">blog</a>
@@ -169,7 +169,7 @@
                             <li><a href="{{route('about')}}">About</a></li>
                             <li><a href="{{route('portfolio')}}">Portfolio</a></li>
                             <li><a href="{{route('services')}}">Services</a></li>
-                            <li><a href="">Careers</a></li>
+                            <li><a href="{{route('careers')}}">Careers</a></li>
                         </ul>
                     </div>
                 </div>

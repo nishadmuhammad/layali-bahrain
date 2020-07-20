@@ -45,7 +45,7 @@
                 <div class="team-row">
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/rohith.jpg" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/rohithnew.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Rohith Mohandas</h6>

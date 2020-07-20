@@ -1,0 +1,68 @@
+@extends('front.layouts.app')
+@section('title', 'Maple Tech Space')
+@section('description','')
+@section('keywords','')
+@section('ogImage','')
+@section('navClass','inner')
+@section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
+@section('content')
+    <div class="careers page">
+        <div class="banner-common" style="background-image: url({{asset('assets/img/Career-page.png')}})">
+            <div class="container">
+                <h1>careers</h1>
+            </div>
+        </div>
+        <div class="careers-inner" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="tabs">
+                            <div class="tab-sec">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#india">India</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#toronto">Canada</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" data-aos="fade-up">
+                                    <div id="india" class="tab-pane active">
+                                        @foreach($careers as $career)
+                                            @if($career->country=='Canada') @continue @endif
+                                            <div class="career-block">
+                                                <h5 class="designation"><a href="{{route('careersShow',$career->id)}}">{{$career->position}}</a></h5>
+                                                <span>({{$career->no_of_opening}}+ Openings)</span>
+                                                <a href="{{route('careersShow',$career->id)}}" class="arrow"><img src="{{asset('assets/img/arrow-two.png')}}" alt=""></a>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                    <div id="toronto" class="tab-pane">
+                                        @foreach($careers as $Canada)
+                                            @if($career->country=='Canada') @continue @endif
+                                            <div class="career-block">
+                                                <h5 class="designation"><a href="{{route('careersShow',$career->id)}}">{{$career->position}}</a></h5>
+                                                <span>({{$career->no_of_opening}}+ Openings)</span>
+                                                <a href="{{route('careersShow',$career->id)}}" class="arrow"><img src="{{asset('assets/img/arrow-two.png')}}" alt=""></a>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="openings">
+                            <ul>
+                                @foreach($careers as $career)
+                                    <li><a href="{{route('careersShow',$career->id)}}">{{$career->position}}({{$career->no_of_opening}}+ Openings)</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
