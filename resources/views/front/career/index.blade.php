@@ -9,7 +9,7 @@
     <div class="careers page">
         <div class="banner-common">
             <div class="container">
-                <h1>Career</h1>
+                <h1>Careers</h1>
             </div>
         </div>
         <div class="careers-inner" data-aos="fade-up">
