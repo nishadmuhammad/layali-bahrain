@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-8">
                         @foreach($blogs as $blog)
-                            @if($loop==4) @break @endif
+
                             <div class="blog-block" data-aos="fade-up">
                                 <h5>{{$blog->title}}</h5>
                                 <div class="blog-image">
@@ -39,7 +39,7 @@
                         <div class="recent-blogs">
                             <h5>Recent Posts</h5>
                             @foreach($blogs as $blog)
-                                @if($loop<=4) @continue @endif
+
                                 <div class="blog-block" data-aos="fade-up">
                                 <div class="blog-image">
                                     <a href="{{route('showBlog',$blog->slug)}}">

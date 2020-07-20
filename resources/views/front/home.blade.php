@@ -239,7 +239,7 @@
         </div>
         <div class="our-clients">
             <div class="container">
-                <h3>Few Big Names Our Team Associated in the Past</h3>
+                <h3>Few Big Names Our Team members Associated in the Past</h3>
                 <div class="owl-carousel owl-theme clients">
                     <div class="item">
                         <div class="client">
