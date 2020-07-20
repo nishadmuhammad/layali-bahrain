@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/TestimonialController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Testimonial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_20_135407_create_testimonials_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/testimonial/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/testimonial/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/testimonial/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Colliers_Logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Dell_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Flipkart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/ICICI_bank_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Idea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Intel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/JLL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Kotak_Mahindra_Bank_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Nissan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Pepsi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/V-GAURD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/Wipro-Icon-PNG-1024x1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/amazon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/home-portfolio01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/home-portfolio02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/home-portfolio03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/home-portfolio04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/kantar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/metricfox.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/microsoft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/walmart.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/front/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/front/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +41,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="50807" />
+    <option name="totalTimeSeconds" value="54643" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
