@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
 @section('title', 'Maple Tech Space')
-@section('description','')
+@section('description','We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development')
 @section('keywords','')
 @section('ogImage','')
 @section('navClass','index')
@@ -62,17 +62,10 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-6">
-                                <p>We are a team of experienced Digital Creators who provide cost effective
-                                    ,contemporary technological solutions for a wider global reach. We help our clients
-                                    harness the Digital wave by providing exceptional services in Digital
-                                    Marketing,Website and App Development , Branding, Search Engine Optimisation, IT
-                                    Consulting, & Software Development. </p>
+                                <p>We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development</p>
                             </div>
                             <div class="col-sm-6">
-                                <p>We prioritize our clients' business strategy while handling their websites, social
-                                    media and marketing campaigns for greater consumer visibility and impact. In our
-                                    view, the power in human relationships is unmatched, which is why our team values
-                                    transparency and communication above anything else.</p>
+                                <p>We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power in human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
                                 <a href="" class="d-block d-sm-none">Read nore</a>
 
                             </div>
@@ -122,7 +115,7 @@
                                     <a href="">
                                         <img src="{{asset('assets/img/it-consulting.png')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>It Consulting</h5>
+                                        <h5>IT Consulting</h5>
                                         <p>With our deep understanding of the web and strong marketing expertise, we’ve
                                             helped scores of companies redefine what they are doing online.</p>
                                         <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
@@ -402,14 +395,6 @@
                         </div>
                         <div class="client">
                             <a href=""><img src="{{asset('assets/img/client1.jpg')}}" alt="" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client">
-                            <a href=""><img src="{{asset('assets/img/client2.jpg')}}" alt="" class="img-fluid"></a>
-                        </div>
-                        <div class="client">
-                            <a href=""><img src="{{asset('assets/img/client3.jpg')}}" alt="" class="img-fluid"></a>
                         </div>
                     </div>
                     <div class="item">
