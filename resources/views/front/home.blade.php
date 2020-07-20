@@ -39,7 +39,7 @@
                         <img src="assets/img/business-strategy-2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>It Consulting & Branding</h1>
+                        <h1>IT Consulting & Branding</h1>
                         <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
