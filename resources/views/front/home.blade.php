@@ -36,7 +36,7 @@
                     <div class="col-sm-3">
                         <h2>About</h2>
                         <p>Maple Tech Space</p>
-                        <a href="" class="d-none d-sm-block">Read nore</a>
+                        <a href="{{route('about')}}" class="d-none d-sm-block">Read nore</a>
                     </div>
                     <div class="col-sm-9">
                         <div class="row">

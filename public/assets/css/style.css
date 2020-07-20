@@ -1005,16 +1005,16 @@ footer .footer-bottom span a {
   transform: translate(-50%, -50%);
 }
 .portfolio .banner .portfolio-banner .project .project-detail h2 {
-  font-size: 80px;
-  color: #585858;
+  font-size: 40px;
+  color: #ffffff;
 }
 .portfolio .banner .portfolio-banner .project .project-detail p {
   font-size: 21px;
-  color: #585858;
+  color: #ffffff;
 }
 .portfolio .banner .portfolio-banner .project .project-detail a {
   font-size: 17px;
-  color: #585858;
+  color: #ffffff;
 }
 .portfolio .banner .portfolio-banner .project .project-detail a img {
   width: 58px;

@@ -12,36 +12,40 @@
                 <div class="item">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/img/project1.jpg" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/banner02.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="project-detail">
-                            <h2>Project</h2>
-                            <p>Website</p>
-                            <a href=""><img src="assets/img/more-grey.png" alt="" class="img-fluid">View project</a>
+                            <h2>Neena Varghese</h2>
+                            <p>Realtor Website</p>
+                            <a href="http://neenavarghese.com/"><img src="{{asset('assets/img/more-grey.png')}}" alt=""
+                                                                     class="img-fluid">View project</a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/img/project1.jpg" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/banner01.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="project-detail">
-                            <h2>Project</h2>
-                            <p>Website</p>
-                            <a href=""><img src="assets/img/more-grey.png" alt="" class="img-fluid">View project</a>
+                            <h2>Sybu Mathew</h2>
+                            <p>Realtor Website</p>
+                            <a href="https://www.sybumathew.com/" target="_blank"><img
+                                    src="{{asset('assets/img/more-grey.png')}}" alt="" class="img-fluid">View
+                                project</a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="project">
                         <div class="project-image">
-                            <img src="assets/img/project1.jpg" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/banner03.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="project-detail">
-                            <h2>Project</h2>
-                            <p>Website</p>
-                            <a href=""><img src="assets/img/more-grey.png" alt="" class="img-fluid">View project</a>
+                            <h2>Manukaii</h2>
+                            <p>Product Website</p>
+                            <a href=""><img src="{{asset('assets/img/more-grey.png')}}" alt="" class="img-fluid">View
+                                project</a>
                         </div>
                     </div>
                 </div>
@@ -52,26 +56,20 @@
                 <h5>Portfolio</h5>
                 <h4>Our latest projects</h4>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <p>We conceptualize and collaborate with our clients to elevate their business in a constantly
-                            evolving Digital Age. Maple Tech Space has been helping businesses online reach their
-                            objectives</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>We conceptualize and collaborate with our clients to elevate their business in a constantly
-                            evolving Digital Age. Maple Tech Space has been helping businesses online reach their
-                            objectives</p>
+                    <div class="col-sm-12">
+                        <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and
+                            functionality. Presenting to you, snapshots of our latest projects.</p>
                     </div>
                     <div class="col-sm-6">
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project2.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/sybumock.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Realtor Website</span>
+                                <h6>Sybu Mathew</h6>
                             </div>
                         </div>
                     </div>
@@ -79,12 +77,12 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project3.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/neenamock.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Realtor Website</span>
+                                <h6>Neena Varghese</h6>
                             </div>
                         </div>
                     </div>
@@ -92,12 +90,12 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project4.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/manukaiimock.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Product Website</span>
+                                <h6>Manukaii</h6>
                             </div>
                         </div>
                     </div>
@@ -105,12 +103,12 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project4.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/ecom.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Mobile App</span>
+                                <h6>E Commerce App</h6>
                             </div>
                         </div>
                     </div>
@@ -118,12 +116,12 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project6.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/sportz999mock.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Video Streaming Website</span>
+                                <h6>Sportz999</h6>
                             </div>
                         </div>
                     </div>
@@ -131,18 +129,56 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="assets/img/project7.jpg" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/babitamock.png')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>WEBSITE</span>
-                                <h6>Free forever online store</h6>
+                                <span>Realtor Website</span>
+                                <h6>Condos By Babita</h6>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-sm-6">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/stringsandbeadsmock.png')}}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <span>Product Website</span>
+                                <h6>Strings and Beads</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/fostermock.png')}}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <span>Product Website</span>
+                                <h6>Foster Hot Bred</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/chaihutmock.png')}}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <span>Restaurant Website</span>
+                                <h6>Chaihut</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    @endsection
+@endsection
