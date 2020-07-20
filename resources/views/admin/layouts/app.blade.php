@@ -65,7 +65,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="{{route('home')}}" class="brand-link">
+        <a href="{{route('adminHome')}}" class="brand-link">
             <span class="brand-text">{{env('APP_NAME')}}</span>
         </a>
 
@@ -78,7 +78,7 @@
                          with font-awesome or any other icon font library -->
 
                     <li class="nav-item">
-                        <a href="{{route('home')}}" class="nav-link">
+                        <a href="{{route('adminHome')}}" class="nav-link">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Dashboard
@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('adminHome')}}">Dashboard</a></li>
                             @if(request()->segment(1))
                                 @if(Route::has(request()->segment(1).".index"))
                                     <li class="breadcrumb-item"><a href="{{route(request()->segment(1).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
