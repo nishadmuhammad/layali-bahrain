@@ -7,7 +7,7 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('content')
     <div class="blog-page page">
-        <div class="banner-common">
+        <div class="banner-common" style="background-image: url({{asset('assets/img/Blogs.png')}})">
             <div class="container">
                 <h1>blog</h1>
             </div>
@@ -38,7 +38,7 @@
                     <div class="col-sm-4">
                         <div class="recent-blogs">
                             <h5>Recent Posts</h5>
-                            @foreach($blogs as $blog)
+                            @foreach($blogs->sortBy('id') as $blog)
 
                                 <div class="blog-block" data-aos="fade-up">
                                 <div class="blog-image">
