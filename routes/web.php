@@ -28,4 +28,8 @@ Route::get('/admin', 'admin\HomeController@index')->name('adminHome');
 Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
 Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
 Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
+Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','destroy','edit','update']);
+Route::resource('/admin/application','admin\ApplicationController')->only(['index']);
+Route::get('/admin/bulkDelete/{id}','admin\ApplicationController@bulkDelete')->name('bulkDelete');
+
 

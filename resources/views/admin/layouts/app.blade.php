@@ -116,6 +116,37 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-folder-open"></i>
+                            <p>
+                                Openings
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{route('opening.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>View all</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('opening.create')}}" class="nav-link">
+                                    <i class="fa fa-plus nav-icon"></i>
+                                    <p>Add New</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('application.index')}}" class="nav-link">
+                            <i class="nav-icon fa fa-comments"></i>
+                            <p>
+                                Applications
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

@@ -451,6 +451,7 @@ class ComposerStaticInit22426dce5bc47abab676ca48fe6f8d2c
     );
 
     public static $classMap = array (
+        'App\\Application' => __DIR__ . '/../..' . '/app/Application.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Enquiry' => __DIR__ . '/../..' . '/app/Enquiry.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -465,8 +466,11 @@ class ComposerStaticInit22426dce5bc47abab676ca48fe6f8d2c
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\admin\\EnquiryController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/EnquiryController.php',
         'App\\Http\\Controllers\\admin\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/HomeController.php',
+        'App\\Http\\Controllers\\admin\\OpeningController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/OpeningController.php',
         'App\\Http\\Controllers\\admin\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/PostController.php',
+        'App\\Http\\Controllers\\front\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/front/BlogController.php',
         'App\\Http\\Controllers\\front\\EnquiryController' => __DIR__ . '/../..' . '/app/Http/Controllers/front/EnquiryController.php',
+        'App\\Http\\Controllers\\front\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/front/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -476,6 +480,7 @@ class ComposerStaticInit22426dce5bc47abab676ca48fe6f8d2c
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Mail\\EnquiryEmail' => __DIR__ . '/../..' . '/app/Mail/EnquiryEmail.php',
+        'App\\Opening' => __DIR__ . '/../..' . '/app/Opening.php',
         'App\\Post' => __DIR__ . '/../..' . '/app/Post.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
