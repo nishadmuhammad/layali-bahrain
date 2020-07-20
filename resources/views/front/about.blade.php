@@ -144,11 +144,11 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/who.jpg')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/akamksha.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="member-details">
-                            <h6>Akamsha</h6>
-                            <p>SEO Specialist</p>
+                            <h6>Akanksha A Kumar</h6>
+                            <p>Social Media & Content Head</p>
                         </div>
                     </div>
                 </div>
