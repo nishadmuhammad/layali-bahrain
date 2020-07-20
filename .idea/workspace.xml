@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/front/BlogController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/achu.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/arrow-two.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/attach.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/careers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/diana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/kamal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/list-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/place.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/robin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/blog/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/blog/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/portfolio.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/services/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/front/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/front/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="43034" />
+    <option name="totalTimeSeconds" value="43272" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -239,10 +212,10 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="172" y="27" width="1012" height="704" key="SettingsEditor/0.27.1366.704@0.27.1366.704" timestamp="1592899286984" />
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595045844690">
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595207237241">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1595045844690" />
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1595207237241" />
     <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1595203522738">
       <screen x="0" y="27" width="1366" height="704" />
     </state>

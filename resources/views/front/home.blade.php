@@ -501,7 +501,7 @@
                         <input type="text" id="name" placeholder="Name" name="name" class="form-control">
                         <input type="email" id="email" placeholder="Email" name="email" class="form-control">
                         <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control">
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                         <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
                         <div class="pt-2">
                             <div id="thanks" style="display: none;text-align: center">
