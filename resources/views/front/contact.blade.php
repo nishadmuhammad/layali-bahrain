@@ -55,7 +55,7 @@
                             <p><img src="assets/img/location-black.svg" alt="">7250 Lancaster Avenue, Mississauga ON
                                 L4T2L6</p>
                             <p><img src="assets/img/email-black.svg" alt="">info@mapletechspace.com</p>
-                            <p><img src="assets/img/phone-black.svg" alt="">+1(647)673-3516</p>
+                            <p><img src="assets/img/phone-black.svg" alt="">+1 (647) 339-9023</p>
                         </div>
                         <div class="location" data-aos="fade-up">
                             <h5>india</h5>

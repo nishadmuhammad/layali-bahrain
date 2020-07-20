@@ -80,7 +80,7 @@
             </li>
             <li class="list-inline-item call">
                 <span>Reach Out</span>
-                <a href="">info@+1 (647) 614-4136</a>
+                <a href="+16473399023">+1 (647) 339-9023</a>
             </li>
             <li class="list-inline-item place">
                 <span>Canada</span>
@@ -109,7 +109,7 @@
 
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<a href="" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 614-4136</span></a>
+<a href="+1 (647) 339-9023" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 339-9023</span></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
