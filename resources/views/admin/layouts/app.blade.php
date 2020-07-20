@@ -135,18 +135,18 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{route('adminHome')}}">Dashboard</a></li>
-                            @if(request()->segment(1))
-                                @if(Route::has(request()->segment(1).".index"))
-                                    <li class="breadcrumb-item"><a href="{{route(request()->segment(1).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
+                            @if(request()->segment(3))
+                                @if(Route::has(request()->segment(3).".index"))
+                                    <li class="breadcrumb-item"><a href="{{route(request()->segment(3).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
                                 @else
-                                    <li class="breadcrumb-item active">{{ucfirst(request()->segment(1))}}</li>
+                                    <li class="breadcrumb-item active">{{ucfirst(request()->segment(3))}}</li>
                                 @endif
                             @endif
-                            @if(request()->segment(2))
-                                <li class="breadcrumb-item active">{{ucfirst(request()->segment(2))}}</li>
+                            @if(request()->segment(4))
+                                <li class="breadcrumb-item active">{{ucfirst(request()->segment(4))}}</li>
                             @endif
-                            @if(request()->segment(3))
-                                <li class="breadcrumb-item active">{{ucfirst(request()->segment(3))}}</li>
+                            @if(request()->segment(5))
+                                <li class="breadcrumb-item active">{{ucfirst(request()->segment(5))}}</li>
                             @endif
                         </ol>
                     </div>
