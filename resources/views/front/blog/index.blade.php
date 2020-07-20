@@ -22,7 +22,7 @@
                                 <h5>{{$blog->title}}</h5>
                                 <div class="blog-image">
                                     <a href="{{route('showBlog',$blog->slug)}}">
-                                        <img src="{{asset('$blog->cover_photo')}}" alt="{{$blog->title}}" class="img-fluid">
+                                        <img src="{{asset($blog->cover_photo)}}" alt="{{$blog->title}}" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="blog-block-details">
