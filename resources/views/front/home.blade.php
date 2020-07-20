@@ -221,7 +221,7 @@
                                     <a href="">
                                         <img src="{{asset('assets/img/it-consulting.png')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>It Consulting</h5>
+                                        <h5>IT Consulting</h5>
                                         <p>With our deep understanding of the web and strong marketing expertise, we’ve
                                             helped scores of companies redefine what they are doing online.</p>
                                         <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
