@@ -68,8 +68,9 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Realtor Website</span>
                                 <h6>Sybu Mathew</h6>
+                                <p>“Credibility , Trust, Reliability - the Reality about Realty.” Our website design for Realtor, Sybu Mathew Real Estate has been custom designed to showcase these core values.<br>
+                                    Take a look for yourself : <a target="_blank" href="https://www.sybumathewrealestate.com">www.sybumathewrealestate.com</a> </p>
                             </div>
                         </div>
                     </div>
@@ -81,8 +82,10 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Realtor Website</span>
                                 <h6>Neena Varghese</h6>
+                                <p>“Every elegant design begins with a great story! “ Our website for mortgage agent , Ms Neena Varghese is inspired by the elegance, intelligence and resilience that our client herself radiates.<br/>
+
+                                    Check it out on : <a target="_blank" href="https://www.neenavarghese.com">www.neenavarghese.com</a> </p>
                             </div>
                         </div>
                     </div>
@@ -94,8 +97,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Product Website</span>
                                 <h6>Manukaii</h6>
+                                <p>Our award-winning designer makes us all proud by adding another feather to his cap by bagging yet another award at the "99 designs Global Competition". </p>
                             </div>
                         </div>
                     </div>
@@ -107,8 +110,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Mobile App</span>
-                                <h6>E Commerce App</h6>
+                                <h6>Mobile App Development</h6>
+                                <p>The Power of Digital : Unfathomed, Unmeasured and Endless. Stay connected with the World, with Apps customized for every business need.</p>
                             </div>
                         </div>
                     </div>
@@ -120,8 +123,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Video Streaming Website</span>
                                 <h6>Sportz999</h6>
+                                <p>“Creativity is inventing, growing, taking risks and having fun”, very similar to the amazing world of Sports. For all the Sports buffs out there, click on <a target="_blank" href="www.sportz999.com">www.sportz999.com</a> to get your dose of Sports stories.</p>
                             </div>
                         </div>
                     </div>
@@ -133,8 +136,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Realtor Website</span>
-                                <h6>Condos By Babita</h6>
+                                <h6>Babita Gupta</h6>
+                                <p>“Our job is to take small ideas and build on them to make it tangible and unique””. The Website done for Realtor, Ms Babitha Gupta was to highlight the awe-inspiring work done by our client.</p>
                             </div>
                         </div>
                     </div>
@@ -146,8 +149,9 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Product Website</span>
                                 <h6>Strings and Beads</h6>
+                                <p>“Design brings content to focus and design makes function visible”.
+                                    This sums up the concept used for designing the website for our UAE based client, “Strings and Beads” who specialize in selling innovative products of healing jewellery. <br/>Click here: <a target="_blank" href="www.stringsandbeads.com">www.stringsandbeads.com</a> </p>
                             </div>
                         </div>
                     </div>
