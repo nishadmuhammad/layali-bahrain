@@ -7,7 +7,7 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('content')
     <div class="contact-page page">
-        <div class="banner-common" style="background-image: url({{asset('assets/img/contactbanner.png')}})">
+        <div class="banner-common">
             <div class="container">
                 <h1>contact</h1>
             </div>

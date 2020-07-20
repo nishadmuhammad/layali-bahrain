@@ -7,8 +7,9 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('content')
     <div class="careers page">
-        <div class="banner-common" style="background-image: url({{asset('assets/img/Career-page.png')}})">
+        <div class="banner-common">
             <div class="container">
+                <h1>Career</h1>
             </div>
         </div>
         <div class="careers-inner" data-aos="fade-up">

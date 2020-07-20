@@ -7,9 +7,9 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('content')
     <div class="blog-page page">
-        <div class="banner-common" style="background-image: url({{asset('assets/img/Blogs.png')}})">
+        <div class="banner-common">
             <div class="container">
-                <h1>blog</h1>
+                <h1>Blog</h1>
             </div>
         </div>
         <div class="container">

@@ -19,6 +19,21 @@ a, a:hover {
   background-color: #2A9FC2;
 }
 
+.portfolio .banner .portfolio-banner .project .project-detail h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail p {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail a {
+  font-size: 17px;
+  color: #ffffff;
+}
+
 .btn.focus, button:focus {
   box-shadow: none !important;
   border: none !important;
@@ -314,6 +329,7 @@ footer .footer-top {
   padding: 50px 0;
 }
 footer .footer-top a.footer-logo {
+  margin-bottom: 50px;
   display: block;
   text-align: center;
 }
@@ -627,7 +643,7 @@ footer .footer-bottom span a {
   left: 0;
 }
 .index .about p {
-  text-align: justify;
+  text-align: left;
   font-size: 14px;
   color: #5A564F;
 }
@@ -712,7 +728,6 @@ footer .footer-bottom span a {
   font-size: 20px;
   margin-top: 10px;
   color: #3E3E3E;
-  text-transform: capitalize;
   transition: all 0.4s;
 }
 .index .our-services .services .owl-item .service p {
@@ -1127,11 +1142,20 @@ footer .footer-bottom span a {
 
 .page .banner-common {
   height: 500px;
-  background-image: url("../../assets/img/about-banner.jpg");
+  background-image: url("../../assets/img/about.png");
   background-size: cover;
   background-position: center center;
   position: relative;
   margin-bottom: 50px;
+}
+.page .banner-common:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
 }
 .page .banner-common h1 {
   color: #FFFFFF;
@@ -1140,6 +1164,9 @@ footer .footer-bottom span a {
   transform: translateY(300%);
 }
 
+.about-us .banner-common {
+  background-image: url("../../assets/img/about-mobile.png");
+}
 .about-us .about-inner h4 {
   font-size: 37px;
   margin-bottom: 25px;
@@ -1247,7 +1274,7 @@ footer .footer-bottom span a {
   padding-bottom: 50px;
 }
 .services-page .banner-common {
-  background-image: url("../../assets/img/services.jpg");
+  background-image: url("../../assets/img/services.png");
 }
 .services-page .all-services {
   background-image: url("../../assets/img/bg-service.png");
@@ -1296,7 +1323,7 @@ footer .footer-bottom span a {
 }
 
 .contact-page .banner-common {
-  background-image: url("../../assets/img/contact.jpg");
+  background-image: url("../../assets/img/contact.png");
 }
 .contact-page .contact-inner h4 {
   font-size: 54px;
@@ -1356,7 +1383,7 @@ footer .footer-bottom span a {
 }
 
 .blog-page .banner-common {
-  background-image: url("../../assets/img/contact.jpg");
+  background-image: url("../../assets/img/blogs.png");
 }
 .blog-page .blogs .blog-block {
   padding-bottom: 30px;
@@ -1419,7 +1446,7 @@ footer .footer-bottom span a {
 }
 
 .service-detail-page .banner-common {
-  background-image: url("../../assets/img/contact.jpg");
+  background-image: url("../../assets/img/services.png");
 }
 .service-detail-page .service-detail-inner img {
   margin: 15px 0;
@@ -1446,7 +1473,7 @@ footer .footer-bottom span a {
 }
 
 .careers .banner-common {
-  background-image: url("../../assets/img/careers.jpg");
+  background-image: url("../../assets/img/career.png");
 }
 .careers .careers-inner .career-block {
   padding-bottom: 25px;
@@ -1656,6 +1683,9 @@ footer .footer-bottom span a {
     width: max-content;
     padding: 10px 15px;
   }
+  a.call-button:hover {
+    transform: none;
+  }
   a.call-button span {
     display: none;
   }
@@ -1663,6 +1693,9 @@ footer .footer-bottom span a {
     margin-right: 0;
   }
 
+  .careers .banner-common {
+    background-image: url("../../assets/img/career-mobile.png");
+  }
   .careers .careers-inner .tabs .tab-sec .nav-tabs li.nav-item {
     width: calc((100% - 15px) / 2);
   }
@@ -1670,6 +1703,9 @@ footer .footer-bottom span a {
     margin: 10px 0;
   }
 
+  .contact-page .banner-common {
+    background-image: url("../../assets/img/contact-mobile.png");
+  }
   .contact-page .contact-inner h4 {
     font-size: 30px;
     line-height: 45px;
@@ -1678,6 +1714,9 @@ footer .footer-bottom span a {
     font-size: 20px;
   }
 
+  .blog-page .banner-common {
+    background-image: url("../../assets/img/blogs-mobile.png");
+  }
   .blog-page .blogs .blog-block h5 {
     font-size: 20px;
   }
@@ -1752,7 +1791,7 @@ footer .footer-bottom span a {
     padding-bottom: 25px;
   }
   .page .banner-common {
-    height: 250px;
+    height: 495px;
   }
   .page .banner-common h1 {
     top: 50%;
@@ -1939,6 +1978,9 @@ footer .footer-bottom span a {
 
   .services-page {
     padding-bottom: 0;
+  }
+  .services-page .banner-common {
+    background-image: url("../../assets/img/services-mobile.png");
   }
   .services-page .all-services {
     background-image: none;

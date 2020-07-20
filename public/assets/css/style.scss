@@ -20,6 +20,21 @@ a, a:hover {
   //outline: 1px solid green;
 }
 
+.portfolio .banner .portfolio-banner .project .project-detail h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail p {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail a {
+  font-size: 17px;
+  color: #ffffff;
+}
+
 .btn.focus, button:focus {
   box-shadow: none !important;
   border: none !important;
@@ -386,6 +401,7 @@ footer {
     padding: 50px 0;
 
     a.footer-logo {
+      margin-bottom: 50px;
       display: block;
       text-align: center;
 
@@ -783,7 +799,7 @@ footer {
     }
 
     p {
-      text-align: justify;
+      text-align: left;
       font-size: 14px;
       color: #5A564F;
     }
@@ -882,7 +898,6 @@ footer {
             font-size: 20px;
             margin-top: 10px;
             color: #3E3E3E;
-            text-transform: capitalize;
             transition: all .4s;
           }
 
@@ -1444,11 +1459,21 @@ footer {
 
   .banner-common {
     height: 500px;
-    background-image: url("../../assets/img/about-banner.jpg");
+    background-image: url("../../assets/img/about.png");
     background-size: cover;
     background-position: center center;
     position: relative;
     margin-bottom: 50px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+    }
 
     h1 {
       color: #FFFFFF;
@@ -1460,6 +1485,9 @@ footer {
 }
 
 .about-us {
+  .banner-common {
+    background-image: url("../../assets/img/about-mobile.png");
+  }
 
   .about-inner {
     h4 {
@@ -1600,7 +1628,7 @@ footer {
   padding-bottom: 50px;
 
   .banner-common {
-    background-image: url("../../assets/img/services.jpg");
+    background-image: url("../../assets/img/services.png");
   }
 
   .all-services {
@@ -1665,7 +1693,7 @@ footer {
 
 .contact-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/contact.png");
   }
 
   .contact-inner {
@@ -1742,7 +1770,7 @@ footer {
 
 .blog-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/blogs.png");
   }
 
   .blogs {
@@ -1829,7 +1857,7 @@ footer {
 
 .service-detail-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/services.png");
   }
 
   .service-detail-inner {
@@ -1871,7 +1899,7 @@ footer {
 
 .careers {
   .banner-common {
-    background-image: url("../../assets/img/careers.jpg");
+    background-image: url("../../assets/img/career.png");
   }
 
   .careers-inner {
@@ -2134,6 +2162,10 @@ footer {
     width: max-content;
     padding: 10px 15px;
 
+    &:hover {
+      transform: none;
+    }
+
     span {
       display: none;
     }
@@ -2143,6 +2175,10 @@ footer {
     }
   }
   .careers {
+    .banner-common {
+      background-image: url("../../assets/img/career-mobile.png");
+    }
+
     .careers-inner {
       .tabs {
         .tab-sec {
@@ -2160,6 +2196,10 @@ footer {
     }
   }
   .contact-page {
+    .banner-common {
+      background-image: url("../../assets/img/contact-mobile.png");
+    }
+
     .contact-inner {
       h4 {
         font-size: 30px;
@@ -2172,6 +2212,10 @@ footer {
     }
   }
   .blog-page {
+    .banner-common {
+      background-image: url("../../assets/img/blogs-mobile.png");
+    }
+
     .blogs {
       .blog-block {
         h5 {
@@ -2273,7 +2317,7 @@ footer {
     padding-bottom: 25px;
 
     .banner-common {
-      height: 250px;
+      height: 495px;
 
       h1 {
         top: 50%;
@@ -2531,6 +2575,10 @@ footer {
   }
   .services-page {
     padding-bottom: 0;
+
+    .banner-common {
+      background-image: url("../../assets/img/services-mobile.png");
+    }
 
     .all-services {
       background-image: none;
