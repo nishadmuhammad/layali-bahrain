@@ -9,7 +9,6 @@
     <div class="careers page">
         <div class="banner-common" style="background-image: url({{asset('assets/img/Career-page.png')}})">
             <div class="container">
-                <h1>careers</h1>
             </div>
         </div>
         <div class="careers-inner" data-aos="fade-up">

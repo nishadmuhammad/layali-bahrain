@@ -8,14 +8,15 @@
 @section('content')
     <div class="index">
         <div class="owl-carousel owl-theme banner-slider">
+
             <div class="item">
                 <div class="banner-item">
                     <div class="banner-image">
-                        <img src="assets/img/seo-banner.png" alt="" class="img-fluid d-none d-sm-block">
-                        <img src="assets/img/seo-banner2.png" alt="" class="img-fluid d-block d-sm-none">
+                        <img src="assets/img/business-strategy.png" alt="" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/business-strategy-2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>SEO & Digital Marketing</h1>
+                        <h1>IT Consulting & Branding</h1>
                         <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
@@ -35,17 +36,15 @@
             <div class="item">
                 <div class="banner-item">
                     <div class="banner-image">
-                        <img src="assets/img/business-strategy.png" alt="" class="img-fluid d-none d-sm-block">
-                        <img src="assets/img/business-strategy-2.png" alt="" class="img-fluid d-block d-sm-none">
+                        <img src="assets/img/seo-banner.png" alt="" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/seo-banner2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>IT Consulting & Branding</h1>
+                        <h1>SEO & Digital Marketing</h1>
                         <a href="{{route('services')}}">More services</a>
                     </div>
                 </div>
             </div>
-
-
         </div>
         <div class="about">
             <div class="container">
@@ -309,7 +308,7 @@
         </div>
         <div class="our-clients">
             <div class="container">
-                <h3>Few Big Names Our Team Members Associated in the Past</h3>
+                <h3>Few <span style="font-weight: bolder; font-size: 35px">Big Names</span> Our Team Members Associated in the Past</h3>
                 <div class="owl-carousel owl-theme clients">
                     <div class="item">
                         <div class="client">
