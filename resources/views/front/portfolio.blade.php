@@ -7,48 +7,9 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('content')
     <div class="portfolio page">
-        <div class="banner">
-            <div class="owl-carousel owl-theme portfolio-banner" data-aos="fade-in">
-                <div class="item">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="{{asset('assets/img/banner02.png')}}" alt="" class="img-fluid">
-                        </div>
-                        <div class="project-detail">
-                            <h2>Neena Varghese</h2>
-                            <p>Realtor Website</p>
-                            <a href="http://neenavarghese.com/"><img src="{{asset('assets/img/more-grey.png')}}" alt=""
-                                                                     class="img-fluid">View project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="{{asset('assets/img/banner01.png')}}" alt="" class="img-fluid">
-                        </div>
-                        <div class="project-detail">
-                            <h2>Sybu Mathew</h2>
-                            <p>Realtor Website</p>
-                            <a href="https://www.sybumathew.com/" target="_blank"><img
-                                    src="{{asset('assets/img/more-grey.png')}}" alt="" class="img-fluid">View
-                                project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="{{asset('assets/img/banner03.png')}}" alt="" class="img-fluid">
-                        </div>
-                        <div class="project-detail">
-                            <h2>Manukaii</h2>
-                            <p>Product Website</p>
-                            <a href=""><img src="{{asset('assets/img/more-grey.png')}}" alt="" class="img-fluid">View
-                                project</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="banner-common">
+            <div class="container">
+                <h1>Portfolio</h1>
             </div>
         </div>
         <div class="portfolio-inner">
