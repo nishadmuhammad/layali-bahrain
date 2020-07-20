@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title'){{$blog->title}} | Maple Tech Space @endsection
+@section('title'){{ucwords(strtolower($blog->title))}} | Maple Tech Space @endsection
 @section('description'){{$blog->description}}@endsection
 @section('keywords'){{$blog->keyword}}@endsection
 @section('ogImage'){{$blog->cover_photo}}@endsection
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="blog-block" data-aos="fade-up">
-                            <h5>{{$blog->title}}</h5>
+                            <h5>{{ucwords(strtolower($blog->title))}}</h5>
                             <div class="blog-image">
                                 <a href="">
                                     <img src="{{asset($blog->cover_photo)}}" alt="{{$blog->title}}" class="img-fluid">
@@ -43,7 +43,7 @@
                                         </a>
                                     </div>
                                     <div class="blog-block-details">
-                                        <p>{{$blog->title}}</p>
+                                        <p>{{ucwords(strtolower($blog->title))}}</p>
                                     </div>
                                 </div>
                             @endforeach

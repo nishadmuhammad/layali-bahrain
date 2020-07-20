@@ -109,7 +109,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="active nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('home')}}">HOME</a>
                 </li>
                 <li class="nav-item">
@@ -220,6 +220,9 @@
         AOS.init({
             duration: 1000,
         });
+        $("#fileupload-img").click(function () {
+            $("#upload-file-img").click();
+        });
         var btn = $('.toggle-link');
 
         $(window).scroll(function () {
@@ -256,6 +259,28 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+        var owl = $('.banner-slider');
+        owl.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            autoplaySpeed: 2000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
                 }
             }
         })

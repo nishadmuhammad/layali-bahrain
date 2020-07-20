@@ -19,7 +19,7 @@
                         @foreach($blogs as $blog)
 
                             <div class="blog-block" data-aos="fade-up">
-                                <h5>{{$blog->title}}</h5>
+                                <h5>{{ucwords(strtolower($blog->title))}}</h5>
                                 <div class="blog-image">
                                     <a href="{{route('showBlog',$blog->slug)}}">
                                         <img src="{{asset($blog->cover_photo)}}" alt="{{$blog->title}}" class="img-fluid">
@@ -47,7 +47,7 @@
                                     </a>
                                 </div>
                                 <div class="blog-block-details">
-                                    <p>{{$blog->title}}</p>
+                                    <p>{{ucwords(strtolower($blog->title))}}</p>
                                 </div>
                             </div>
                             @endforeach

@@ -7,27 +7,48 @@
 @section('logo'){{asset('assets/img/logo.png')}}@endsection
 @section('content')
     <div class="index">
-        <div class="banner">
-            <img src="{{asset('assets/img/shape1.png')}}" alt="" class="img-fluid shape-one">
-            <img src="{{asset('assets/img/shape2.png')}}" alt="" class="img-fluid shape-one">
-            <img src="{{asset('assets/img/app01.png')}}" alt="" class="img-fluid shape-app" data-aos="fade-right">
-            <img src="{{asset('assets/img/app02.png')}}" alt="" class="img-fluid shape-ap" data-aos="fade-right">
-            <img src="{{asset('assets/img/shape3.png')}}" alt="" class="img-fluid shape-two">
-            <img src="{{asset('assets/img/shape4.png')}}" alt="" class="img-fluid shape-three">
-            <img src="{{asset('assets/img/shape5.png')}}" alt="" class="img-fluid shape-four">
-            <div class="banner-content">
-                <div class="container">
-                    <div class="col-sm-12">
-                        <div class="banner-text">
-                            <div class="banner-text-inner">
-                                <h1>Mobile app</h1>
-                                <h5>development</h5>
-                                <a href="">More services</a>
-                            </div>
-                        </div>
+        <div class="owl-carousel owl-theme banner-slider">
+            <div class="item">
+                <div class="banner-item">
+                    <div class="banner-image">
+                        <img src="assets/img/seo-banner.png" alt="" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/seo-banner2.png" alt="" class="img-fluid d-block d-sm-none">
+                    </div>
+                    <div class="banner-details">
+                        <h1>SEO & Digital Marketing</h1>
+                        <h5>development</h5>
+                        <a href="">More services</a>
                     </div>
                 </div>
             </div>
+            <div class="item">
+                <div class="banner-item">
+                    <div class="banner-image">
+                        <img src="assets/img/web-design.png" alt="" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/web-design2.png" alt="" class="img-fluid d-block d-sm-none">
+                    </div>
+                    <div class="banner-details">
+                        <h1>Web Design</h1>
+                        <h5>development</h5>
+                        <a href="">More services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner-item">
+                    <div class="banner-image">
+                        <img src="assets/img/business-strategy.png" alt="" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/business-strategy-2.png" alt="" class="img-fluid d-block d-sm-none">
+                    </div>
+                    <div class="banner-details">
+                        <h1>Business Strategy</h1>
+                        <h5>development</h5>
+                        <a href="">More services</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <div class="about">
             <div class="container">
@@ -531,7 +552,7 @@
                             <a href="{{route('showBlog',$post->slug)}}" class="block-image">
                                 <img src="{{$post->thumbnail}}" alt="" class="img-fluid">
                             </a>
-                            <h6>{{$post->title}}</h6>
+                            <h6>{{ucwords(strtolower($post->title))}}</h6>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <span>{{date('M  d Y', strtotime($post->created_at))}}</span>
