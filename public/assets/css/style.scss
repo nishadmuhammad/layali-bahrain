@@ -768,7 +768,7 @@ footer {
   }
 
   .about {
-    padding: 100px 0 25px 0;
+    padding: 50px 0 25px 0;
 
     h2 {
       font-size: 74px;
@@ -1354,6 +1354,10 @@ footer {
 }
 
 .portfolio {
+  .banner-common {
+    background-image: url("../../assets/img/portfolio.png") !important;
+  }
+
   .banner {
     margin-bottom: 50px;
 
@@ -1486,7 +1490,7 @@ footer {
 
 .about-us {
   .banner-common {
-    background-image: url("../../assets/img/about-mobile.png");
+    background-image: url("../../assets/img/about.png");
   }
 
   .about-inner {
@@ -2244,6 +2248,10 @@ footer {
     }
   }
   .about-us {
+    .banner-common {
+      background-image: url("../../assets/img/about-mobile.png") !important;
+    }
+
     .about-inner {
       h4 {
         font-size: 25px;
@@ -2288,6 +2296,12 @@ footer {
           margin-bottom: 15px;
           box-shadow: rgba(139, 139, 139, 0.27) 1px 1px 5px 1px;
 
+          .team-image {
+            img {
+              filter: grayscale(0) !important;
+            }
+          }
+
           .member-details {
             transform: none !important;
             padding: 5px;
@@ -2317,7 +2331,7 @@ footer {
     padding-bottom: 25px;
 
     .banner-common {
-      height: 495px;
+      height: 280px;
 
       h1 {
         top: 50%;
@@ -2330,6 +2344,10 @@ footer {
     }
   }
   .index {
+    .banner-slider {
+      margin-top: 84px;
+    }
+
     .banner {
       height: 242px;
       background-image: url("../../assets/img/mobile-banner.jpg");
@@ -2509,10 +2527,11 @@ footer {
   }
   .navbar {
     height: auto !important;
+    background: #ffffff !important;
 
     &.inner {
       .navbar-brand {
-        padding: 3px 15px;
+        padding: 0 15px 10px 15px;
       }
     }
 
@@ -2541,6 +2560,10 @@ footer {
     }
   }
   .portfolio {
+    .banner-common {
+      background-image: url("../../assets/img/portfolio-mobile.png") !important;
+    }
+
     .banner {
       margin-bottom: 25px;
 

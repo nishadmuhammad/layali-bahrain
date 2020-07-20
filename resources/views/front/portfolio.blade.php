@@ -57,8 +57,8 @@
                 <h4>Our latest projects</h4>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and
-                            functionality. Presenting to you, snapshots of our latest projects.</p>
+                        <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and functionality.We value relationship with our clients and for every business, whether small or big we understand that customer satisfaction will sustain and help grow a business in the long term.</p>
+                        <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
                     </div>
                     <div class="col-sm-6">
                         <div class="portfolio-block" data-aos="fade-up">
