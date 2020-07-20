@@ -15,7 +15,7 @@
     <!-- SEO META TAGS -->
 
     <!-- ICONS ---->
-    <link rel="icon" href="" type="image/png" sizes="32X32">
+    <link rel="icon" href="{{asset('assets/img/favicon.png')}}" type="image/png" sizes="32X32">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
@@ -50,45 +50,85 @@
 
 <div id="mySidenav" class="sidenav" style="width: 0;">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <ul class="list-inline">
-        <li class=""><a href="">link</a></li>
-        <li class=""><a href="">link</a></li>
-        <li class=""><a href="">link</a></li>
-        <li class=""><a href="">link</a></li>
-        <li class=""><a href="">link</a></li>
-    </ul>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="list-inline">
+                <li class=""><a href="{{route('home')}}">Home</a></li>
+                <li class=""><a href="{{route('about')}}">About Us </a></li>
+                <li class=""><a href="{{route('services')}}">Services</a></li>
+                <li class=""><a href="{{route('portfolio')}}">Portfolio</a></li>
+                <li class=""><a href="{{route('blog')}}">Blog</a></li>
+                <li class=""><a href="{{route('contact')}}">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="get-in-touch">
+        <h3>Get in Touch</h3>
+        <div class="row">
+            <ul class="contact-list list-inline">
+                <li class="list-inline-item email">
+                    <span>Email Us</span>
+                    <a href="">info@mapletechspace.com</a>
+                </li>
+                <li class="list-inline-item call">
+                    <span>Reach Out</span>
+                    <a href="">info@+1 (647) 614-4136</a>
+                </li>
+                <li class="list-inline-item place">
+                    <span>Find Us</span>
+                    <a href="">7250 Lancaster Avenue, Mississauga ON L4T2L6</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="list-inline social-media-footer">
+            <li class="list-inline-item">
+                <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="assets/img/fb.svg" alt=""></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="assets/img/instagram.svg" alt=""></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="assets/img/linkedin.svg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<a href="" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 614-4136</span></a>
+<!--<a href="" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 614-4136</span></a>-->
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img src="{{asset('assets/img/logo.png')}}" class="img-fluid"></a>
+        <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="active nav-item">
-                    <a class="nav-link" href="index.php">HOME</a>
+                    <a class="nav-link" href="{{route('home')}}">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.php">about us</a>
+                    <a class="nav-link" href="{{route('about')}}">about us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.php">services</a>
+                    <a class="nav-link" href="{{route('services')}}">services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.php">portfolio</a>
+                    <a class="nav-link" href="{{route('portfolio')}}">portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.php">blog</a>
+                    <a class="nav-link" href="{{route('blog')}}">blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link contact-link" href="contact.php">contact</a>
+                    <a class="nav-link contact-link" href="{{route('contact')}}">contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link toggle-icon" href="javascript:void(0)"><img src="{{asset('assets/img/toggle.png')}}"
-                                                                                   alt="icon"></a>
+                <li class="nav-item  d-none d-sm-block">
+                    <a class="nav-link toggle-icon" href="javascript:void(0)"><img
+                            src="{{asset('assets/img/toggle.png')}}"
+                            alt="icon"></a>
                 </li>
             </ul>
         </div>
@@ -100,51 +140,16 @@
     <div class="social-media-inner">
         <a href=""><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
-            <li><a href=""><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
+            <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
             <li><a href=""><img src="{{asset('assets/img/twitter.png')}}" alt=""></a></li>
-            <li><a href=""><img src="{{asset('assets/img/instagram.png')}}" alt=""></a></li>
-            <li><a href=""><img src="{{asset('assets/img/linkedin.png')}}" alt=""></a></li>
+            <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt=""></a></li>
             <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt=""></a></li>
         </ul>
     </div>
 </div>
 @yield('content')
 <footer>
-    <div class="free-consultation" data-aos="fade-in">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="text-content">
-
-                        <h6>Get a free</h6>
-                        <h4>30 Minutes<br>
-                            Consultation</h4>
-                        <p>Talk to our it experts who has 15 years of experience in the
-                            space of digital marketing, seo,website development... !!!</p>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <form action="{{route('enquire')}}" method="post" class="php-email-form" data-aos="zoom-in">
-                        @csrf
-                        <input type="text" id="name" placeholder="Name" name="name" class="form-control">
-                        <input type="email" id="email" placeholder="Email" name="email" class="form-control">
-                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control">
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
-                        <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
-                        <div class="pt-2">
-                            <div id="thanks" style="display: none;text-align: center">
-                                Thank you for contacting us.<br/>We will get back to you soon!
-                            </div>
-                            <div class="response" style="display: none">
-                                Please wait <i class="fa fa-cog fa-spin"></i>
-                            </div>
-                            <div class="error-message mt-3"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="footer-top">
         <div class="container">
             <div class="row">
