@@ -463,13 +463,13 @@
                 @foreach($posts as $post)
                     <div class="item">
                     <div class="block">
-                        <a href="{{route('showBlog',$blog->slug)}}" class="block-image">
+                        <a href="{{route('showBlog',$post->slug)}}" class="block-image">
                             <img src="{{$post->thumbnail}}" alt="" class="img-fluid">
                         </a>
-                        <h6>$post->title</h6>
+                        <h6>{{$post->title}}</h6>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <span>{{date('M / d/ Y', strtotime($post->created_at))}}</span>
+                                <span>{{date('M  d Y', strtotime($post->created_at))}}</span>
                             </li>
                         </ul>
                     </div>

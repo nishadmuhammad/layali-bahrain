@@ -20,12 +20,11 @@
                             <h5>{{$blog->title}}</h5>
                             <div class="blog-image">
                                 <a href="">
-                                    <img src="{{$blog->cover_photo}}" alt="{{$blog->title}}" class="img-fluid">
+                                    <img src="{{asset($blog->cover_photo)}}" alt="{{$blog->title}}" class="img-fluid">
                                 </a>
                             </div>
                             <div class="blog-block-details">
                                 <ul class="list-inline blog-by">
-                                    <li class="list-inline-item"><span>{{$blog->author}}</span></li>
                                     <li class="list-inline-item">
                                         <span>{{date('M d Y'),strtotime($blog->created_at)}}</span></li>
                                 </ul>

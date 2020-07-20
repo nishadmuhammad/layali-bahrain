@@ -72,11 +72,12 @@
                 </li>
                 <li class="list-inline-item call">
                     <span>Reach Out</span>
-                    <a href="">info@+1 (647) 614-4136</a>
+                    <a href="">+1(647)673-3516</a>
                 </li>
                 <li class="list-inline-item place">
                     <span>Find Us</span>
-                    <a href="">7250 Lancaster Avenue, Mississauga ON L4T2L6</a>
+                    <a href="">7250 Lancaster Avenue, Mississauga ON L4T2L6.</a>
+                    <a href="">14/554, Taxi Stand Building Complex, Chakkarakkal, Kannur, Kerala, 670613.</a>
                 </li>
             </ul>
         </div>
@@ -138,7 +139,7 @@
 
 <div class="social-media">
     <div class="social-media-inner">
-        <a href=""><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
+        <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
             <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
             <li><a href=""><img src="{{asset('assets/img/twitter.png')}}" alt=""></a></li>

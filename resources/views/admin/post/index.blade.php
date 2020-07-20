@@ -16,7 +16,7 @@
         <tr>
             <td></td>
             <td>{{$post->title}}</td>
-            <td><img src="img/{{$post->cover_photo}}" width="200px" class="img-thumbnail"></td>
+            <td><img src="{{asset($post->thumbnail)}}" width="200px" class="img-thumbnail"></td>
             <td>{{$post->status}}</td>
             <td>
                 <form action="{{route('post.destroy',$post->id)}}" method="POST" id="delete-form-{{$post->id}}">

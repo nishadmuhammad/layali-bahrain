@@ -64,7 +64,7 @@ class PostController extends AdminController
         if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/posts/thumbnail', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            $photo = Image::make($naked_path)->fit(398,194);
+            $photo = Image::make($naked_path)->fit(581,333);
             $photo->save();
             $data['thumbnail']=$image_path;
         }
@@ -125,7 +125,7 @@ class PostController extends AdminController
         if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/posts/cover', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            $photo = Image::make($naked_path)->fit(1194,505);
+            $photo = Image::make($naked_path)->fit(931,505);
             $photo->save();
             $data['cover_photo']=$image_path;
             //removing old image
@@ -139,7 +139,7 @@ class PostController extends AdminController
         if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/posts/thumbnail', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            $photo = Image::make($naked_path)->fit(398, 194);
+            $photo = Image::make($naked_path)->fit(581,333);
             $photo->save();
             $data['thumbnail'] = $image_path;
             //removing old image
