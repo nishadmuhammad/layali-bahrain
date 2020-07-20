@@ -142,4 +142,38 @@
             </div>
         </div>
     </div>
+    <div class="free-consultation" data-aos="fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="text-content">
+
+                        <h6>Get a free</h6>
+                        <h4>30 Minutes<br>
+                            Consultation</h4>
+                        <p>Talk to our amazing team of IT Experts who have over 15 years of experience in Digital Marketing , IT Consulting , SEO ,Website development and Content Generation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <form action="{{route('enquire')}}" method="post" class="php-email-form" data-aos="zoom-in">
+                        @csrf
+                        <input type="text" id="name" placeholder="Name" name="name" class="form-control">
+                        <input type="email" id="email" placeholder="Email" name="email" class="form-control">
+                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control">
+                        <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                        <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
+                        <div class="pt-2">
+                            <div id="thanks" style="display: none;text-align: center">
+                                Thank you for contacting us.<br/>We will get back to you soon!
+                            </div>
+                            <div class="response" style="display: none">
+                                Please wait <i class="fa fa-cog fa-spin"></i>
+                            </div>
+                            <div class="error-message mt-3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
