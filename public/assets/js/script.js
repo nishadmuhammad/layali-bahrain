@@ -37,13 +37,11 @@ $(document).ready(function () {
             $(".navbar.index").css({
                 "transition": "all .3s",
                 "height": "144",
-                "overflow": "visible",
                 "opacity": "1"
             })
             $(".navbar.inner").css({
                 "transition": "all .3s",
                 "height": "100",
-                "overflow": "visible",
                 "opacity": "1"
             })
             $(".social-media .social-media-inner a img.side-logo").css({
@@ -86,5 +84,4 @@ $(document).ready(function () {
             });
         }
     });
-    
 });
