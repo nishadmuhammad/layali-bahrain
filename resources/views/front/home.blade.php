@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="service">
                                     <a href="">
-                                        <img src="{{asset('assets/img/app-dev.png')}}" alt=""
+                                        <img src="{{asset('assets/img/android-ios.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>App Development</h5>
                                         <p>If you're looking to leverage mobile technology for your business, our best
@@ -190,7 +190,7 @@
                             <div class="item">
                                 <div class="service">
                                     <a href="">
-                                        <img src="{{asset('assets/img/branding.png')}}" alt=""
+                                        <img src="{{asset('assets/img/branding.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Branding</h5>
                                         <p>Deep diving into the unfamiliar waters of Brand Mangement? Look to the
@@ -219,7 +219,7 @@
                             <div class="item">
                                 <div class="service">
                                     <a href="">
-                                        <img src="{{asset('assets/img/it-consulting.png')}}" alt=""
+                                        <img src="{{asset('assets/img/it-consulting.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>IT Consulting</h5>
                                         <p>With our deep understanding of the web and strong marketing expertise, we’ve
@@ -247,7 +247,7 @@
                             <div class="item">
                                 <div class="service">
                                     <a href="">
-                                        <img src="{{asset('assets/img/website.png')}}" alt=""
+                                        <img src="{{asset('assets/img/web-development-designing.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Website Development</h5>
                                         <p>Boost your business through a technology first approach to showcase your
@@ -261,7 +261,7 @@
                             <div class="item">
                                 <div class="service">
                                     <a href="">
-                                        <img src="{{asset('assets/img/software.png')}}" alt=""
+                                        <img src="{{asset('assets/img/software.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Software Development</h5>
                                         <p>We build robust and scalable web apps that are custom made using rapid
