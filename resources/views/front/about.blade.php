@@ -32,7 +32,7 @@
                         <h3 style="font-size: 70px">Business entering the D2C space?</h3>
                     </div>
                     <div class="col-sm-6">
-                        <h4>Let MTS be the wind beneath your wings and capture targeted customers with just the click of a button, on your smart phone </h4>
+                        <h4>Let MTS be the wind beneath your wings and capture targeted customers with just the click of a button.</h4>
                     </div>
                 </div>
 
