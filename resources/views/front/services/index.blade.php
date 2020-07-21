@@ -104,7 +104,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="{{route('servicesShow','android-and-ios-development')}}">Android And Ios Development</a></h4>
+                                <h4><a href="{{route('servicesShow','android-and-ios-development')}}">Android and iOS Development</a></h4>
                                 <span>If you have a vision for an application, we have the tools to make that vision a reality. </span>
                             </div>
                         </div>

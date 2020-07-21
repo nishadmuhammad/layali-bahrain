@@ -58,10 +58,10 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-6">
-                                <p>We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development</p>
+                                <p style="text-align: justify;text-justify: inter-word;">We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development</p>
                             </div>
                             <div class="col-sm-6">
-                                <p>We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power in human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
+                                <p style="text-align: justify;text-justify: inter-word;">We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power of human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
                                 <a href="{{route('about')}}" class="d-block d-sm-none">Read more</a>
 
                             </div>
@@ -125,7 +125,7 @@
                                              class="service-image img-fluid">
                                         <h5>App Development</h5>
                                         <p>If you're looking to leverage mobile technology for your business, our best
-                                            app developers are at your service for both Android and IOS apps.</p>
+                                            app developers are at your service for both Android and iOS apps.</p>
                                         <a href="{{route('servicesShow','android-and-ios-development')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
@@ -162,7 +162,7 @@
                                     <a href="{{route('servicesShow','search-engine-optimization')}}">
                                         <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Search Engine optimization</h5>
+                                        <h5>Search Engine Optimization</h5>
                                         <p>At Maple Tech Space, we take care of all your business concerns regarding SEO
                                             and make sure that your website is coming on the first page of Google
                                             results.</p>
