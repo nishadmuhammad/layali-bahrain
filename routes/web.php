@@ -23,6 +23,7 @@ Route::get('/careers','front\CareerController@index')->name('careers');
 Route::get('/careers/{slug}','front\CareerController@show')->name('careersShow');
 Route::get('/contact/',function (){return view('front.contact');})->name('contact');
 Route::get('/services/{slug}','front\ServiceController@show')->name('servicesShow');
+Route::post('/subscribe','front\SubscriptionController@subscribe')->name('subscribe');
 //Auth Routes
 Auth::routes();
 

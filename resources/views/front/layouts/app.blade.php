@@ -192,8 +192,8 @@
                 <div class="col-sm-4">
                     <h4>Subscribe to our blog</h4>
                     <div class="subscribe-form">
-                        <form action="">
-                            <input type="text" class="form-control" id="usr" name="type"
+                        <form action="{{route('subscribe')}}" method="post" class="php-email-form">
+                            <input type="text" class="form-control" id="usr" name="email"
                                    placeholder="Enter your email id">
                             <button type="submit"></button>
                         </form>
