@@ -37,4 +37,5 @@ Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name(
 Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
 Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
 Route::resource('/admin/service','admin\ServiceController')->only(['index','create','store','edit','update','destroy']);
+Route::resource('/admin/application','admin\ApplicationController')->only(['index','create','store','edit','update','destroy']);
 
