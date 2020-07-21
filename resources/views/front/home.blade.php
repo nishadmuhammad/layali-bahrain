@@ -210,7 +210,7 @@
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
                                             marketing and Business Strategy at Maple Tech Space.</p>
-                                        <a href="{{route('servicesShow','branding')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','digital-marketing')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
