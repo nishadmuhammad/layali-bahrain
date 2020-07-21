@@ -39,8 +39,8 @@
                                         @endforeach
                                     </div>
                                     <div id="toronto" class="tab-pane">
-                                        @foreach($careers as $Canada)
-                                            @if($career->country=='Canada') @continue @endif
+                                        @foreach($careers as $career)
+                                            @if($career->country=='India') @continue @endif
                                             <div class="career-block">
                                                 <h5 class="designation"><a href="{{route('careersShow',$career->id)}}">{{$career->position}}</a></h5>
                                                 <span>({{$career->no_of_opening}}+ Openings)</span>
