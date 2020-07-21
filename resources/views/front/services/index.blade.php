@@ -23,7 +23,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">IT Consulting</a></h4>
+                                <h4><a href="{{route('servicesShow','it-consulting')}}">IT Consulting</a></h4>
                                 <span>With our deep understanding of the web and strong marketing expertise, we’ve helped scores of companies redefine what they are doing online.</span>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Branding</a></h4>
+                                <h4><a href="{{route('servicesShow','branding')}}">Branding</a></h4>
                                 <span>Branding, at its core, is the process of building an identity that will become the foundation for the future of your business. </span>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Digital Marketing</a></h4>
+                                <h4><a href="{{route('servicesShow','digital-marketing')}}">Digital Marketing</a></h4>
                                 <span>Digital marketing encompasses all marketing efforts that use an electronic device or the internet. </span>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Social Media Marketing</a></h4>
+                                <h4><a href="{{route('servicesShow','social-media-marketing')}}">Social Media Marketing</a></h4>
                                 <span>Social media marketing is a powerful way for businesses of all sizes to reach prospects and customers.</span>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Search Engine Optimization</a></h4>
+                                <h4><a href="{{route('servicesShow','search-engine-optimization')}}">Search Engine Optimization</a></h4>
                                 <span>You can promote your business through search engine optimization, but do you know how? Well, not everyone’s cup of tea.</span>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Website Development
+                                <h4><a href="{{route('servicesShow','website-design-and-development')}}">Website Development
                                         & Web Design</a></h4>
                                 <span>In digital space, websites are the front face of your business. In Maple Tech Space, we strongly believe that websites plays a crucial role in shaping your brand.</span>
                             </div>
@@ -104,7 +104,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Android And Ios Development</a></h4>
+                                <h4><a href="{{route('servicesShow','android-and-ios-development')}}">Android And Ios Development</a></h4>
                                 <span>If you have a vision for an application, we have the tools to make that vision a reality. </span>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 </a>
                             </div>
                             <div class="service-details">
-                                <h4><a href="">Custom Software Development</a></h4>
+                                <h4><a href="{{route('servicesShow','custom-software-development')}}">Custom Software Development</a></h4>
                                 <span>We provide software consulting services, which assess the processes of a business or organization and provide software solutions and other recommendations based on this assessment.</span>
                             </div>
                         </div>

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/front/ServiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/services/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +26,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="70799" />
+    <option name="totalTimeSeconds" value="4484" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -138,24 +147,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RedBuyers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/front" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/front" />
+      <recent name="$PROJECT_DIR$/resources/views/admin/service" />
+      <recent name="$PROJECT_DIR$/database/migrations" />
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/front/services" />
       <recent name="$PROJECT_DIR$/resources/views/front" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/admin" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/migrations" />
-      <recent name="$PROJECT_DIR$/resources/views/admin" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/admin" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/front" />
     </key>
   </component>
   <component name="RunManager">
@@ -184,10 +193,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="136" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1594871917522">
-      <screen x="0" y="27" width="1366" height="704" />
+    <state x="461" y="139" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595313700855">
+      <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="416" y="136" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.704@0.27.1366.704" timestamp="1594871917522" />
+    <state x="461" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/65.24.1301.744@65.24.1301.744" timestamp="1595313700855" />
     <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595266588733">
       <screen x="0" y="27" width="1366" height="704" />
     </state>

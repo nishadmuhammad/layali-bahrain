@@ -22,6 +22,7 @@ Route::get('/blog/{slug}','front\BlogController@show')->name('showBlog');
 Route::get('/careers','front\CareerController@index')->name('careers');
 Route::get('/careers/{slug}','front\CareerController@show')->name('careersShow');
 Route::get('/contact/',function (){return view('front.contact');})->name('contact');
+Route::get('/services/{slug}','front\ServiceController@show')->name('servicesShow');
 //Auth Routes
 Auth::routes();
 
@@ -32,4 +33,5 @@ Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','dest
 Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
 Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
 Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
+Route::resource('/admin/service','admin\ServiceController')->only(['index','create','store','edit','update','destroy']);
 

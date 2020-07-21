@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\front;
 
 use App\Service;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class ServiceController extends AdminController
+class ServiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,7 @@ class ServiceController extends AdminController
      */
     public function index()
     {
-        $services=Service::all();
-        return view('admin.service.index',['services'=>$services]);
+        //
     }
 
     /**
@@ -27,7 +26,7 @@ class ServiceController extends AdminController
      */
     public function create()
     {
-        return view('admin.service.create');
+        //
     }
 
     /**
@@ -38,13 +37,7 @@ class ServiceController extends AdminController
      */
     public function store(Request $request)
     {
-        $data=$request->validate([
-            'name'=>'required',
-            'description'=>'required',
-        ]);
-        $data['slug']=Str::slug($data['name'], '-');
-        Service::create($data);
-        return redirect(route('service.index'))->with('success','Service added successfully');
+        //
     }
 
     /**
@@ -53,9 +46,11 @@ class ServiceController extends AdminController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-       //
+        $service=Service::where('slug',$slug)->firstOrFail();
+       // dd($service);
+        return view('front.services.show',['service'=>$service]);
     }
 
     /**
@@ -66,8 +61,7 @@ class ServiceController extends AdminController
      */
     public function edit($id)
     {
-        $service=Service::findOrFail($id);
-        return view('admin.service.edit',['service'=>$service]);
+       //
     }
 
     /**
@@ -79,15 +73,7 @@ class ServiceController extends AdminController
      */
     public function update(Request $request, $id)
     {
-        $service=Service::findOrFail($id);
-        $data=$request->validate([
-            'name'=>'required',
-            'description'=>'required',
-        ]);
-        $data['slug']=Str::slug($data['name'], '-');
-        $service->update($data);
-        return redirect(route('service.index'))->with('success','Service updated successfully');
-
+        //
     }
 
     /**
@@ -98,9 +84,7 @@ class ServiceController extends AdminController
      */
     public function destroy($id)
     {
-        $service=Service::findOrFail($id);
-        $service->delete();
-        return back()->with('success','Service deleted successfully!');
+        //
     }
 
 
