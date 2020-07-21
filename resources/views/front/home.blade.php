@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title', 'Best SEO/Digital Marketing/Web Development Company Toronto')
+@section('title', 'Best SEO, Digital Marketing, Web Development Company Toronto')
 @section('description','We are a team of Digital Creators expertise in SEO, Digital and Social Media Marketing, Website Development, Application Development, IT consulting and Branding.')
 @section('keywords','Best seo company in toronto,Best digital marketing company in toronto,Best web development companies in toronto,Toronto seo company,Toronto digital marketing agency,Best web development companies in toronto,Web development agency toronto,Low Cost SEO Services toronto,Social Media Optimization')
 @section('ogImage'){{asset('assets/img/logo.png')}}@endsection
