@@ -329,7 +329,6 @@ footer .footer-top {
   padding: 50px 0;
 }
 footer .footer-top a.footer-logo {
-  margin-bottom: 50px;
   display: block;
   text-align: center;
 }
@@ -2024,6 +2023,13 @@ footer .footer-bottom span a {
     position: relative;
     bottom: 5px;
   }
+
+  footer .footer-top {
+    padding: 25px 0;
+  }
+  footer .footer-top a.footer-logo {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .index .our-services {
@@ -2155,7 +2161,15 @@ footer .footer-bottom span a {
   }
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 10px !important;
-    font-size: 15px;
+    font-size: 14px !important;
+  }
+
+  .page .banner-common {
+    height: 265px;
+  }
+  .page .banner-common h1 {
+    transform: translateY(180%);
+    font-size: 65px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
@@ -2179,7 +2193,15 @@ footer .footer-bottom span a {
   }
 
   .navbar .navbar-nav .nav-link {
-    padding: 10px 18px !important;
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+  }
+
+  .page .banner-common {
+    height: 350px;
+  }
+  .page .banner-common h1 {
+    transform: translateY(170%);
   }
 }
 @media (min-width: 1600px) {
