@@ -27,32 +27,32 @@
                         {!! $opening->description !!}
                         <h6>Drop your CVs to<a href="">hr@mapletechspace.ca</a></h6>
                         <div class="apply-now-form">
-                            <form action="">
+                            <form action="{{route('application')}}" method="POST" enctype="multipart/form-data">
+                                {{csrf_field()}}
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" placeholder="Full Name">
+                                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                                             </div>
                                             <div class="col-sm-6">
-                                                <select class="form-control" id="sel1" name="sellist1">
-                                                    <option>{{$opening->position}}</option>
+                                                <select class="form-control" name="opening_id" id="sel1" required >
+                                                    <option value="{{$opening->id}}">{{$opening->position}}</option>
                                                 </select>
                                             </div>
                                             <div class="col-sm-6">
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" class="form-control" name="email" placeholder="Email" required >
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="phone">
-                                                    <input type="text" class="form-control" placeholder="Phone">
+                                                    <input type="text" class="form-control" placeholder="Phone" name="phone" required>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="upload">
-                                            <input name="logo" class="form-control" id="upload-file-img" type="file"
-                                                   accept="image/png, image/jpeg">
+                                            <input  name="biodata" class="form-control" id="upload-file-img" type="file" required>
 
                                             <a id="fileupload-img"><span>Upload Resume</span><img
                                                     src="{{asset('assets/img/attach.svg')}}"
@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea name="" id="" placeholder="A Brief About Your Profile"></textarea>
+                                        <textarea  id="" placeholder="A Brief About Your Profile" name="description" required></textarea>
                                     </div>
                                     <div class="col-sm-12">
                                         <input type="submit" value="submit">
