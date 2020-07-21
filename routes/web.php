@@ -19,6 +19,8 @@ Route::get('/services',function (){return view('front.services.index');})->name(
 Route::get('/portfolio',function (){return view('front.portfolio');})->name('portfolio');
 Route::get('/blog','front\BlogController@index')->name('blog');
 Route::get('/blog/{slug}','front\BlogController@show')->name('showBlog');
+Route::get('/careers','front\CareerController@index')->name('careers');
+Route::get('/careers/{slug}','front\CareerController@show')->name('careersShow');
 Route::get('/contact/',function (){return view('front.contact');})->name('contact');
 //Auth Routes
 Auth::routes();
@@ -28,8 +30,6 @@ Route::get('/admin', 'admin\HomeController@index')->name('adminHome');
 Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
 Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
 Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
-Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','destroy','edit','update']);
-Route::resource('/admin/application','admin\ApplicationController')->only(['index']);
-Route::get('/admin/bulkDelete/{id}','admin\ApplicationController@bulkDelete')->name('bulkDelete');
-
+Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
+Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
 

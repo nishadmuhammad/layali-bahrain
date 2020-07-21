@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     <title>@yield('title')</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173018670-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173018670-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- SEO META TAGS -->
@@ -64,23 +73,24 @@
     </div>
     <div class="get-in-touch">
         <h3>Get in Touch</h3>
-        <div class="row">
-            <ul class="contact-list list-inline">
-                <li class="list-inline-item email">
-                    <span>Email Us</span>
-                    <a href="">info@mapletechspace.com</a>
-                </li>
-                <li class="list-inline-item call">
-                    <span>Reach Out</span>
-                    <a href="">+1(647)673-3516</a>
-                </li>
-                <li class="list-inline-item place">
-                    <span>Find Us</span>
-                    <a href="">7250 Lancaster Avenue, Mississauga ON L4T2L6.</a>
-                    <a href="">14/554, Taxi Stand Building Complex, Chakkarakkal, Kannur, Kerala, 670613.</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="contact-list list-inline">
+            <li class="list-inline-item email">
+                <span>Email Us</span>
+                <a href="">info@mapletechspace.com</a>
+            </li>
+            <li class="list-inline-item call">
+                <span>Reach Out</span>
+                <a href="+16473399023">+1 (647) 339-9023</a>
+            </li>
+            <li class="list-inline-item place">
+                <span>Canada</span>
+                <a href="">7250 Lancaster Avenue, Mississauga ON L4T2L6.</a>
+            </li>
+            <li class="list-inline-item place">
+                <span>India</span>
+                <a href="">14/554, Taxi Stand Shopping Complex, Chakkarakkal, Kannur, Kerala, 670613.</a>
+            </li>
+        </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
                 <a href=""><img src="assets/img/twitter.svg" alt=""></a>
@@ -99,7 +109,7 @@
 
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<!--<a href="" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 614-4136</span></a>-->
+<a href="+1 (647) 339-9023" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 339-9023</span></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
@@ -108,7 +118,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="active nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('home')}}">HOME</a>
                 </li>
                 <li class="nav-item">
@@ -121,16 +131,19 @@
                     <a class="nav-link" href="{{route('portfolio')}}">portfolio</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('careers')}}">careers</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('blog')}}">blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link contact-link" href="{{route('contact')}}">contact</a>
+                    <a class="nav-link" href="{{route('contact')}}">contact</a>
                 </li>
-                <li class="nav-item  d-none d-sm-block">
+                <!--<li class="nav-item  d-none d-sm-block">
                     <a class="nav-link toggle-icon" href="javascript:void(0)"><img
                             src="{{asset('assets/img/toggle.png')}}"
                             alt="icon"></a>
-                </li>
+                </li>-->
             </ul>
         </div>
     </div>
@@ -162,24 +175,20 @@
                 <div class="col-sm-3">
                     <div class="quick-links">
                         <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Customers</a></li>
-                            <li><a href="">Partner</a></li>
-                            <li><a href="">Datahut Startup Partner</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="{{route('about')}}">About</a></li>
+                            <li><a href="{{route('portfolio')}}">Portfolio</a></li>
+                            <li><a href="{{route('services')}}">Services</a></li>
+                            <li><a href="{{route('careers')}}">Careers</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="quick-links">
                         <ul>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Case Studies</a></li>
-                            <li><a href="">Slides</a></li>
-                            <li><a href="">Careers</a></li>
+                            <li><a href="{{route('blog')}}">Blog</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
+                            <li><a href="{{route('portfolio')}}">Latest Projects</a></li>
+                            <li><a href="{{route('blog')}}">Tech Updates</a></li>
                         </ul>
                     </div>
                 </div>
@@ -194,16 +203,16 @@
                     </div>
                     <ul class="list-inline social-media-footer">
                         <li class="list-inline-item">
-                            <a href=""><img src="{{asset('assets/img/twitter.svg')}}" alt=""></a>
+                            <a href="" target="_blank"><img src="{{asset('assets/img/twitter.svg')}}" alt=""></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
+                            <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
+                            <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
+                            <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -211,7 +220,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <span>© copyright <a href="">maple tech space.</a> all rights reserved</span>
+        <span>© Copyright <a href="">Maple Tech Space.</a> All rights reserved</span>
     </div>
 </footer>
 <script src="{{asset('assets/js/php-email-form.js')}}"></script>
@@ -219,6 +228,9 @@
     $(document).ready(function () {
         AOS.init({
             duration: 1000,
+        });
+        $("#fileupload-img").click(function () {
+            $("#upload-file-img").click();
         });
         var btn = $('.toggle-link');
 
@@ -256,6 +268,28 @@
                 },
                 1000: {
                     items: 3
+                }
+            }
+        })
+        var owl = $('.banner-slider');
+        owl.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            autoplaySpeed: 2000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
                 }
             }
         })

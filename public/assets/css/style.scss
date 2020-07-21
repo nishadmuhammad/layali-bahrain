@@ -20,6 +20,21 @@ a, a:hover {
   //outline: 1px solid green;
 }
 
+.portfolio .banner .portfolio-banner .project .project-detail h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail p {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.portfolio .banner .portfolio-banner .project .project-detail a {
+  font-size: 17px;
+  color: #ffffff;
+}
+
 .btn.focus, button:focus {
   box-shadow: none !important;
   border: none !important;
@@ -31,10 +46,16 @@ a.call-button {
   top: 50%;
   right: 0;
   background: #FFFFFF;
-  transform: translateY(-50%);
+  transform: translate(179px, -50%);
   z-index: 3;
   padding: 15px 22px;
   box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translate(0%, -50%);
+    transition: all 0.3s;
+  }
 
   img {
     vertical-align: initial;
@@ -55,7 +76,7 @@ a.call-button {
       content: "";
       height: 57px;
       width: 1px;
-      background: #000000;
+      background: #D8D8D8;
     }
   }
 }
@@ -67,37 +88,39 @@ a.call-button {
   top: 0;
   right: 0;
   background-color: #022640;
-  overflow-x: hidden;
-  transition: all 0.4s ease-in;
+  overflow: auto;
+  transition: all 0.4s ease-in-out;
   box-shadow: #8b8b8b45 0px 8px 7px 0px;
-  padding: 50px 100px;
+  padding: 35px;
   transform: translateX(100%);
+  width: 350px !important;
 
   a.closebtn {
     float: right;
     font-size: 36px !important;
     padding: 0 !important;
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    top: -25px;
+    top: 0;
+    right: 15px;
   }
 
   &.main-nav {
-    width: 50vw !important;
     transform: translateX(0%);
-    transition: all 0.4s ease-out;
+    transition: all 0.4s ease-in-out;
   }
 
   ul.contact-list {
-    margin-top: 40px;
+    margin: 15px 0;
 
     li {
-      padding-left: 50px;
-      margin-bottom: 30px;
+      padding-left: 45px;
+      margin-bottom: 5px;
       position: relative;
+      display: block;
 
       &:not(:last-child) {
-        margin-right: 25px;
+        margin-right: 0;
       }
 
       &.email {
@@ -163,8 +186,8 @@ a.call-button {
   }
 
   .get-in-touch {
-    padding-top: 50px;
-    margin-top: 50px;
+    padding-top: 25px;
+    margin-top: 25px;
     border-top: 1px solid #3F596B;
 
     h3 {
@@ -177,6 +200,7 @@ a.call-button {
 
 .page {
   margin-top: 100px;
+  padding-bottom: 50px;
 }
 
 .free-consultation {
@@ -284,12 +308,19 @@ a.call-button {
       text-align: center;
 
       li.nav-item {
+        &.active, &:hover {
+          a.nav-link {
+            border: 1px solid #7A7A7A;
+            transition: all 0.3s;
+
+          }
+        }
+
         a.nav-link {
           color: #7A7A7A;
+          border: 1px solid transparent;
+          transition: all 0.3s;
 
-          &.contact-link {
-            border: 1px solid #7A7A7A;
-          }
 
           img {
             filter: brightness(0);
@@ -320,15 +351,21 @@ a.call-button {
         margin-right: 25px;
       }
 
+      &.active, &:hover {
+        a.nav-link {
+          border: 1px solid #ffffff;
+          transition: all 0.3s;
+        }
+      }
+
       a.nav-link {
         color: #FFFFFF;
         text-transform: uppercase;
         font-size: 16px;
         padding: 10px 25px;
+        border: 1px solid transparent;
+        transition: all 0.3s;
 
-        &.contact-link {
-          border: 1px solid #FFFFFF;
-        }
       }
     }
   }
@@ -340,6 +377,7 @@ a.call-button {
 }
 
 a.toggle-link {
+  display: block;
   position: fixed;
   top: 25px;
   right: 25px;
@@ -537,7 +575,7 @@ footer {
 
 .index {
   .banner {
-    height: 780px;
+    height: 625px;
     width: 100%;
     background: rgb(0, 37, 125);
     background: -moz-linear-gradient(90deg, rgb(152, 240, 249) 25%, rgb(21, 147, 195) 100%);
@@ -661,8 +699,75 @@ footer {
     }
   }
 
+  .banner-slider {
+    .banner-item {
+      position: relative;
+      width: 100%;
+      display: block;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .banner-image {
+        img {
+          width: 100%;
+        }
+      }
+
+      .banner-details {
+        position: absolute;
+        top: 70%;
+        left: 250px;
+        transform: translateY(-50%);
+
+        h1 {
+          color: #FFFFFF;
+          font-size: 80px;
+        }
+
+        h5 {
+          text-transform: capitalize;
+          color: #FFFFFF;
+          font-size: 21px;
+        }
+
+        a {
+          color: #FFFFFF;
+          position: relative;
+          padding-left: 70px;
+          margin-top: 25px;
+          display: block;
+          transition: all 0.4s;
+
+          &:hover {
+            margin-left: 10px;
+            transition: all 0.4s;
+
+          }
+
+          &:before {
+            content: url("../../assets/img/more.png");
+            position: absolute;
+            top: -6px;
+            left: 0;
+          }
+        }
+      }
+
+    }
+  }
+
   .about {
-    padding: 100px 0 25px 0;
+    padding: 50px 0 25px 0;
 
     h2 {
       font-size: 74px;
@@ -693,7 +798,7 @@ footer {
     }
 
     p {
-      text-align: justify;
+      text-align: left;
       font-size: 14px;
       color: #5A564F;
     }
@@ -777,8 +882,8 @@ footer {
           padding: 30px 15px;
           background: #FFFFFF;
           border-radius: 17px;
-          box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.1);
-          margin: 20px 5px 0 5px;
+          box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
+          margin: 20px 5px 5px 10px;
           text-align: center;
           transition: all .4s;
 
@@ -1248,6 +1353,10 @@ footer {
 }
 
 .portfolio {
+  .banner-common {
+    background-image: url("../../assets/img/portfolio.png") !important;
+  }
+
   .banner {
     margin-bottom: 50px;
 
@@ -1352,23 +1461,36 @@ footer {
 
 
   .banner-common {
-    height: 588px;
-    background-image: url("../../assets/img/about-banner.jpg");
+    height: 500px;
+    background-image: url("../../assets/img/about.png");
     background-size: cover;
     background-position: center center;
     position: relative;
     margin-bottom: 50px;
 
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+    }
+
     h1 {
       color: #FFFFFF;
       text-transform: capitalize;
       font-size: 97px;
-      transform: translateY(350%);
+      transform: translateY(300%);
     }
   }
 }
 
 .about-us {
+  .banner-common {
+    background-image: url("../../assets/img/about.png");
+  }
 
   .about-inner {
     h4 {
@@ -1457,11 +1579,22 @@ footer {
             transition: all 0.3s;
             opacity: 1;
           }
+
+          .team-image {
+            img {
+              filter: grayscale(0);
+              transition: all 0.3s;
+
+            }
+          }
         }
 
         .team-image {
           img {
             width: 100%;
+            filter: grayscale(1);
+            transition: all 0.3s;
+
           }
         }
 
@@ -1498,17 +1631,17 @@ footer {
   padding-bottom: 50px;
 
   .banner-common {
-    background-image: url("../../assets/img/services.jpg");
+    background-image: url("../../assets/img/services.png");
   }
 
   .all-services {
     background-image: url("../../assets/img/bg-service.png");
-    background-size: 400px;
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: bottom left;
 
     .service {
-      padding: 75px 0 75px 50px;
+      padding: 50px 0;
 
       .service-image {
         margin-bottom: 25px;
@@ -1535,6 +1668,7 @@ footer {
           left: -50px;
           font-size: 14px;
           color: #000000;
+          display: none;
         }
       }
     }
@@ -1562,7 +1696,7 @@ footer {
 
 .contact-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/contact.png");
   }
 
   .contact-inner {
@@ -1639,7 +1773,7 @@ footer {
 
 .blog-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/blogs.png");
   }
 
   .blogs {
@@ -1726,7 +1860,7 @@ footer {
 
 .service-detail-page {
   .banner-common {
-    background-image: url("../../assets/img/contact.jpg");
+    background-image: url("../../assets/img/services.png");
   }
 
   .service-detail-inner {
@@ -1768,7 +1902,7 @@ footer {
 
 .careers {
   .banner-common {
-    background-image: url("../../assets/img/careers.jpg");
+    background-image: url("../../assets/img/career.png");
   }
 
   .careers-inner {
@@ -1911,6 +2045,8 @@ footer {
         .nav-tabs {
           display: flex;
           border-bottom: none;
+          list-style-image: none;
+          padding-left: 0;
 
           li.nav-item {
             width: 33.333%;
@@ -2029,6 +2165,10 @@ footer {
     width: max-content;
     padding: 10px 15px;
 
+    &:hover {
+      transform: none;
+    }
+
     span {
       display: none;
     }
@@ -2038,6 +2178,10 @@ footer {
     }
   }
   .careers {
+    .banner-common {
+      background-image: url("../../assets/img/career-mobile.png");
+    }
+
     .careers-inner {
       .tabs {
         .tab-sec {
@@ -2055,6 +2199,10 @@ footer {
     }
   }
   .contact-page {
+    .banner-common {
+      background-image: url("../../assets/img/contact-mobile.png");
+    }
+
     .contact-inner {
       h4 {
         font-size: 30px;
@@ -2067,6 +2215,10 @@ footer {
     }
   }
   .blog-page {
+    .banner-common {
+      background-image: url("../../assets/img/blogs-mobile.png");
+    }
+
     .blogs {
       .blog-block {
         h5 {
@@ -2095,6 +2247,10 @@ footer {
     }
   }
   .about-us {
+    .banner-common {
+      background-image: url("../../assets/img/about-mobile.png") !important;
+    }
+
     .about-inner {
       h4 {
         font-size: 25px;
@@ -2139,6 +2295,12 @@ footer {
           margin-bottom: 15px;
           box-shadow: rgba(139, 139, 139, 0.27) 1px 1px 5px 1px;
 
+          .team-image {
+            img {
+              filter: grayscale(0) !important;
+            }
+          }
+
           .member-details {
             transform: none !important;
             padding: 5px;
@@ -2165,9 +2327,10 @@ footer {
 
   .page {
     margin-top: 85px;
+    padding-bottom: 25px;
 
     .banner-common {
-      height: 250px;
+      height: 280px;
 
       h1 {
         top: 50%;
@@ -2180,9 +2343,16 @@ footer {
     }
   }
   .index {
+    .banner-slider {
+      margin-top: 84px;
+    }
+
     .banner {
       height: 242px;
       background-image: url("../../assets/img/mobile-banner.jpg");
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
 
       .shape-one, .shape-two, .shape-three, .shape-four, .shape-ap, .shape-app {
         display: none;
@@ -2225,6 +2395,38 @@ footer {
                 display: none;
               }
             }
+          }
+        }
+      }
+    }
+
+    .banner-slider {
+
+      .banner-details {
+        left: 30px !important;
+
+        h1 {
+          font-size: 20px !important;
+          //color: #000000 !important;
+        }
+
+        h5 {
+          font-size: 14px !important;
+          //color: #000000 !important;
+          font-weight: 400;
+        }
+
+        a {
+          padding: 2px 10px !important;
+          //color: #000000 !important;
+          border: 1px solid #ffffff;
+          display: inline-block !important;
+          font-size: 14px;
+          border-radius: 3px;
+          margin-top: 8px !important;
+
+          &:before {
+            display: none;
           }
         }
       }
@@ -2324,10 +2526,11 @@ footer {
   }
   .navbar {
     height: auto !important;
+    background: #ffffff !important;
 
     &.inner {
       .navbar-brand {
-        padding: 3px 15px;
+        padding: 0 15px 10px 15px;
       }
     }
 
@@ -2356,6 +2559,10 @@ footer {
     }
   }
   .portfolio {
+    .banner-common {
+      background-image: url("../../assets/img/portfolio-mobile.png") !important;
+    }
+
     .banner {
       margin-bottom: 25px;
 
@@ -2391,6 +2598,10 @@ footer {
   .services-page {
     padding-bottom: 0;
 
+    .banner-common {
+      background-image: url("../../assets/img/services-mobile.png");
+    }
+
     .all-services {
       background-image: none;
 
@@ -2403,9 +2614,8 @@ footer {
         }
 
         .service-details {
-          padding: 0 15px 15px 25px;
-
-          span {
+          h4 {
+            text-align: center;
           }
 
           p.count {
@@ -2429,6 +2639,15 @@ footer {
       }
     }
 
+  }
+  footer {
+    .footer-top {
+      padding: 25px 0;
+
+      a.footer-logo {
+        margin-bottom: 50px;
+      }
+    }
   }
 }
 
@@ -2471,6 +2690,20 @@ footer {
           h1 {
             font-size: 60px !important;
           }
+        }
+      }
+    }
+
+    .banner-slider {
+      .banner-details {
+        left: 150px !important;
+
+        h1 {
+          font-size: 35px !important;
+        }
+
+        h5 {
+          font-size: 18px !important;
         }
       }
     }
@@ -2552,10 +2785,6 @@ footer {
       .nav-link {
         color: #7A7A7A !important;
       }
-
-      .contact-link {
-        border: 1px solid #7A7A7A !important;
-      }
     }
   }
 
@@ -2566,6 +2795,23 @@ footer {
     padding: 0 75px;
   }
   .index {
+    .banner {
+      h1 {
+        font-size: 70px !important;
+      }
+    }
+
+    .banner-slider {
+      .banner-details {
+        left: 150px !important;
+
+        h1 {
+          font-size: 50px !important;
+        }
+      }
+    }
+
+
     .our-services {
       min-height: auto;
 
@@ -2608,8 +2854,18 @@ footer {
 
         .nav-link {
           padding: 10px !important;
-          font-size: 15px;
+          font-size: 14px !important;
         }
+      }
+    }
+  }
+  .page {
+    .banner-common {
+      height: 265px;
+
+      h1 {
+        transform: translateY(180%);
+        font-size: 65px;
       }
     }
   }
@@ -2620,14 +2876,18 @@ footer {
 @media (min-width: 1200px) and (max-width: 1440px) {
   .index {
     .banner {
-      height: 700px;
-
       .shape-app {
         left: 75% !important;
       }
 
       .shape-ap {
         left: 70% !important;
+      }
+    }
+
+    .banner-slider {
+      h1 {
+        font-size: 60px !important;
       }
     }
   }
@@ -2647,7 +2907,17 @@ footer {
   .navbar {
     .navbar-nav {
       .nav-link {
-        padding: 10px 18px !important;
+        padding: 10px 15px !important;
+        font-size: 15px !important;
+      }
+    }
+  }
+  .page {
+    .banner-common {
+      height: 350px;
+
+      h1 {
+        transform: translateY(170%);
       }
     }
   }
@@ -2656,7 +2926,11 @@ footer {
 }
 
 @media (min-width: 1600px) {
-
+  .index {
+    .banner {
+      height: 788px !important;
+    }
+  }
   .container {
     max-width: 1400px;
     padding: 0 75px;

@@ -14,19 +14,13 @@
         </div>
         <div class="about-inner" data-aos="fade-up">
             <div class="container">
-                <h4>About maple tech space</h4>
+                <h4>Maple Tech Space</h4>
+                <h5 style="margin-top: -15px">Conceptualize, Collaborate, Elevate</h5>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>We conceptualize and collaborate with our clients to elevate their business in a constantly
-                            evolving Digital Age. Maple Tech Space has been helping businesses online reach their
-                            objectives by providing unique solutions to digital marketing challenges, since our
-                            inception in 2013. At Maple Tech Space, we consider the clients’ vision our utmost priority
-                            as we transform and reflect it in the Digital space. We prioritize business needs at the
-                            center of all our work and are constantly driven by results. In our view, relationships are
-                            stronger than contracts which is why it is our main goal to bring clients closer to their
-                            consumers. We started our journey by launching the website for Kannur Government Engineering
-                            College and over the years have grown by leaps and bounds to even get recognized by the
-                            “Kerala Start-Up” mission. </p>
+                        <p>At Maple Tech Space, we firmly believe that our mission statement “Conceptualize, Collaborate and Elevate” helps us partner with our clients to consistently achieve their business objectives in the Digital age. We help businesses online to understand and leverage the unfathomable power of the Digital Space.</p>
+                        <p>Having started our journey in India by launching the Website for Kannur Government Engineering College in the year 2006, our dedicated and passionate team has grown over the years by leaps and bounds , to gain recognition from the “Kerala Start-Up mission” in 2017. Maple Tech Space has forayed into the Canadian Market in the year 2020 and within a short span of time has managed to execute customized projects with prestigious clients.</p>
+                        <p>Building a strong on-line presence is the mantra for good business today and the team at Maple Tech Space is well versed in executing targeted Digital Marketing campaigns and providing Technological solutions in an ethical and efficient way.</p>
                     </div>
                 </div>
             </div>
@@ -35,13 +29,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3>Mobile app</h3>
-                        <span>Development</span>
+                        <h3 style="font-size: 70px">Business entering the D2C space?</h3>
                     </div>
                     <div class="col-sm-6">
-                        <h4>At Maple Tech Space, we consider
-                            the clients’ vision our utmost priority
-                            as we transform</h4>
+                        <h4>Let MTS be the wind beneath your wings and capture targeted customers with just the click of a button, on your smart phone </h4>
                     </div>
                 </div>
 
@@ -54,7 +45,7 @@
                 <div class="team-row">
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/rohith.jpg" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/rohithnew.png')}}" alt="" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Rohith Mohandas</h6>
@@ -67,7 +58,7 @@
                         </div>
                         <div class="member-details">
                             <h6>Robin cheriyan</h6>
-                            <p>Chief Executive Officer</p>
+                            <p>Co-Founder</p>
                         </div>
                     </div>
                     <div class="team-item" data-aos="fade-up">
@@ -126,6 +117,15 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
+                            <img src="{{asset('assets/img/arun.png')}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Arun M</h6>
+                            <p>HR Manager</p>
+                        </div>
+                    </div>
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
                             <img src="assets/img/team4.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="member-details">
@@ -142,7 +142,15 @@
                             <p>Content Strategist</p>
                         </div>
                     </div>
-
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="{{asset('assets/img/akamksha.png')}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Akanksha A Kumar</h6>
+                            <p>Social Media & Content Head</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
