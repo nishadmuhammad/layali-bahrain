@@ -48,6 +48,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\Service' => $baseDir . '/app/Service.php',
+    'App\\Subscriber' => $baseDir . '/app/Subscriber.php',
     'App\\Testimonial' => $baseDir . '/app/Testimonial.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',

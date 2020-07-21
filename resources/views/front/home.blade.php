@@ -1,8 +1,8 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
+@section('title', 'Best SEO/Digital Marketing/Web Development Company Toronto')
 @section('description','We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development')
-@section('keywords','')
-@section('ogImage','')
+@section('keywords','Best seo company in toronto,Best digital marketing company in toronto,Best web development companies in toronto,Toronto seo company,Toronto digital marketing agency,Best web development companies in toronto,Web development agency toronto,Low Cost SEO Services toronto,Social Media Optimization')
+@section('ogImage'){{asset('assets/img/logo.png')}}@endsection
 @section('navClass','index')
 @section('logo'){{asset('assets/img/logo.png')}}@endsection
 @section('content')
@@ -210,7 +210,7 @@
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
                                             marketing and Business Strategy at Maple Tech Space.</p>
-                                        <a href="{{route('servicesShow','branding')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','digital-marketing')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>

@@ -6,7 +6,7 @@
 @endsection
 @section('tableHead')
     <th>#</th>
-    <th>Opening Id</th>
+    <th>Applying for</th>
     <th>Name</th>
     <th>Email Id</th>
     <th>Description</th>
@@ -17,11 +17,11 @@
     @foreach($applications->sortByDesc('id') as $application)
         <tr>
             <td></td>
-            <td>{{$application->opening_id}}</td>
+            <td>{{$application->opening->position}}</td>
             <td>{{$application->name}}</td>
             <td>{{$application->email}}</td>
             <td>{{$application->description}}</td>
-            <td>{{$application->biodata}}</td>
+            <td><a href="{{asset($application->biodata)}}" target="_blank"><i class="fas fa-file"></i> </a> </td>
             <td>
                 <input type="checkbox" id="bulk_chk" name="ids[]" value="{{$application->id}}">
             </td>

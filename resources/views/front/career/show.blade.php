@@ -19,6 +19,12 @@
                         <div class="career-block">
                             <div class="row">
                                 <div class="col-sm-12">
+                                    @if ($message = Session::get('success'))
+                                        <div class="alert alert-success alert-block">
+                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                            <strong>{{ $message }}</strong>
+                                        </div>
+                                    @endif
                                     <h5 class="designation"><a href="">{{$opening->position}}</a></h5>
                                     <span>Posted On: {{date('d M, Y', strtotime($opening->created_at))}}  |   Exp: {{date('d M Y', strtotime($opening->expiry_date))}}</span>
                                 </div>

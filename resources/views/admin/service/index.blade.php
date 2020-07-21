@@ -15,7 +15,7 @@
         <tr>
             <td></td>
             <td>{{$service->name}}</td>
-            <td>{{$service->description}}</td>
+            <td>{!! $service->description !!}</td>
             <td>
                 <form action="{{route('service.destroy',$service->id)}}" method="POST" id="delete-form-{{$service->id}}">
                     {{csrf_field()}}

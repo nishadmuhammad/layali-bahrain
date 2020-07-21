@@ -23,7 +23,9 @@ Route::get('/careers','front\CareerController@index')->name('careers');
 Route::get('/careers/{slug}','front\CareerController@show')->name('careersShow');
 Route::get('/contact/',function (){return view('front.contact');})->name('contact');
 Route::get('/services/{slug}','front\ServiceController@show')->name('servicesShow');
+Route::post('/subscribe','front\SubscriptionController@subscribe')->name('subscribe');
 Route::post('/application','front\CareerController@store')->name('application');
+
 //Auth Routes
 Auth::routes();
 
@@ -35,4 +37,5 @@ Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name(
 Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
 Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
 Route::resource('/admin/service','admin\ServiceController')->only(['index','create','store','edit','update','destroy']);
+Route::resource('/admin/application','admin\ApplicationController')->only(['index','create','store','edit','update','destroy']);
 
