@@ -93,9 +93,6 @@
         </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
-                <a href=""><img src="assets/img/twitter.svg" alt=""></a>
-            </li>
-            <li class="list-inline-item">
                 <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="assets/img/fb.svg" alt=""></a>
             </li>
             <li class="list-inline-item">
@@ -158,7 +155,6 @@
         <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
             <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
-            <li><a href=""><img src="{{asset('assets/img/twitter.png')}}" alt=""></a></li>
             <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt=""></a></li>
             <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt=""></a></li>
             <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt=""></a></li>
@@ -181,16 +177,15 @@
                             <li><a href="{{route('about')}}">About</a></li>
                             <li><a href="{{route('portfolio')}}">Portfolio</a></li>
                             <li><a href="{{route('services')}}">Services</a></li>
-                            <li><a href="{{route('careers')}}">Careers</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="quick-links">
                         <ul>
+                            <li><a href="{{route('careers')}}">Careers</a></li>
                             <li><a href="{{route('blog')}}">Blog</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{route('portfolio')}}">Latest Projects</a></li>
                         </ul>
                     </div>
                 </div>
@@ -204,9 +199,6 @@
                         </form>
                     </div>
                     <ul class="list-inline social-media-footer">
-                        <li class="list-inline-item">
-                            <a href="" target="_blank"><img src="{{asset('assets/img/twitter.svg')}}" alt=""></a>
-                        </li>
                         <li class="list-inline-item">
                             <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
                         </li>

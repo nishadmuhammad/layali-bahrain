@@ -345,7 +345,8 @@ a.toggle-link img {
 
 footer .footer-top {
   background: #0E152A;
-  padding: 50px 0;
+  padding-top: 50px;
+    padding-bottom: 10px;
 }
 footer .footer-top a.footer-logo {
   display: block;
