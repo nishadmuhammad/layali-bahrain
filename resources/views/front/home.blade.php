@@ -557,9 +557,9 @@
                 <div class="col-sm-5">
                     <form action="{{route('enquire')}}" method="post" class="php-email-form" data-aos="zoom-in">
                         @csrf
-                        <input type="text" id="name" placeholder="Name" name="name" class="form-control">
-                        <input type="email" id="email" placeholder="Email" name="email" class="form-control">
-                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control">
+                        <input type="text" id="name" placeholder="Name" name="name" class="form-control" required>
+                        <input type="email" id="email" placeholder="Email" name="email" class="form-control" required>
+                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control" required>
                         <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                         <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
                         <div class="pt-2">
