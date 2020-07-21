@@ -191,7 +191,6 @@
                             <li><a href="{{route('blog')}}">Blog</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
                             <li><a href="{{route('portfolio')}}">Latest Projects</a></li>
-                            <li><a href="{{route('blog')}}">Tech Updates</a></li>
                         </ul>
                     </div>
                 </div>
@@ -223,7 +222,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <span>© Copyright <a href="">Maple Tech Space.</a> All rights reserved</span>
+        <span>© Copyright <a href="#">Maple Tech Space.</a> All rights reserved</span>
     </div>
 </footer>
 <script src="{{asset('assets/js/php-email-form.js')}}"></script>
