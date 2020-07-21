@@ -18,7 +18,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','it-consulting')}}">
                                     <img src="{{asset('assets/img/it-consulting.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -31,7 +31,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','branding')}}">
                                     <img src="{{asset('assets/img/branding.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -44,7 +44,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','digital-marketing')}}">
                                     <img src="{{asset('assets/img/digital-marketing.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -57,7 +57,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','social-media-marketing')}}">
                                     <img src="{{asset('assets/img/social-media-marketing.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -70,7 +70,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','search-engine-optimization')}}">
                                     <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -83,7 +83,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','website-design-and-development')}}">
                                     <img src="{{asset('assets/img/web-development-designing.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -99,7 +99,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','android-and-ios-development')}}">
                                     <img src="assets/img/android-ios.svg" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -112,7 +112,7 @@
                     <div class="col-sm-4">
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
-                                <a href="">
+                                <a href="{{route('servicesShow','custom-software-development')}}">
                                     <img src="{{asset('assets/img/software.svg')}}" alt="" class="img-fluid">
                                 </a>
                             </div>

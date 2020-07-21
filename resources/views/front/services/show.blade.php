@@ -9,7 +9,7 @@
     <div class="service-detail-page page">
         <div class="banner-common">
             <div class="container">
-                <h1>{{$service->name}}</h1>
+                <h1>SERVICES</h1>
             </div>
         </div>
         <div class="container">
@@ -18,12 +18,6 @@
                     <div class="col-sm-8">
                         <h5>{{$service->name}}</h5>
                         <p>{!! $service->description !!} </p>
-                        <img src="{{asset('assets/img/service-detail.jpg')}}" alt="" class="img-fluid">
-                        <p>With 14+ years of experiance in this domain, we will be able to provide you a 360 degree
-                            holistic approach on the IT adoptation for your business. We follow a unique approach, by
-                            evaluating your business opportunities and implement the left solutions for you. This will
-                            help the businesses to achive profit at an exponential speed.
-                        </p>
                     </div>
                     <div class="col-sm-4">
                         <div class="quick-nav">
