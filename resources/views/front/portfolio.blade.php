@@ -124,8 +124,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Product Website</span>
                                 <h6>Foster Hot Bred</h6>
+                                <p>We strive to create content that reaches your audience’s audience! It’s all about perpetual motion and high visibility . Head over to our client's page <a href="https://fosterhotbread.com/">www.fosterhotbread.com</a> to see for yourself.</p>
                             </div>
                         </div>
                     </div>
@@ -137,8 +137,8 @@
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <span>Restaurant Website</span>
                                 <h6>Chaihut</h6>
+                                <p>A website should be like the visiting card, leading users to the front door of  a Business. This was the concept while designing for our client, <a href="https://www.chaihut.in/">www.chaihut.in</a>  </p>
                             </div>
                         </div>
                     </div>

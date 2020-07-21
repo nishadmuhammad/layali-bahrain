@@ -56,7 +56,7 @@
                         <div class="openings">
                             <ul>
                                 @foreach($careers as $career)
-                                    <li><a href="{{route('careersShow',$career->id)}}">{{$career->position}}({{$career->no_of_opening}}+ Openings)</a></li>
+                                    <li><a href="{{route('careersShow',$career->id)}}">{{$career->position}} ({{$career->no_of_opening}}+ Openings)</a></li>
                                 @endforeach
                             </ul>
                         </div>

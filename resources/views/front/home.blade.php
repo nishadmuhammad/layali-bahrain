@@ -17,7 +17,7 @@
                     </div>
                     <div class="banner-details">
                         <h1>IT Consulting & Branding</h1>
-                        <a href="{{route('services')}}">More services</a>
+                        <a href="{{route('servicesShow','it-consulting')}}">More services</a>
                     </div>
                 </div>
             </div>
@@ -28,8 +28,8 @@
                         <img src="assets/img/web-design2.png" alt="" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
-                        <h1>Website Development</h1>
-                        <a href="{{route('services')}}">More services</a>
+                        <h1>Website Design and Development</h1>
+                        <a href="{{route('servicesShow','website-design-and-development')}}">More services</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="banner-details">
                         <h1>SEO & Digital Marketing</h1>
-                        <a href="{{route('services')}}">More services</a>
+                        <a href="{{route('servicesShow','search-engine-optimization')}}">More services</a>
                     </div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-6">
-                                <p>We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development</p>
+                                <p style="text-align: justify;text-justify: inter-word;">We are a team of experienced Digital Creators who provide cost effective, contemporary technological solutions for a wider global reach. We help our clients harness the Digital wave by providing exceptional services in Digital Marketing,Website and App Development , Branding, Search Engine Optimisation, IT Consulting, & Software Development</p>
                             </div>
                             <div class="col-sm-6">
-                                <p>We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power in human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
-                                <a href="" class="d-block d-sm-none">Read more</a>
+                                <p style="text-align: justify;text-justify: inter-word;">We prioritize our clients' business strategy while handling their websites, social media and marketing campaigns for greater consumer visibility and impact. In our view, the power of human relationships is unmatched, which is why our team values transparency and communication above anything else.</p>
+                                <a href="{{route('about')}}" class="d-block d-sm-none">Read more</a>
 
                             </div>
                         </div>
@@ -74,33 +74,33 @@
         <div class="our-services" data-aos="fade-up">
             <div class="container">
                 <h3 class="text-center">Our Services</h3>
-                <a href="" class="text-center view-all">View All</a>
+                <a href="{{route('services')}}" class="text-center view-all">View All</a>
                 <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-8">
                         <div class="owl-carousel owl-theme services d-none d-sm-block" data-aos="fade-in">
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','branding')}}">
                                         <img src="{{asset('assets/img/branding.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Branding</h5>
                                         <p>Deep diving into the unfamiliar waters of Brand Mangement? Look to the
                                             experts, MTS to guide you through and be a class apart from the
                                             competition.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','branding')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','digital-marketing')}}">
                                         <img src="{{asset('assets/img/digital-marketing.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
                                             marketing and Business Strategy at Maple Tech Space.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','digital-marketing')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -108,25 +108,25 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','it-consulting')}}">
                                         <img src="{{asset('assets/img/it-consulting.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>IT Consulting</h5>
                                         <p>With our deep understanding of the web and strong marketing expertise, we’ve
                                             helped scores of companies redefine what they are doing online.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','it-consulting')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','android-and-ios-development')}}">
                                         <img src="{{asset('assets/img/android-ios.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>App Development</h5>
                                         <p>If you're looking to leverage mobile technology for your business, our best
-                                            app developers are at your service for both Android and IOS apps.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                            app developers are at your service for both Android and iOS apps.</p>
+                                        <a href="{{route('servicesShow','android-and-ios-development')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -134,52 +134,52 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','website-design-and-development')}}">
                                         <img src="{{asset('assets/img/web-development-designing.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Website Development</h5>
+                                        <h5>Website Design and Development</h5>
                                         <p>Boost your business through a technology first approach to showcase your
                                             uniqueness. Dont settle with a template based , generic website.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','website-design-and-development')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','custom-software-development')}}">
                                         <img src="{{asset('assets/img/software.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Software Development</h5>
+                                        <h5>Custom Software Development</h5>
                                         <p>We build robust and scalable web apps that are custom made using rapid
                                             development processes leveraging the most cultured web technologies.</p>
-                                        <a href="" class="read-more"><img src="assets/img/more-grey.png" alt=""
+                                        <a href="{{route('servicesShow','custom-software-development')}}" class="read-more"><img src="assets/img/more-grey.png" alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','search-engine-optimization')}}">
                                         <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Search Engine optimization</h5>
+                                        <h5>Search Engine Optimization</h5>
                                         <p>At Maple Tech Space, we take care of all your business concerns regarding SEO
                                             and make sure that your website is coming on the first page of Google
                                             results.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','search-engine-optimization')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','social-media-marketing')}}">
                                         <img src="{{asset('assets/img/social-media-marketing.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Social Media Marketing</h5>
                                         <p>Great marketing on social media can bring remarkable success to your
                                             business, creating devoted brand advocates and even driving leads and
                                             sales.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','social-media-marketing')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -189,14 +189,14 @@
                         <div class="owl-carousel owl-theme services d-block d-sm-none" data-aos="fade-in">
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','branding')}}">
                                         <img src="{{asset('assets/img/branding.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Branding</h5>
                                         <p>Deep diving into the unfamiliar waters of Brand Mangement? Look to the
                                             experts, MTS to guide you through and be a class apart from the
                                             competition.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','branding')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -204,13 +204,13 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','digital-marketing')}}">
                                         <img src="{{asset('assets/img/digital-marketing.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
                                             marketing and Business Strategy at Maple Tech Space.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','branding')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -218,13 +218,13 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','it-consulting')}}">
                                         <img src="{{asset('assets/img/it-consulting.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>IT Consulting</h5>
                                         <p>With our deep understanding of the web and strong marketing expertise, we’ve
                                             helped scores of companies redefine what they are doing online.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','it-consulting')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -232,13 +232,13 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','android-and-ios-development')}}">
                                         <img src="{{asset('assets/img/android-ios.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>App Development</h5>
                                         <p>If you're looking to leverage mobile technology for your business, our best
                                             app developers are at your service for both Android and IOS apps.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','android-and-ios-development')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -246,13 +246,13 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','website-design-and-development')}}">
                                         <img src="{{asset('assets/img/web-development-designing.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Website Development</h5>
+                                        <h5>Website Design and Development</h5>
                                         <p>Boost your business through a technology first approach to showcase your
                                             uniqueness. Dont settle with a template based , generic website.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','website-design-and-development')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -260,27 +260,27 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','custom-software-development')}}">
                                         <img src="{{asset('assets/img/software.svg')}}" alt=""
                                              class="service-image img-fluid">
-                                        <h5>Software Development</h5>
+                                        <h5>Custom Software Development</h5>
                                         <p>We build robust and scalable web apps that are custom made using rapid
                                             development processes leveraging the most cultured web technologies.</p>
-                                        <a href="" class="read-more"><img src="assets/img/more-grey.png" alt=""
+                                        <a href="{{route('servicesShow','custom-software-development')}}" class="read-more"><img src="assets/img/more-grey.png" alt=""
                                                                           class="img-fluid"></a>
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','search-engine-optimization')}}">
                                         <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Search Engine optimization</h5>
                                         <p>At Maple Tech Space, we take care of all your business concerns regarding SEO
                                             and make sure that your website is coming on the first page of Google
                                             results.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','search-engine-optimization')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -288,14 +288,14 @@
                             </div>
                             <div class="item">
                                 <div class="service">
-                                    <a href="">
+                                    <a href="{{route('servicesShow','social-media-marketing')}}">
                                         <img src="{{asset('assets/img/social-media-marketing.svg')}}" alt=""
                                              class="service-image img-fluid">
                                         <h5>Social Media Marketing</h5>
                                         <p>Great marketing on social media can bring remarkable success to your
                                             business, creating devoted brand advocates and even driving leads and
                                             sales.</p>
-                                        <a href="" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
+                                        <a href="{{route('servicesShow','social-media-marketing')}}" class="read-more"><img src="{{asset('assets/img/more-grey.png')}}"
                                                                           alt=""
                                                                           class="img-fluid"></a>
                                     </a>
@@ -420,7 +420,7 @@
                         <h3>Our Latest Projects</h3>
                     </div>
                     <div class="col-sm-6 col-2">
-                        <a href="" class="text-right view-all"><span>View All Projects</span></a>
+                        <a href="{{route('portfolio')}}" class="text-right view-all"><span>View All Projects</span></a>
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme portfolio-slider">
@@ -430,9 +430,9 @@
                                 <img src="{{asset('assets/img/home-portfolio01.png')}}" alt="" class="img-fluid">
                             </a>
                             <div class="portfolio-details">
-                                <h4><a href="">website</a></h4>
-                                <h3><a href="">Manukaii</a></h3>
-                                <a href="" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
+                                <h4><a href="{{route('portfolio')}}">website</a></h4>
+                                <h3><a href="{{route('portfolio')}}">Manukaii</a></h3>
+                                <a href="{{route('portfolio')}}" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
                             </div>
                         </div>
                     </div>
@@ -442,9 +442,9 @@
                                 <img src="{{asset('assets/img/home-portfolio02.png')}}" alt="" class="img-fluid">
                             </a>
                             <div class="portfolio-details">
-                                <h4><a href="">website</a></h4>
-                                <h3><a href="">Foster</a></h3>
-                                <a href="" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
+                                <h4><a href="{{route('portfolio')}}">website</a></h4>
+                                <h3><a href="{{route('portfolio')}}">Foster</a></h3>
+                                <a href="{{route('portfolio')}}" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
                             </div>
                         </div>
                     </div>
@@ -454,9 +454,9 @@
                                 <img src="{{asset('assets/img/home-portfolio03.png')}}" alt="" class="img-fluid">
                             </a>
                             <div class="portfolio-details">
-                                <h4><a href="">website</a></h4>
-                                <h3><a href="">Sybu Mathew</a></h3>
-                                <a href="" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
+                                <h4><a href="{{route('portfolio')}}">website</a></h4>
+                                <h3><a href="{{route('portfolio')}}">Sybu Mathew</a></h3>
+                                <a href="{{route('portfolio')}}" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
                             </div>
                         </div>
                     </div>
@@ -466,8 +466,8 @@
                                 <img src="{{asset('assets/img/home-portfolio04.png')}}" alt="" class="img-fluid">
                             </a>
                             <div class="portfolio-details">
-                                <h4><a href="">website</a></h4>
-                                <h3><a href="">All American Taxidermy</a></h3>
+                                <h4><a href="{{route('portfolio')}}">website</a></h4>
+                                <h3><a href="{{route('portfolio')}}">All American Taxidermy</a></h3>
                                 <a href="" class="arrow"><img src="{{asset('assets/img/arrow.png')}}" alt="" class="img-fluid"></a>
                             </div>
                         </div>
@@ -557,9 +557,9 @@
                 <div class="col-sm-5">
                     <form action="{{route('enquire')}}" method="post" class="php-email-form" data-aos="zoom-in">
                         @csrf
-                        <input type="text" id="name" placeholder="Name" name="name" class="form-control">
-                        <input type="email" id="email" placeholder="Email" name="email" class="form-control">
-                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control">
+                        <input type="text" id="name" placeholder="Name" name="name" class="form-control" required>
+                        <input type="email" id="email" placeholder="Email" name="email" class="form-control" required>
+                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control" required>
                         <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                         <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
                         <div class="pt-2">

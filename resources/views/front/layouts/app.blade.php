@@ -93,26 +93,23 @@
         </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
-                <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="assets/img/fb.svg" alt=""></a>
+                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="assets/img/instagram.svg" alt=""></a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="assets/img/linkedin.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
             </li>
         </ul>
     </div>
 
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<a href="tel:+16473399023" class="call-button"><img src="assets/img/call-black.svg"
+<a href="tel:+16473399023" class="call-button"><img src="{{asset('assets/img/call-black.svg')}}"
                                                     alt=""><span>+1 (647) 614-4136</span></a>
 <a href="https://wa.me/16473399023" class="whatsapp-mobile d-block d-sm-none img-fluid"><img
-        src="assets/img/whatsapp.svg" alt="" alt="whatsapp"></a>
+        src="{{asset('assets/img/whatsapp.svg')}}" alt="" alt="whatsapp"></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
@@ -158,7 +155,6 @@
         <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
             <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
-            <li><a href=""><img src="{{asset('assets/img/twitter.png')}}" alt=""></a></li>
             <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt=""></a></li>
             <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt=""></a></li>
             <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt=""></a></li>
@@ -181,17 +177,15 @@
                             <li><a href="{{route('about')}}">About</a></li>
                             <li><a href="{{route('portfolio')}}">Portfolio</a></li>
                             <li><a href="{{route('services')}}">Services</a></li>
-                            <li><a href="{{route('careers')}}">Careers</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="quick-links">
                         <ul>
+                            <li><a href="{{route('careers')}}">Careers</a></li>
                             <li><a href="{{route('blog')}}">Blog</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{route('portfolio')}}">Latest Projects</a></li>
-                            <li><a href="{{route('blog')}}">Tech Updates</a></li>
                         </ul>
                     </div>
                 </div>
@@ -205,9 +199,6 @@
                         </form>
                     </div>
                     <ul class="list-inline social-media-footer">
-                        <li class="list-inline-item">
-                            <a href="" target="_blank"><img src="{{asset('assets/img/twitter.svg')}}" alt=""></a>
-                        </li>
                         <li class="list-inline-item">
                             <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
                         </li>
@@ -223,7 +214,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <span>© Copyright <a href="">Maple Tech Space.</a> All rights reserved</span>
+        <span>© Copyright <a href="#">Maple Tech Space.</a> All rights reserved</span>
     </div>
 </footer>
 <script src="{{asset('assets/js/php-email-form.js')}}"></script>
