@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="70072" />
+    <option name="totalTimeSeconds" value="70799" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -216,13 +216,13 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="172" y="27" width="1012" height="704" key="SettingsEditor/0.27.1366.704@0.27.1366.704" timestamp="1592899286984" />
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595301058184">
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595301985560">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1595301058184" />
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1595300979931">
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1595301985560" />
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1595302966400">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1595300979931" />
+    <state x="339" y="205" key="com.intellij.ide.util.TipDialog/0.27.1366.704@0.27.1366.704" timestamp="1595302966400" />
   </component>
 </project>
