@@ -109,7 +109,10 @@
 
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<a href="+1 (647) 339-9023" class="call-button"><img src="assets/img/call-black.svg" alt=""><span>+1 (647) 339-9023</span></a>
+<a href="tel:+16473399023" class="call-button"><img src="assets/img/call-black.svg"
+                                                    alt=""><span>+1 (647) 614-4136</span></a>
+<a href="https://wa.me/16473399023" class="whatsapp-mobile d-block d-sm-none img-fluid"><img
+        src="assets/img/whatsapp.svg" alt="" alt="whatsapp"></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
@@ -260,7 +263,7 @@
             autoplaySpeed: 2000,
             responsive: {
                 0: {
-                    items: 1.3,
+                    items: 1.2,
                     margin: 10
                 },
                 600: {

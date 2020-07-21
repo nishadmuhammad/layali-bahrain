@@ -41,6 +41,22 @@ a, a:hover {
   outline: none !important;
 }
 
+a.whatsapp-mobile {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: #ffffff;
+  z-index: 3;
+  box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
+  height: 48px;
+  width: 48px;
+  padding: 5px;
+
+  img {
+    width: 38px;
+  }
+}
+
 a.call-button {
   position: fixed;
   top: 50%;
@@ -87,22 +103,23 @@ a.call-button {
   z-index: 9999;
   top: 0;
   right: 0;
-  background-color: #022640;
+  background-color: #0083AA;
   overflow: auto;
   transition: all 0.4s ease-in-out;
   box-shadow: #8b8b8b45 0px 8px 7px 0px;
   padding: 35px;
   transform: translateX(100%);
-  width: 350px !important;
+  width: 400px !important;
 
   a.closebtn {
-    float: right;
     font-size: 36px !important;
     padding: 0 !important;
-    position: absolute;
+    position: sticky;
     color: #FFFFFF;
     top: 0;
-    right: 15px;
+    right: 0;
+    line-height: 36px;
+    float: right;
   }
 
   &.main-nav {
@@ -156,7 +173,7 @@ a.call-button {
 
       span {
         display: block;
-        color: #507691;
+        color: #ffffff;
       }
 
       a {
@@ -185,10 +202,20 @@ a.call-button {
     }
   }
 
+  ul.social-media-footer {
+    li {
+      a {
+        img {
+          filter: brightness(100%);
+        }
+      }
+    }
+  }
+
   .get-in-touch {
     padding-top: 25px;
     margin-top: 25px;
-    border-top: 1px solid #3F596B;
+    border-top: 1px solid #ffffff;
 
     h3 {
       color: #FFFFFF;
@@ -384,7 +411,7 @@ a.toggle-link {
   background: #FFFFFF;
   height: 50px;
   width: 75px;
-  z-index: 3;
+  z-index: 1031;
   text-align: center;
   padding: 10px;
   box-shadow: 0 0px 13px 1px rgba(0, 0, 0, 0.1);
@@ -405,7 +432,7 @@ footer {
       text-align: center;
 
       img {
-        max-width: 177px;
+        max-width: 150px;
       }
     }
 
@@ -2320,7 +2347,7 @@ footer {
     }
   }
 
-  .toggle-link {
+  a.toggle-link {
     display: none;
   }
   //common
@@ -2333,12 +2360,13 @@ footer {
       height: 280px;
 
       h1 {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: auto;
+        bottom: 30px;
+        left: 30px;
+        transform: none;
         position: absolute;
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
       }
     }
   }
@@ -2404,9 +2432,14 @@ footer {
 
       .banner-details {
         left: 30px !important;
+        top: auto !important;
+        bottom: 30px;
+        transform: none !important;
 
         h1 {
-          font-size: 20px !important;
+          font-size: 35px !important;
+          margin-bottom: 5px;
+          line-height: 35px;
           //color: #000000 !important;
         }
 
@@ -2423,7 +2456,7 @@ footer {
           display: inline-block !important;
           font-size: 14px;
           border-radius: 3px;
-          margin-top: 8px !important;
+          margin-top: 0 !important;
 
           &:before {
             display: none;
@@ -2787,6 +2820,17 @@ footer {
       }
     }
   }
+  .page {
+    .banner-common {
+      height: 265px;
+
+      h1 {
+        transform: translateY(180%);
+        font-size: 65px;
+      }
+    }
+  }
+
 
 }
 
