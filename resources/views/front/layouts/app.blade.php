@@ -93,23 +93,23 @@
         </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="assets/img/fb.svg" alt=""></a>
+                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="assets/img/instagram.svg" alt=""></a>
+                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="assets/img/linkedin.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
             </li>
         </ul>
     </div>
 
 </div>
 <a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
-<a href="tel:+16473399023" class="call-button"><img src="assets/img/call-black.svg"
+<a href="tel:+16473399023" class="call-button"><img src="{{asset('assets/img/call-black.svg')}}"
                                                     alt=""><span>+1 (647) 614-4136</span></a>
 <a href="https://wa.me/16473399023" class="whatsapp-mobile d-block d-sm-none img-fluid"><img
-        src="assets/img/whatsapp.svg" alt="" alt="whatsapp"></a>
+        src="{{asset('assets/img/whatsapp.svg')}}" alt="" alt="whatsapp"></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('home')}}"><img src="@yield('logo')" class="img-fluid"></a>
