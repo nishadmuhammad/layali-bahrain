@@ -27,6 +27,7 @@
                     <a href="#" onclick="return confirmation({{$opening->id}});"><i class="fa fa-trash"></i> </a>
                 </form>
                 <a href="{{route('opening.edit',$opening->id)}}"><i class="fa fa-edit"></i> </a>
+                <a href="{{route('application.index','id='.$opening->id)}}"><i class="fa fa-mail-bulk"></i> </a>
             </td>
         </tr>
     @endforeach

@@ -14,8 +14,12 @@
     <th>Select</th>
 @endsection
 @section('tableBody')
+    @php
+        $id=app('request')->input('id');
+    @endphp
     @foreach($applications->sortByDesc('id') as $application)
-        <tr>
+        @if($id=='' || $id == $application->opening_id)
+            <tr>
             <td></td>
             <td>{{$application->opening->position}}</td>
             <td>{{$application->name}}</td>
@@ -26,5 +30,6 @@
                 <input type="checkbox" id="bulk_chk" name="ids[]" value="{{$application->id}}">
             </td>
         </tr>
+         @endif
     @endforeach
 @endsection
