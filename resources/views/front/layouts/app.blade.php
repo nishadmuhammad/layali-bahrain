@@ -16,11 +16,11 @@
     <!-- SEO META TAGS -->
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
-    <meta property="og:url" content="{{Request::url()}}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="@yield('title')"/>
-    <meta property="og:description" content="@yield('description')"/>
-    <meta property="og:image" content="@yield('ogImage')"/>
+    <meta property="og:url"                content="{{Request::url()}}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="@yield('title')" />
+    <meta property="og:description"        content="@yield('description')" />
+    <meta property="og:image"              content="@yield('ogImage')" />
     <link rel=“canonical” href=“{{Request::url()}}”/>
     <!-- SEO META TAGS -->
 
