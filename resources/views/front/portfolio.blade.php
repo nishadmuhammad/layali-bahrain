@@ -125,7 +125,7 @@
                             </div>
                             <div class="portfolio-block-details">
                                 <h6>Foster Hot Bred</h6>
-                                <p>We strive to create content that reaches your audience’s audience! It’s all about perpetual motion and high visibility . Head over to our client's page <a href="https://fosterhotbread.com/">www.fosterhotbread.com</a> to see for yourself.</p>
+                                <p>We strive to create content that reaches your audience’s audience! It’s all about perpetual motion and high visibility.</p>
                             </div>
                         </div>
                     </div>

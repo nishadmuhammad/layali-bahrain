@@ -35,7 +35,7 @@ class CareerController extends Controller
             $filename=pathinfo($filenameWithExt,PATHINFO_FILENAME);
             $extension=$request->file('biodata')->getClientOriginalExtension();
             $fileNameToStore=$filename.'_'.time().'.'.$extension;
-            request()->biodata->move(public_path('/uploads/biodata'), $fileNameToStore);
+            request()->biodata->move(env('IMAGE_PATH').'/uploads/biodata', $fileNameToStore);
             $file_path='uploads/biodata/'.$fileNameToStore;
             $data['biodata']=$file_path;
         }
@@ -43,6 +43,6 @@ class CareerController extends Controller
             $data['biodata']='';
         }
         Application::create($data);
-        return back()->with('success','Application Submitted Successfully');
+        return back()->with('success','Your application submitted successfully. Our HR manager will contact you in 2-3 days.');
     }
 }
