@@ -194,10 +194,18 @@
                     <h4>Subscribe to our blog</h4>
                     <div class="subscribe-form">
                         <form action="{{route('subscribe')}}" method="post" class="php-email-form">
-                            <input type="text" class="form-control" id="usr" name="email"
+                            @csrf
+                            <input type="email" class="form-control" id="usr" name="email"
                                    placeholder="Enter your email id">
                             <button type="submit"></button>
                         </form>
+                    </div>
+
+                    <div class="response" style="display: none;color: white">
+                        Please wait <i class="fa fa-cog fa-spin"></i>
+                    </div>
+                    <div id="subscribed" style="color: white">
+
                     </div>
                     <ul class="list-inline social-media-footer">
                         <li class="list-inline-item">

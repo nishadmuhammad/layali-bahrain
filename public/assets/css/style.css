@@ -19,6 +19,12 @@ a, a:hover {
   background-color: #2A9FC2;
 }
 
+footer .footer-top {
+  background: #0E152A;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
 .portfolio .banner .portfolio-banner .project .project-detail h2 {
   font-size: 40px;
   color: #ffffff;
@@ -345,8 +351,7 @@ a.toggle-link img {
 
 footer .footer-top {
   background: #0E152A;
-  padding-top: 50px;
-    padding-bottom: 10px;
+  padding: 50px 0;
 }
 footer .footer-top a.footer-logo {
   display: block;
@@ -381,7 +386,7 @@ footer .footer-top .subscribe-form {
   display: block;
   margin: 25px 0;
 }
-footer .footer-top .subscribe-form input[type=text] {
+footer .footer-top .subscribe-form input[type=email] {
   display: block;
   border: none;
   height: 100%;
@@ -480,116 +485,12 @@ footer .footer-bottom span a {
   padding: 10px;
 }
 
-.index .banner {
-  height: 625px;
-  width: 100%;
-  background: #00257d;
-  background: -moz-linear-gradient(90deg, #98f0f9 25%, #1593c3 100%);
-  background: -webkit-linear-gradient(90deg, #98f0f9 25%, #1593c3 100%);
-  background: linear-gradient(90deg, #98f0f9 25%, #1593c3 100%);
-  position: relative;
-}
-.index .banner img.shape-one {
-  position: absolute;
-  bottom: 0;
-  left: 60%;
-  transform: translateX(-50%);
-  height: 457px;
-  width: 660px;
-}
-.index .banner img.shape-one:nth-child(2) {
-  left: 51%;
-  bottom: 50px;
-}
-.index .banner img.shape-two {
-  position: absolute;
-  top: 70%;
-  left: 40%;
-  transform: translateX(-50%);
-  height: 150px;
-  width: 150px;
-}
-.index .banner img.shape-three {
-  position: absolute;
-  top: 30%;
-  left: 44%;
-  transform: translateX(-50%);
-  height: 100px;
-  width: 100px;
-}
-.index .banner img.shape-four {
-  position: absolute;
-  bottom: -25px;
-  left: 66%;
-  transform: translateX(-50%);
-  height: 100px;
-  width: 100px;
-}
-.index .banner img.shape-app {
-  position: absolute;
-  bottom: -40px;
-  left: 62%;
-  transform: translateX(-50%);
-  width: 257px;
-  z-index: 2;
-}
-.index .banner img.shape-ap {
-  position: absolute;
-  bottom: -15px;
-  left: 55%;
-  transform: translateX(-50%);
-  width: 209px;
-}
-.index .banner .banner-content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-.index .banner .banner-content .banner-text {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.index .banner .banner-content .banner-text .banner-text-inner {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.index .banner .banner-content .banner-text .banner-text-inner h1 {
-  color: #FFFFFF;
-  font-size: 88px;
-}
-.index .banner .banner-content .banner-text .banner-text-inner h5 {
-  text-transform: capitalize;
-  color: #FFFFFF;
-  font-size: 21px;
-}
-.index .banner .banner-content .banner-text .banner-text-inner a {
-  color: #FFFFFF;
-  position: relative;
-  padding-left: 70px;
-  margin-top: 25px;
-  display: block;
-  transition: all 0.4s;
-}
-.index .banner .banner-content .banner-text .banner-text-inner a:hover {
-  margin-left: 10px;
-  transition: all 0.4s;
-}
-.index .banner .banner-content .banner-text .banner-text-inner a:before {
-  content: url("../../assets/img/more.png");
-  position: absolute;
-  top: -6px;
-  left: 0;
-}
 .index .banner-slider .banner-item {
   position: relative;
   width: 100%;
   display: block;
 }
 .index .banner-slider .banner-item:before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1834,49 +1735,6 @@ footer .footer-bottom span a {
   .index .banner-slider {
     margin-top: 84px;
   }
-  .index .banner {
-    height: 242px;
-    background-image: url("../../assets/img/mobile-banner.jpg");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .index .banner .shape-one, .index .banner .shape-two, .index .banner .shape-three, .index .banner .shape-four, .index .banner .shape-ap, .index .banner .shape-app {
-    display: none;
-  }
-  .index .banner .banner-content {
-    left: -15px;
-    top: auto;
-    bottom: 30px;
-    transform: none;
-  }
-  .index .banner .banner-content .banner-text .banner-text-inner {
-    position: initial;
-    transform: none;
-  }
-  .index .banner .banner-content .banner-text .banner-text-inner h1 {
-    font-size: 29px;
-    color: #000000;
-    margin-bottom: 0;
-  }
-  .index .banner .banner-content .banner-text .banner-text-inner h5 {
-    color: #000000;
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-  .index .banner .banner-content .banner-text .banner-text-inner a {
-    padding: 2px 10px;
-    color: #000000;
-    border: 1px solid #000000;
-    display: inline-block;
-    margin-top: 5px;
-    font-size: 14px;
-    border-radius: 3px;
-    margin-top: 8px;
-  }
-  .index .banner .banner-content .banner-text .banner-text-inner a:before {
-    display: none;
-  }
   .index .banner-slider .banner-details {
     left: 30px !important;
     top: auto !important;
@@ -2067,24 +1925,6 @@ footer .footer-bottom span a {
   .index .about h2 {
     font-size: 50px !important;
   }
-  .index .banner {
-    height: 650px;
-  }
-  .index .banner .shape-ap {
-    left: 58% !important;
-  }
-  .index .banner .shape-app {
-    left: 65% !important;
-  }
-  .index .banner .shape-one {
-    width: 500px !important;
-  }
-  .index .banner .banner-content {
-    padding-left: 70px;
-  }
-  .index .banner .banner-content .banner-text-inner h1 {
-    font-size: 60px !important;
-  }
   .index .banner-slider .banner-details {
     left: 150px !important;
   }
@@ -2160,9 +2000,6 @@ footer .footer-bottom span a {
     padding: 0 75px;
   }
 
-  .index .banner h1 {
-    font-size: 70px !important;
-  }
   .index .banner-slider .banner-details {
     left: 150px !important;
   }
@@ -2207,12 +2044,6 @@ footer .footer-bottom span a {
   }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
-  .index .banner .shape-app {
-    left: 75% !important;
-  }
-  .index .banner .shape-ap {
-    left: 70% !important;
-  }
   .index .banner-slider h1 {
     font-size: 60px !important;
   }
@@ -2239,10 +2070,6 @@ footer .footer-bottom span a {
   }
 }
 @media (min-width: 1600px) {
-  .index .banner {
-    height: 788px !important;
-  }
-
   .container {
     max-width: 1400px;
     padding: 0 75px;
