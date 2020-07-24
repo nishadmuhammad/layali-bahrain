@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
-@section('description','')
-@section('keywords','')
+@section('title', 'Best Web Designer in Toronto | Creative & Customized Designs')
+@section('description','Designs from MTS are a blend of craft, science, storytelling, propaganda and functionality. We build tangible & unique designs from the small ideas you provide')
+@section('keywords','toronto seo experts,seo agency toronto,best seo toronto,toronto seo specialist,website designers toronto,web design companies toronto,website development toronto,web designers toronto,best digital marketing agency in GTA,digital agency toronto,internet marketing agency toronto,toronto internet marketing')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection

@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
-@section('description','')
-@section('keywords','')
+@section('title', 'Blogs | SEO Tips | Digital Marketing Trends | SEM & SMM')
+@section('description','Want to get higher rankings on Search Engine? Check the best practices in Digital Marketing - Email, Social Media and Content Marketing. Paid Advertising')
+@section('keywords','toronto seo marketing,toronto search engine optimization,seo agency,seo expert toronto,web designer in toronto,toronto web design company,web design firm,web design firm toronto,digital marketing agencies toronto,online marketing company toronto,internet marketing toronto,toronto digital marketing agency')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection

@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
-@section('description','')
-@section('keywords','')
+@section('title', 'Contact | Best Digital Marketing Agency in Toronto | MTS')
+@section('description','Need a Dynamic Website for your Business? Looking for an SEO Expert? Book 30 minutes Free consultation. Maple Tech Space is available to help, 24 hours a day')
+@section('keywords','search engine optimization toronto,seo consultant toronto,toronto seo expert,seo companies toronto,website developers toronto,web design company toronto,toronto web designers,web developers in toronto,toronto marketing agencies,digital marketing companies toronto,internet marketing in toronto,marketing firms toronto')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
