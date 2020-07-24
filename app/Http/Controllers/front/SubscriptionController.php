@@ -14,6 +14,7 @@ class SubscriptionController extends Controller
             $data = $request->validate([
                 'email' => 'required|email|unique:subscribers',
             ]);
+            $data['status']='Subscribed';
             if(Subscriber::create($data)){
                 //send confirmation mail to subscriber
                 return('subscribed');

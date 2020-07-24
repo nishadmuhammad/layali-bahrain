@@ -133,7 +133,11 @@
                 $('.response').css('display','none');
                 $('#thanks').css('display','block');
 
-            } else {
+            } else if(msg='subscribed'){
+                $('.response').css('display','none');
+                $("#subscribed").html('Thank you for subscribing to our blog!')
+            }
+            else {
                 $("#pleaseWait").css('display','none');
                 this_form.find('.loading').slideUp();
                 if(!msg) {

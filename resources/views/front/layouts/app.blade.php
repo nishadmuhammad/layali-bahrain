@@ -16,11 +16,11 @@
     <!-- SEO META TAGS -->
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
-    <meta property="og:url" content="{{Request::url()}}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="@yield('title')"/>
-    <meta property="og:description" content="@yield('description')"/>
-    <meta property="og:image" content="@yield('ogImage')"/>
+    <meta property="og:url"                content="{{Request::url()}}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="@yield('title')" />
+    <meta property="og:description"        content="@yield('description')" />
+    <meta property="og:image"              content="@yield('ogImage')" />
     <link rel=“canonical” href=“{{Request::url()}}”/>
     <!-- SEO META TAGS -->
 
@@ -194,10 +194,18 @@
                     <h4>Subscribe to our blog</h4>
                     <div class="subscribe-form">
                         <form action="{{route('subscribe')}}" method="post" class="php-email-form">
-                            <input type="text" class="form-control" id="usr" name="email"
+                            @csrf
+                            <input type="email" class="form-control" id="usr" name="email"
                                    placeholder="Enter your email id">
                             <button type="submit"></button>
                         </form>
+                    </div>
+
+                    <div class="response" style="display: none;color: white">
+                        Please wait <i class="fa fa-cog fa-spin"></i>
+                    </div>
+                    <div id="subscribed" style="color: white">
+
                     </div>
                     <ul class="list-inline social-media-footer">
                         <li class="list-inline-item">
