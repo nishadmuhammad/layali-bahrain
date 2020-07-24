@@ -52,17 +52,17 @@
                         <div class="location" data-aos="fade-up">
                             <h5>canada</h5>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.9456627821764!2d-79.64801118450033!3d43.71167827911927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3bf75ef7d22d%3A0xdc94d09198d4eed2!2s7250%20Lancaster%20Ave%2C%20Mississauga%2C%20ON%20L4T%202L6%2C%20Canada!5e0!3m2!1sen!2sin!4v1595212993794!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p><img src="assets/img/location-black.svg" alt="">7250 Lancaster Avenue, Mississauga ON
+                            <p><img src="assets/img/location-black.svg" alt="MTS Location">7250 Lancaster Avenue, Mississauga ON
                                 L4T2L6</p>
-                            <p><img src="assets/img/email-black.svg" alt="">info@mapletechspace.com</p>
-                            <p><img src="assets/img/phone-black.svg" alt="">+1 (647) 339-9023</p>
+                            <p><img src="assets/img/email-black.svg" alt="MTS Email">info@mapletechspace.com</p>
+                            <p><img src="assets/img/phone-black.svg" alt="MTS Phone">+1 (647) 339-9023</p>
                         </div>
                         <div class="location" data-aos="fade-up">
                             <h5>india</h5>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.0486858692699!2d75.47026932915867!3d11.891523799473184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43b235d4c4db7%3A0x32bfe63021da7a3b!2sTaxi%20Stand%20Shopping%20Complex%2C%20Chakkarakkal%2C%20Kerala%20670613!5e0!3m2!1sen!2sin!4v1595237787912!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p><img src="assets/img/location-black.svg" alt="">14/554, Taxi Stand Shopping Complex, Chakkarakkal, Kannur, Kerala, 670613.</p>
-                            <p><img src="assets/img/email-black.svg" alt="">info@mapletechspace.com</p>
-                            <p><img src="assets/img/phone-black.svg" alt="">+919037757027</p>
+                            <p><img src="assets/img/location-black.svg" alt="MTS Location">14/554, Taxi Stand Shopping Complex, Chakkarakkal, Kannur, Kerala, 670613.</p>
+                            <p><img src="assets/img/email-black.svg" alt="MTS Email">info@mapletechspace.com</p>
+                            <p><img src="assets/img/phone-black.svg" alt="MTS Phone">+919037757027</p>
                         </div>
 
                     </div>

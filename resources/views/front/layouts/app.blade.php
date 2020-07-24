@@ -94,21 +94,21 @@
         </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
+                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt="MTS Facebook Account"></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
+                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt="MTS Instagram Account"></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
+                <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt="MTS Linkedin Account"></a>
             </li>
         </ul>
     </div>
 
 </div>
-<a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt=""></a>
+<a href="javascript:void(0)" class="toggle-link toggle-icon"><img src="{{asset('assets/img/toggle.png')}}" alt="Sliding Menu"></a>
 <a href="tel:+16473399023" class="call-button"><img src="{{asset('assets/img/call-black.svg')}}"
-                                                    alt=""><span>+1 (647) 614-4136</span></a>
+                                                    alt="Agency Contact"><span>+1 (647) 614-4136</span></a>
 <a href="https://wa.me/16473399023" class="whatsapp-mobile d-block d-sm-none img-fluid"><img
         src="{{asset('assets/img/whatsapp.svg')}}" alt="" alt="whatsapp"></a>
 <nav class="navbar @yield('navClass') navbar-expand-lg fixed-top navbar-light">
@@ -155,10 +155,10 @@
     <div class="social-media-inner">
         <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
-            <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt=""></a></li>
-            <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt=""></a></li>
-            <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt=""></a></li>
-            <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt=""></a></li>
+            <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt="Agency Facebook Account"></a></li>
+            <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt="Agency Instagram Account"></a></li>
+            <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt="Agency Linkedin Account"></a></li>
+            <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt="MTS Email"></a></li>
         </ul>
     </div>
 </div>
@@ -169,7 +169,7 @@
             <div class="row">
                 <div class="col-sm-3">
                     <a href="" class="footer-logo">
-                        <img src="{{asset('assets/img/footer-logo.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/img/footer-logo.svg')}}" alt="Company Logo" class="img-fluid">
                     </a>
                 </div>
                 <div class="col-sm-3">
@@ -209,13 +209,13 @@
                     </div>
                     <ul class="list-inline social-media-footer">
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt=""></a>
+                            <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt="MTS Facebook Account"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt=""></a>
+                            <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt="MTS Instagram Account"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt=""></a>
+                            <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt="MTS Linkedin Account"></a>
                         </li>
                     </ul>
                 </div>

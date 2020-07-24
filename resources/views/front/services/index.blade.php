@@ -19,7 +19,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','it-consulting')}}">
-                                    <img src="{{asset('assets/img/it-consulting.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/it-consulting.svg')}}" alt="IT Consulting" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -32,7 +32,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','branding')}}">
-                                    <img src="{{asset('assets/img/branding.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/branding.svg')}}" alt="Branding" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -45,7 +45,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','digital-marketing')}}">
-                                    <img src="{{asset('assets/img/digital-marketing.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/digital-marketing.svg')}}" alt="Digital Marketing" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -58,7 +58,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','social-media-marketing')}}">
-                                    <img src="{{asset('assets/img/social-media-marketing.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/social-media-marketing.svg')}}" alt="SMM" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -71,7 +71,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','search-engine-optimization')}}">
-                                    <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/search-engine-optimization.svg')}}" alt="SEO" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -84,7 +84,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','website-design-and-development')}}">
-                                    <img src="{{asset('assets/img/web-development-designing.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/web-development-designing.svg')}}" alt="Web Design" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -100,7 +100,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','android-and-ios-development')}}">
-                                    <img src="assets/img/android-ios.svg" alt="" class="img-fluid">
+                                    <img src="assets/img/android-ios.svg" alt="App Development" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -113,7 +113,7 @@
                         <div class="service" data-aos="zoom-in-up">
                             <div class="service-image">
                                 <a href="{{route('servicesShow','custom-software-development')}}">
-                                    <img src="{{asset('assets/img/software.svg')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/software.svg')}}" alt="Custom Software" class="img-fluid">
                                 </a>
                             </div>
                             <div class="service-details">
@@ -128,7 +128,7 @@
                 <div class="col-12">
                     <div class="lets-talk">
                         <span class="text-center d-block">Got A Project?</span>
-                        <h3 class="text-center">Let’s talk. <img src="{{asset('assets/img/lets-talk.png')}}" alt=""></h3>
+                        <h3 class="text-center">Let’s talk. <img src="{{asset('assets/img/lets-talk.png')}}" alt="Arrow"></h3>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
                         <input type="email" id="email" placeholder="Email" name="email" class="form-control" required>
                         <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control" required>
                         <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-                        <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt=""></button>
+                        <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt="Arrow"></button>
                         <div class="pt-2">
                             <div id="thanks" style="display: none;text-align: center">
                                 Thank you for contacting us.<br/>We will get back to you soon!

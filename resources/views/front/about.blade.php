@@ -55,7 +55,7 @@
                 <div class="team-row">
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/rohithnew.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/rohithnew.png')}}" alt="rohith" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Rohith Mohandas</h6>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/kamal.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/kamal.png')}}" alt="kamal"  class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Kamal Pillai</h6>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/robin.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/robin.png')}}" alt="robin" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Robin cheriyan</h6>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/jithin.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/jithin.jpg" alt="jithin" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Jithin Parakka</h6>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/sanal.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/sanal.jpg" alt="sanal" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Sanoop M S</h6>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/nikhil.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/nikhil.jpg" alt="nikhil" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Nikhil Varghese</h6>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/team2.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/team2.jpg" alt="gokul" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Gokul Prasad</h6>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/joseph.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/joseph.jpg" alt="joseph" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Joseph John</h6>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/arun.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/arun.png')}}" alt="arun" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Arun M</h6>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/akamksha.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/akamksha.png')}}" alt="akanksha" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Akanksha A Kumar</h6>
@@ -146,7 +146,7 @@
 
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/diana.png')}}" alt="" class="img-fluid">
+                            <img src="{{asset('assets/img/diana.png')}}" alt="diana" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Diana M Thomas</h6>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="assets/img/team4.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/team4.jpg" alt="priyanka" class="img-fluid">
                         </div>
                         <div class="member-details">
                             <h6>Priyanka O P</h6>

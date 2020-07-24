@@ -25,7 +25,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/sybumock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/sybumock.png')}}" alt="sybu" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -39,7 +39,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/neenamock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/neenamock.png')}}" alt="neena" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -54,7 +54,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/manukaiimock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/manukaiimock.png')}}" alt="manukaii" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -67,7 +67,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/ecom.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/ecom.png')}}" alt="ecom" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -80,7 +80,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/sportz999mock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/sportz999mock.png')}}" alt="sportz999" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -93,7 +93,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/babitamock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/babitamock.png')}}" alt="babita" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -106,7 +106,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/stringsandbeadsmock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/stringsandbeadsmock.png')}}" alt="stringsandbeeds" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -120,7 +120,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/fostermock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/fostermock.png')}}" alt="foster" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
@@ -133,7 +133,7 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/chaihutmock.png')}}" alt="" class="img-fluid">
+                                    <img src="{{asset('assets/img/chaihutmock.png')}}" alt="chaihut" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
