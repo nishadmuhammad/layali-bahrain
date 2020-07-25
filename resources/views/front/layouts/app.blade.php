@@ -119,25 +119,25 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="{{ (request()->is('/')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('home')}}">HOME</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('about-us')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('about')}}">about us</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('services*')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('services')}}">services</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('portfolio')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('portfolio')}}">portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('careers*')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('careers')}}">careers</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('blog')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('blog')}}">blog</a>
                 </li>
-                <li class="nav-item">
+                <li class="{{ (request()->is('contact')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('contact')}}">contact</a>
                 </li>
                 <!--<li class="nav-item  d-none d-sm-block">
