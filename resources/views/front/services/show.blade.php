@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
+@section('title'){{$service->name}} | Maple Tech Space @endsection
 @section('description','')
 @section('keywords','')
 @section('ogImage','')
