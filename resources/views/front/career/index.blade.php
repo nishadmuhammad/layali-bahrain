@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
 @section('title', 'Jobs | Digital Marketing | SEO Specialist | App Development')
 @section('description','If you are looking for a promising career in Digital Marketing & SEO in Toronto, Send your CV now. We are the best IT Consulting & Digital Marketing Firm in GTA')
-@section('keywords','seo services toronto,toronto seo agency,seo services,best seo company toronto,website design company,custom web design toronto,website design services toronto,responsive web design toronto,toronto digital marketing,online marketing toronto,internet marketing company toronto,toronto marketing agency')
+@section('keywords','Seo specialist jobs in toronto,Digital marketing jobs in toronto,seo services,Mobile app development jobs in toronto,Seo jobs in toronto,custom web design toronto,website design services toronto,responsive web design toronto,toronto digital marketing,online marketing toronto,internet marketing company toronto,toronto marketing agency')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection

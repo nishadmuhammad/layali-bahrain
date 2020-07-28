@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
-@section('title', 'Services | SEO Toronto | Web Design | Android, iOS App | SMO')
-@section('description','We are the Best IT consulting firm in Toronto. We offer Low Cost SEO & SMM Services. We have dedicated team for Custom software & Mobile Application Development')
+@section('title', 'Services | SEO Toronto | Web Design & Development | SMO')
+@section('description','We are the Best IT consulting firm in Toronto. We offer affordable SEO & SMM Services. We have dedicated team for Custom software & Mobile Application Development')
 @section('keywords','toronto seo company,seo optimization toronto,seo company toronto,toronto seo services,web development toronto,mobile web design toronto,toronto web designer,web design toronto company,marketing agencies toronto,marketing agency toronto,digital marketing services toronto,digital marketing company toronto')
 @section('ogImage','')
 @section('navClass','inner')

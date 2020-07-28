@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title', 'About MTS | Low Cost SEO Service Toronto | Top IT Consultant')
+@section('title', 'About MTS | Affordable SEO Agency & IT Consultant in Toronto')
 @section('description','Best SEO, Digital Marketing and Website Development Company in Toronto. We also do Branding services, Social Media Optimization and Custom software development')
 @section('keywords','seo toronto, toronto seo, seo in toronto, seo toronto services, web design toronto, Top branding agencies in toronto, Top branding companies in toronto, website design toronto, digital marketing, digital marketing agency toronto, digital marketing toronto, digital marketing agency
 ')

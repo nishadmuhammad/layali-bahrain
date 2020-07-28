@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
-@section('title', 'Best Web Designer in Toronto | Creative & Customized Designs')
-@section('description','Designs from MTS are a blend of craft, science, storytelling, propaganda and functionality. We build tangible & unique designs from the small ideas you provide')
+@section('title', 'Best Web Designing Company in Toronto | Creative Web Designs')
+@section('description','Maple Tech Space - Best Web designing company in Toronto. We build creative and customized web designs for a visually appealing online presence of your business.')
 @section('keywords','toronto seo experts,seo agency toronto,best seo toronto,toronto seo specialist,website designers toronto,web design companies toronto,website development toronto,web designers toronto,best digital marketing agency in GTA,digital agency toronto,internet marketing agency toronto,toronto internet marketing')
 @section('ogImage','')
 @section('navClass','inner')
