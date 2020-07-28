@@ -1,7 +1,8 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
-@section('description','')
-@section('keywords','')
+@section('title', 'About MTS | Low Cost SEO Service Toronto | Top IT Consultant')
+@section('description','Best SEO, Digital Marketing and Website Development Company in Toronto. We also do Branding services, Social Media Optimization and Custom software development')
+@section('keywords','seo toronto, toronto seo, seo in toronto, seo toronto services, web design toronto, Top branding agencies in toronto, Top branding companies in toronto, website design toronto, digital marketing, digital marketing agency toronto, digital marketing toronto, digital marketing agency
+')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
