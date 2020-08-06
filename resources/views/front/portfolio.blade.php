@@ -30,7 +30,7 @@
                             </div>
                             <div class="portfolio-block-details">
                                 <h6>Digital Marketing- Pumpkin Kart</h6>
-                                <p>Digital Marketing is the powerhouse of every business. Our client, Pumpkin Kart, partnered with us to boost their Social media and Digital Marketing presence to showcase their USP of "Delivering Happiness". Maple Tech Space worked closely with the client right from proposing a customized strategy for promoting their virtual Biriyani campaign(Aug 2020) , brainstorming, designing and posting the creative content for social media, consistently monitoring the online user data and overall , working together as one, for the success of the campaign.  At Maple Tech Space, we believe that every successful Digital Marketing campaign is like showing the world that you are a Rockstar!</p>
+                                <p>Digital Marketing is the powerhouse of every business. Our client, Pumpkin Kart, partnered with us to boost their Social media and Digital Marketing presence to showcase their USP of "Delivering Happiness". By following a funnel based approach to optimize app downloads, Maple Tech Space worked closely with the client for promoting their virtual Biriyani campaign(Aug 2020). The strategy, content, design and execution have been successfully completed.</p>
                             </div>
                         </div>
                     </div>

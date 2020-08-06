@@ -337,6 +337,15 @@
                     </div>
                     <div class="item">
                         <div class="client">
+                            <a href=""><img src="{{asset('assets/img/pumpkin.png')}}" alt="Pumpkin Kart" class="img-fluid"></a>
+                        </div>
+                        <div class="client">
+                            <a href=""><img src="{{asset('assets/img/kotak.jpeg')}}" alt="Kotak Bank"
+                                            class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client">
                             <a href=""><img src="{{asset('assets/img/ICICI_bank_logo.png')}}" alt="ICICI" class="img-fluid"></a>
                         </div>
                         <div class="client">
