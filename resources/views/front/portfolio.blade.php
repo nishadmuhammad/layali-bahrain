@@ -21,6 +21,19 @@
                         <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and functionality.We value relationship with our clients and for every business, whether small or big we understand that customer satisfaction will sustain and help grow a business in the long term.</p>
                         <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
                     </div>
+                    <div class="col-sm-12">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/pumkin-kart-project.png')}}" alt="pumkin kart project" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <h6>Digital Marketing- Pumpkin Kart</h6>
+                                <p>Digital Marketing is the powerhouse of every business. Our client, Pumpkin Kart, partnered with us to boost their Social media and Digital Marketing presence to showcase their USP of "Delivering Happiness". Maple Tech Space worked closely with the client right from proposing a customized strategy for promoting their virtual Biriyani campaign(Aug 2020) , brainstorming, designing and posting the creative content for social media, consistently monitoring the online user data and overall , working together as one, for the success of the campaign.  At Maple Tech Space, we believe that every successful Digital Marketing campaign is like showing the world that you are a Rockstar!</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-6">
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
