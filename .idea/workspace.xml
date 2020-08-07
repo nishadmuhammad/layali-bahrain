@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2f78c44-c79d-4a44-9ff4-1210ea019cd2" name="Default Changelist" comment="Merge branch 'master' of https://bitbucket.org/parakkajithin/mts-app&#10;&#10;# Conflicts:&#10;#&#9;routes/web.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/career/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/career/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/portfolio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/services/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/services/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +16,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="28879" />
+    <option name="totalTimeSeconds" value="29062" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -142,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -179,6 +174,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592462668055</updated>
       <workItem from="1595588475564" duration="4936000" />
+      <workItem from="1596097170455" duration="1085000" />
+      <workItem from="1596527838404" duration="1119000" />
     </task>
     <servers />
   </component>
@@ -200,11 +197,11 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="223" y="27" width="909" height="704" key="CommitChangelistDialog2/0.27.1366.704@0.27.1366.704" timestamp="1595352013550" />
-    <state x="509" y="139" width="424" height="484" key="FileChooserDialogImpl" timestamp="1595588512334">
+    <state x="509" y="139" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596791650463">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="466" y="136" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.704@0.27.1366.704" timestamp="1595266588733" />
-    <state x="509" y="139" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1595588512334" />
+    <state x="509" y="139" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1596791650463" />
     <state width="1320" height="163" key="GridCell.Tab.0.bottom" timestamp="1592462711668">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
