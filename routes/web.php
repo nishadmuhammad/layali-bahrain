@@ -31,11 +31,18 @@ Auth::routes();
 
 //Admin End Routes
 Route::get('/admin', 'admin\HomeController@index')->name('adminHome');
-Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
-Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
-Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
-Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
-Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
-Route::resource('/admin/service','admin\ServiceController')->only(['index','create','store','edit','update','destroy']);
-Route::resource('/admin/application','admin\ApplicationController')->only(['index','create','store','edit','update','destroy']);
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('/admin/post','admin\PostController')->only(['index','create','store','destroy','edit','update']);
+    Route::resource('/admin/enquiry','admin\EnquiryController')->only(['index','destroy']);
+    Route::get('/admin/bulkDelete/{id}','admin\EnquiryController@bulkDelete')->name('bulkDelete');
+    Route::resource('/admin/testimonial','admin\TestimonialController')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('/admin/opening','admin\OpeningController')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('/admin/service','admin\ServiceController')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('/admin/application','admin\ApplicationController')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('user','admin\UserRoleController')->only(['index','edit','update','create','store','destroy']);
+    Route::resource('role', 'admin\RoleController')->only(['index', 'create', 'store', 'destroy', 'edit', 'update']);
+});
+Route::resource('password','admin\PasswordController')->only(['edit','update']);
+
 

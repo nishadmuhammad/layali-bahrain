@@ -8,6 +8,10 @@ use Intervention\Image\Facades\Image;
 
 class TestimonialController extends AdminController
 {
+    function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
     /**
      * Display a listing of the resource.
      *

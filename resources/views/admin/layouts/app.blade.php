@@ -50,6 +50,10 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <span class="dropdown-item dropdown-header">User Settings</span>
                     <div class="dropdown-divider"></div>
+                    <a href="{{route('password.edit',Auth::user()->id)}}" class="dropdown-item">
+                        <i class="fa fa-key"></i> Reset Password
+                    </a>
+                    <div class="dropdown-divider"></div>
                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="fa fa-user"></i> Logout
                     </a>
@@ -85,6 +89,8 @@
                             </p>
                         </a>
                     </li>
+                    @if(Auth::user()->hasRole(['admin|Blogger']))
+
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-home"></i>
@@ -108,6 +114,8 @@
                             </li>
                         </ul>
                     </li>
+                    @endif
+                    @if(Auth::user()->hasRole('admin'))
                     <li class="nav-item">
                         <a href="{{route('enquiry.index')}}" class="nav-link">
                             <i class="nav-icon fas fa-mail-bulk"></i>
@@ -116,6 +124,8 @@
                             </p>
                         </a>
                     </li>
+                    @endif
+                    @if(Auth::user()->hasRole('admin'))
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-users"></i>
@@ -139,6 +149,8 @@
                             </li>
                         </ul>
                     </li>
+                    @endif
+                    @if(Auth::user()->hasRole(['admin|HR']))
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-user-circle"></i>
@@ -168,6 +180,8 @@
                             </li>
                         </ul>
                     </li>
+                    @endif
+                    @if(Auth::user()->hasRole('admin'))
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-star"></i>
@@ -191,6 +205,57 @@
                             </li>
                         </ul>
                     </li>
+                    @endif
+                    @if(Auth::user()->hasRole('admin'))
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-circle"></i>
+                                <p>
+                                    Role Manangement
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('role.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('role.create')}}" class="nav-link">
+                                        <i class="fa fa-plus nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
+                    @if(Auth::user()->hasRole('admin'))
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Users
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('user.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('user.create')}}" class="nav-link">
+                                        <i class="fa fa-plus nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    @endif
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
