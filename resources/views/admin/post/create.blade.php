@@ -94,7 +94,17 @@
     <script>
         $(function () {
             // Summernote
-            $('.textarea').summernote()
+            $('.textarea').summernote({
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ]
+            })
         })
     </script>
 @endsection
