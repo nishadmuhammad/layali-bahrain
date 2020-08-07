@@ -109,13 +109,16 @@
             $('.textarea').summernote({
                 toolbar: [
                     // [groupName, [list of button]]
+                    ['style', ['style', 'code']],
                     ['style', ['bold', 'italic', 'underline', 'clear']],
-                    ['fontsize', ['fontsize']],
+                    ['styleTags' ['p', 'h1', 'h2']]
+                        ['fontsize', ['fontsize']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
-                    ['insert', ['link', 'picture', 'video']],
+                    ['insert', ['link', 'picture', 'video','table']],
                     ['view', ['fullscreen', 'codeview', 'help']],
-                ]
+                ],
+                styleTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
             })
         })
     </script>
