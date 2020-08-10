@@ -9,6 +9,12 @@ use Intervention\Image\Facades\Image;
 
 class ApplicationController extends AdminController
 {
+    function __construct()
+    {
+        $this->middleware(['role:admin|HR']);
+
+
+    }
     /**
      * Display a listing of the resource.
      *

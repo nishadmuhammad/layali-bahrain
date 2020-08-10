@@ -9,6 +9,10 @@ use Illuminate\Support\Str;
 
 class ServiceController extends AdminController
 {
+    function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
     /**
      * Display a listing of the resource.
      *

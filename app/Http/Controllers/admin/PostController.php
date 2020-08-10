@@ -9,6 +9,10 @@ use Intervention\Image\Facades\Image;
 
 class PostController extends AdminController
 {
+    function __construct()
+    {
+        $this->middleware(['role:admin|Blogger']);
+    }
     /**
      * Display a listing of the resource.
      *
