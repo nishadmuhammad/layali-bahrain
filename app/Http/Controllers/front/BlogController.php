@@ -12,7 +12,7 @@ class BlogController extends Controller
     }
     public function show($slug){
         $blog=Post::where('slug',$slug)->firstOrFail();
-        $blogs=Post::where([['slug','<>',$slug].['status','Published']])->OrderBy('id', 'DESC')->limit(4)->get();
+        $blogs=Post::where([['slug','<>',$slug],['status','Published']])->OrderBy('id', 'DESC')->limit(4)->get();
         return view('front.blog.show',['blog'=>$blog,'blogs'=>$blogs]);
     }
 }
