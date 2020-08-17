@@ -17,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="38809" />
+    <option name="totalTimeSeconds" value="39729" />
     <option name="autoCountIdleSeconds" value="120" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
@@ -234,10 +234,10 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="172" y="27" width="1012" height="704" key="SettingsEditor/0.27.1366.704@0.27.1366.704" timestamp="1592899286984" />
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595642270977">
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597648242562">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
-    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1595642270977" />
+    <state x="278" y="114" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.704@0.27.1366.704" timestamp="1597648242562" />
     <state x="388" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1595588524485">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
@@ -247,6 +247,10 @@
       <screen x="0" y="27" width="1366" height="704" />
     </state>
     <state x="434" y="27" width="488" height="704" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.704@0.27.1366.704" timestamp="1595642956321" />
+    <state x="451" y="298" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597649008038">
+      <screen x="0" y="27" width="1366" height="704" />
+    </state>
+    <state x="451" y="298" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.704@0.27.1366.704" timestamp="1597649008038" />
     <state x="293" y="170" width="769" height="415" key="git4idea.merge.GitPullDialog" timestamp="1595351719822">
       <screen x="0" y="27" width="1366" height="704" />
     </state>
