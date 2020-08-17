@@ -5,6 +5,7 @@
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
+@section('canonical','https://www.mapletechspace.com/portfolio')
 @section('content')
     <div class="portfolio page">
         <div class="banner-common">

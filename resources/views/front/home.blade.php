@@ -5,6 +5,7 @@
 @section('ogImage'){{asset('assets/img/logo.png')}}@endsection
 @section('navClass','index')
 @section('logo'){{asset('assets/img/logo.png')}}@endsection
+@section('canonical','https://www.mapletechspace.com')
 @section('content')
     <div class="index">
         <div class="owl-carousel owl-theme banner-slider">
