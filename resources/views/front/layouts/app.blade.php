@@ -21,7 +21,7 @@
     <meta property="og:title"              content="@yield('title')" />
     <meta property="og:description"        content="@yield('description')" />
     <meta property="og:image"              content="@yield('ogImage')" />
-    <link rel=“canonical” href=“{{Request::url()}}”/>
+    <link rel=“canonical” href=“https://{{substr(Request::fullUrl(),7)}}”/>
     <!-- SEO META TAGS -->
 
     <!-- ICONS ---->
