@@ -338,7 +338,7 @@
                     </div>
                     <div class="item">
                         <div class="client">
-                            <a href=""><img src="{{asset('assets/img/pumpkin.png')}}" alt="Pumpkin Kart" class="img-fluid"></a>
+                            <a href=""><img src="{{asset('assets/img/pumpkin-thumb.png')}}" alt="Pumpkin Kart" class="img-fluid"></a>
                         </div>
                         <div class="client">
                             <a href=""><img src="{{asset('assets/img/kotak.jpeg')}}" alt="Kotak Bank"
