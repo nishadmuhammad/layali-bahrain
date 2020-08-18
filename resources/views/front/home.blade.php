@@ -324,7 +324,7 @@
                             <a href=""><img src="{{asset('assets/img/amazon.jpg')}}" alt="Amazon" class="img-fluid"></a>
                         </div>
                         <div class="client">
-                            <a href=""><img src="{{asset('assets/img/Colliers_Logo.jpg')}}" alt="Colliers"
+                            <a href=""><img src="{{asset('assets/img/Colliers_Logo_v1.jpg')}}" alt="Colliers"
                                             class="img-fluid"></a>
                         </div>
                     </div>
@@ -341,7 +341,7 @@
                             <a href=""><img src="{{asset('assets/img/pumpkin-thumb.png')}}" alt="Pumpkin Kart" class="img-fluid"></a>
                         </div>
                         <div class="client">
-                            <a href=""><img src="{{asset('assets/img/kotak.jpeg')}}" alt="Kotak Bank"
+                            <a href=""><img src="{{asset('assets/img/kotakv1.jpeg')}}" alt="Kotak Bank"
                                             class="img-fluid"></a>
                         </div>
                     </div>
