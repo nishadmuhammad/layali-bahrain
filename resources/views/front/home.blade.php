@@ -507,7 +507,7 @@
                                         <div class="avatar">
                                             <div class="profile-image">
                                                 <img src="{{asset($testimonial->profile_pic)}}" class="rounded-circle"
-                                                     alt="">
+                                                     alt="{{$testimonial->name}}">
                                             </div>
                                             <div class="profile-info">
                                                 <h5>{{$testimonial->name}}</h5>
