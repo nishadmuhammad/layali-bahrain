@@ -134,12 +134,12 @@
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
                                 <a href="">
-                                    <img src="{{asset('assets/img/fostermock.png')}}" alt="foster" class="img-fluid">
+                                    <img src="{{asset('assets/img/foxlegum.png')}}" alt="foster" class="img-fluid">
                                 </a>
                             </div>
                             <div class="portfolio-block-details">
-                                <h6>Foster Hot Bred</h6>
-                                <p>We strive to create content that reaches your audience’s audience! It’s all about perpetual motion and high visibility.</p>
+                                <h6>Foxlegum</h6>
+                                <p>Your website is the center of your digital eco-system, like a brick and mortar location - the customer experience matters !! " Website done for our clientFox Legum, leading provider of the most flexible and upgradeable ERP and Business solutions on the market today. <br><a href="http://foxlegum.com/">www.foxlegum.com</a></p>
                             </div>
                         </div>
                     </div>
