@@ -52,7 +52,7 @@
                     <div class="col-sm-6">
                         <div class="location" data-aos="fade-up">
                             <h5>canada</h5>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1598553904887!2d-79.6979458845025!3d43.64484237912163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f9dfd586049%3A0x2d5735190c921e6a!2s191%20Superior%20Blvd%2C%20Mississauga%2C%20ON%20L5T%202L6%2C%20Canada!5e0!3m2!1sen!2sin!4v1598918791539!5m2!1sen!2sin" width="250" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1598553904887!2d-79.6979458845025!3d43.64484237912163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f9dfd586049%3A0x2d5735190c921e6a!2s191%20Superior%20Blvd%2C%20Mississauga%2C%20ON%20L5T%202L6%2C%20Canada!5e0!3m2!1sen!2sin!4v1598918791539!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             <p><img src="assets/img/location-black.svg" alt="MTS Location">191 Superior BlvdMississauga, ON L5T 2L6</p>
                             <p><img src="assets/img/email-black.svg" alt="MTS Email">info@mapletechspace.com</p>
                             <p><img src="assets/img/phone-black.svg" alt="MTS Phone">+1 (647) 339-9023</p>
