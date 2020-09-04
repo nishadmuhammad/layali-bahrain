@@ -85,7 +85,7 @@
             </li>
             <li class="list-inline-item place">
                 <span>Canada</span>
-                <a href="">191 Superior BlvdMississauga, ON L5T 2L6</a>
+                <a href="">191 Superior Blvd Mississauga, ON L5T 2L6</a>
             </li>
             <li class="list-inline-item place">
                 <span>India</span>
