@@ -145,16 +145,6 @@
                             <p>Social Media & Content Head</p>
                         </div>
                     </div>
-
-                    <div class="team-item" data-aos="fade-up">
-                        <div class="team-image">
-                            <img src="{{asset('assets/img/diana.png')}}" alt="diana" class="img-fluid">
-                        </div>
-                        <div class="member-details">
-                            <h6>Diana M Thomas</h6>
-                            <p>Content Strategist</p>
-                        </div>
-                    </div>
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
                             <img src="assets/img/team4.jpg" alt="priyanka" class="img-fluid">
@@ -162,6 +152,33 @@
                         <div class="member-details">
                             <h6>Priyanka O P</h6>
                             <p>Full Stack Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="{{asset('assets/img/neenu.jpg')}}" alt="diana" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Neenu Manuval</h6>
+                            <p>SEO Executive</p>
+                        </div>
+                    </div>
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="{{asset('assets/img/shaheed.jpg')}}" alt="diana" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Shaheed Konnola</h6>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="{{asset('assets/img/soumya.jpg')}}" alt="diana" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Sowmya Joseph</h6>
+                            <p>Associate Software Developer</p>
                         </div>
                     </div>
                 </div>
