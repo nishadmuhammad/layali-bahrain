@@ -156,6 +156,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/redbuy.png')}}" alt="stringsandbeeds" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <h6>RedBuyers</h6>
+                                <p align="justify"><a target="_blank" href="http://www.RedBuyers.com">www.RedBuyers.com</a>
+                                    is a revolutionary website that offers a progressive way of selling your home in Canada, by just clicking a button, while being seated on your couch!
+                                    Our team has worked tirelessly to go that extra mile to execute the client’s vision of interposing technology with a contemporary approach for buying and selling homes whilst keeping it simple and fun for the customer.
+                                     </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/sudheer.jpeg')}}" alt="foster" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <h6>Sudheer Portifolio</h6>
+                                <p align="justify"><a href="http://www.sudheer.ca" target="_blank">www.sudheer.ca</a> is a Maple Tech Space customized portfolio website for our client who is an Agile and Business process management professional , transformation consultant, soccer lover, car & motorcycle enthusiast, and Paulo Coelho fan.
+
+                                    Our team effectively collaborated with working from remote locations for this website design for our valued client. It has been successfully executed by keeping the client's vision intact.
+                                    <br>Please check it out on <a href="http://www.sudheer.ca" target="_blank">www.sudheer.ca</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
