@@ -181,6 +181,15 @@
                             <p>Associate Software Developer</p>
                         </div>
                     </div>
+                    <div class="team-item" data-aos="fade-up">
+                        <div class="team-image">
+                            <img src="{{asset('assets/img/vishnu.jpg')}}" alt="diana" class="img-fluid">
+                        </div>
+                        <div class="member-details">
+                            <h6>Vishnu Viswanath</h6>
+                            <p>Content strategist</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
