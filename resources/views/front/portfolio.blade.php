@@ -189,6 +189,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12">
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="{{asset('assets/img/jp.png')}}" alt="foster" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <h6>J.P. Singh Masaun Broker</h6>
+                                <p align="justify">Our designers and web developers have executed a contemporary website with a modernistic feel, for our charismatic client , who is the  “creme de la creme” amongst realtors in Canada.  <a href="https://www.jpsinghmasaun.com/" target="_blank">https://www.jpsinghmasaun.com/</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
