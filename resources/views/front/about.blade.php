@@ -187,7 +187,7 @@
                         </div>
                         <div class="member-details">
                             <h6>Vishnu Viswanath</h6>
-                            <p>Content strategist</p>
+                            <p>Content Developer</p>
                         </div>
                     </div>
                 </div>
