@@ -1,0 +1,162 @@
+<?php
+
+namespace App\Http\Controllers\admin;
+use App\Portfolio;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class PortfolioController extends Controller
+{
+    function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
+
+   /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+
+        $portfolios=Portfolio::all()->sortBy('odr');
+        return view('admin.Portfolio.index',['portfolios'=>$portfolios]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('admin.Portfolio.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+          //dd('hii');
+          $data=$request->validate([
+            'title'=>'required',
+            'odr'=>'nullable',
+            'photo'=>'nullable|image',
+            'description'=>'required',
+            'width'=>'required',
+            'status'=>'nullable',
+            
+        ]);
+
+        $data['status']='Published';
+        // $data['slug']=Str::slug($data['title'], '-');
+
+        //Uploading and saving outer image
+        if($request->photo) {
+            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $naked_path = env('IMAGE_PATH') . $image_path;
+            if($request->width ="full"){
+            $photos = Image::make($naked_path)->fit(990,495.36);
+            }else{
+            $photos = Image::make($naked_path)->fit(480,346.98);
+            }
+            $photos->save();
+            $data['photo']=$image_path;
+        }
+        else{
+            $data['photo']='';
+        }
+    
+        //storing
+        Portfolio::create($data);
+        return redirect(route('Portfolio.index'))->with('success','Portfolio added successfully!');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Portfolio  $portfolio
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Portfolio  $portfolio
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+         $Portfolios=Portfolio::findOrFail($id);
+        return view('Portfolio.edit',['Portfolios'=>$portfolios]);
+    }
+    
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Portfolio  $portfolio
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $data=$request->validate([
+            'title'=>'required',
+            'odr'=>'nullable',
+            'photo'=>'nullable|image',
+            'description'=>'required',
+            'width'=>'required',
+            'status'=>'required',
+            
+        ]);
+
+        if($request->photo) {
+            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $naked_path = env('IMAGE_PATH') . $image_path;
+            if($request->width ="full"){
+            $photos = Image::make($naked_path)->fit(990,495.36);
+            }else{
+            $photos = Image::make($naked_path)->fit(480,346.98);
+            }
+            $photos->save();
+            $file_path=env('IMAGE_PATH').$Portfolio->Portfolio;
+            if(file_exists($file_path))
+            {
+                @unlink($file_path);
+            }
+        }
+
+        //updating
+        $Portfolio->update($data);
+        return redirect(route('Portfolio.index'))->with('success','Portfolio updated successfully!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Portfolio  $portfolio
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $portfolios=Portfolio::findOrFail($id);
+        //removing  outer image
+        $file_path=env('IMAGE_PATH').$portfolios->portfolio;
+        if(file_exists($file_path))
+        {
+            @unlink($file_path);
+        }
+        $portfolios->delete();
+        return back()->with('success','portfolio deleted successfully!');
+    }
+}

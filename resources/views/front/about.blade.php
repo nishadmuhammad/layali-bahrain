@@ -51,20 +51,29 @@
             </div>
 
         </div>
+
+
         <div class="our-team">
             <div class="container">
+                @foreach($staff as family)
+                <p>{{$family->photo}}</p>
+                <h6>{{$family->name}}</h6>
+                <p>{{$family->position}}</p>
                 <h5 data-aos="fade-right">Meet Our Team</h5>
                 <div class="team-row">
+
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="{{asset('assets/img/rohithnew.png')}}" alt="rohith" class="img-fluid">
+                            <img src="/storage/{{asset('$family->photo')}}"class="img-fluid">
+                            <!-- <img src="{{asset('assets/img/rohithnew.png')}}" alt="rohith" class="img-fluid"> -->
                         </div>
                         <div class="member-details">
-                            <h6>Rohith Mohandas</h6>
-                            <p>President</p>
+                            <h6>$family->name</h6>
+                            <p>$family->position</p>
                         </div>
                     </div>
-                    <div class="team-item" data-aos="fade-up">
+            @endforeach
+                    <!-- <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
                             <img src="{{asset('assets/img/kamal.png')}}" alt="kamal"  class="img-fluid">
                         </div>
@@ -180,7 +189,7 @@
                             <h6>Sowmya Joseph</h6>
                             <p>Associate Software Developer</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
                             <img src="{{asset('assets/img/vishnu.jpg')}}" alt="diana" class="img-fluid">

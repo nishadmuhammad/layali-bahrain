@@ -1,3 +1,4 @@
+
 @extends('front.layouts.app')
 @section('title', 'Best Web Designing Company in Toronto | Creative Web Designs')
 @section('description','Maple Tech Space - Best Web designing company in Toronto. We build creative and customized web designs for a visually appealing online presence of your business.')
@@ -21,7 +22,30 @@
                     <div class="col-sm-12">
                         <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and functionality.We value relationship with our clients and for every business, whether small or big we understand that customer satisfaction will sustain and help grow a business in the long term.</p>
                         <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
+                
+
+                        <div class="col-sm-12">
+                   @foreach($portfolio as projects)
+                    <p>{{$projects->photo}}</p>
+                    <h6>{{$projects->title}}</h6>
+                    <p>{{$projects->description}}</p>
+                        <div class="portfolio-block" data-aos="fade-up">
+                            <div class="portfolio-image">
+                                <a href="">
+                                    <img src="/storage/{{asset('$family->photo')}}" alt="manukaii" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="portfolio-block-details">
+                                <h6>$projects->title</h6>
+                                <p>$projects->description</p>
+                            </div>
+                        </div>
                     </div>
+                   @endforeach
+
+
+
+                 <!-- </div>
                     <div class="col-sm-12">
                         <div class="portfolio-block" data-aos="fade-up">
                             <div class="portfolio-image">
@@ -195,7 +219,7 @@
                                 <a href="">
                                     <img src="{{asset('assets/img/jp.png')}}" alt="foster" class="img-fluid">
                                 </a>
-                            </div>
+                            </div> -->
                             <div class="portfolio-block-details">
                                 <h6>J.P. Singh Masaun Broker</h6>
                                 <p align="justify">Our designers and web developers have executed a contemporary website with a modernistic feel, for our charismatic client , who is the  “creme de la creme” amongst realtors in Canada.  <a href="https://www.jpsinghmasaun.com/" target="_blank">https://www.jpsinghmasaun.com/</a>
