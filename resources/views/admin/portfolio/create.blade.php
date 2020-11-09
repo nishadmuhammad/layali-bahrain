@@ -50,7 +50,7 @@
             @endif
         </div>
     </div>
-
+   
     <div class="col-6">
         <div class="form-group">
             <label for="cover_photo">Cover Photo <small>(Not less than 926X494 px)</small></label>
@@ -59,8 +59,18 @@
                     <input type="file" class="custom-file-input {{$errors->has('cover_photo') ? 'is-invalid' : ''}}" id="cover_photo" name="cover_photo" value="{{old('cover_photo')}}">
                     <label class="custom-file-label" for="cover_photo">Choose file</label>
                 </div>
+                
             </div>
-        
+            <div class="col-6">
+            <label for="width" class="control-label">Width  </label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="full" name="width"  class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="full">
+                    <label class="form-check-label" for="full">full</label>
+                    <input type="radio"  id="half" name="width" required class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="half">
+                    <label class="form-check-label" for="half">half</label>
+                </div>
+            </div>
+           
             @if($errors->has('cover_photo'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('cover_photo')}}</strong>

@@ -21,62 +21,31 @@ title  photo width description status
     <!-- ---------------------------- -->
     <div class="col-6">
         <div class="form-group">
-            <label for="title" class="control-label">title</label>
+            <label for="title" class="control-label">Project</label>
             @if($errors->has('title'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('title')}}</strong>
                 </span>
             @endif
-            <div class="col-12">
-                <div class="form-check form-check-inline">
-                    <input type="radio" id="full" name="width"  class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="full" {{$portfolios->width == 'full' ? 'checked' : ''}}>
-                    <label class="form-check-label" for="full">full</label>
-                    <input type="radio"  id="half" name="width" required class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="half" {{$portfolios->width == 'half' ? 'checked' : ''}}>
-                    <label class="form-check-label" for="half">half</label>
-                </div>
-            </div>
+           
         </div>
     </div>
 
     <div class="col-6">
         <div class="form-group">
-            <label for="no_of_opening" class="control-label">Number Of Openings </label>
-            <input type="text" id="no_of_opening" name="no_of_opening" required class="form-control {{$errors->has('no_of_opening') ? 'is-invalid' : ''}}" value="{{$opening->no_of_opening}}">
-            @if($errors->has('no_of_opening'))
+            <label for="odr" class="control-label">Order No </label>
+            <input type="text" id="odr" name="odr" required class="form-control {{$errors->has('odr') ? 'is-invalid' : ''}}" value="{{$portfolios->odr}}">
+            @if($errors->has('odr'))
                 <span class="help-block error invalid-feedback">
-                    <strong>{{$errors->first('no_of_opening')}}</strong>
+                    <strong>{{$errors->first('odr')}}</strong>
                 </span>
             @endif
         </div>
     </div>
     <div class="col-6">
         <div class="form-group">
-            <label for="position" class="control-label">Position </label>
-            <input type="text" id="position" name="position" required class="form-control {{$errors->has('position') ? 'is-invalid' : ''}}" value="{{$opening->position}}">
-            @if($errors->has('position'))
-                <span class="help-block error invalid-feedback">
-                    <strong>{{$errors->first('position')}}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="form-group">
-            <label for="expiry_date" class="control-label">Expiry Date </label>
-            <input type="datetime-local" id="expiry_date" name="expiry_date" required class="form-control {{$errors->has('expiry_date') ? 'is-invalid' : ''}}" value="{{date('Y-m-d\TH:i', strtotime($opening->expiry_date))}}">
-            @if($errors->has('expiry_date'))
-                <span class="help-block error invalid-feedback">
-                    <strong>{{$errors->first('expiry_date')}}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
-    <div class="col-12">
-        <div class="form-group">
-            <label for="description" class="control-label">Description <small>(Do not capitalise entire sentence)</small></label>
-            <textarea id="description" name="description" required
-                      class="form-control textarea {{$errors->has('description') ? 'is-invalid' : ''}}">{{$opening->description}}
-            </textarea>
+            <label for="description" class="control-label">Description </label>
+            <input type="text" id="description" name="description" required class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}" value="{{$portfolios->description}}">
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('description')}}</strong>
@@ -84,6 +53,28 @@ title  photo width description status
             @endif
         </div>
     </div>
+  
+    <div class="col-6">
+        <div class="form-group">
+            <label for="cover_photo">Cover Photo <small>(Not less than 926X494 px)</small></label>
+            <div class="input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input {{$errors->has('cover_photo') ? 'is-invalid' : ''}}" id="cover_photo" name="cover_photo" value="{{old('cover_photo')}}">
+                    <label class="custom-file-label" for="cover_photo">Choose file</label>
+                </div>
+            </div>
+
+
+
+    <div class="col-12">
+            <label for="width" class="control-label">Width  </label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="full" name="width"  class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="full">
+                    <label class="form-check-label" for="full">full</label>
+                    <input type="radio"  id="half" name="width" required class="form-check-input {{$errors->has('width') ? 'is-invalid' : ''}}" value="half">
+                    <label class="form-check-label" for="half">half</label>
+                </div>
+            </div>
 @endsection
 @section('additionalScripts')
     <script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>

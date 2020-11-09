@@ -58,7 +58,7 @@ class PortfolioController extends Controller
 
         //Uploading and saving outer image
         if($request->cover_photo) {
-            $image_path = request('cover_photo')->store('uploads/portfolio  ', 'public');
+            $image_path = request('cover_photo')->store('uploads/portfolio', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             if($request->width =="full"){
             $photos = Image::make($naked_path)->fit(1365,683);
@@ -113,7 +113,7 @@ class PortfolioController extends Controller
         $data=$request->validate([
             'title'=>'required',
             'odr'=>'nullable',
-            'photo'=>'nullable|image',
+            'cover_photo'=>'nullable|image',
             'description'=>'required',
             'width'=>'required',
             'status'=>'required',
@@ -121,12 +121,12 @@ class PortfolioController extends Controller
         ]);
 
         if($request->photo) {
-            $image_path = request('photo')->store('uploads', 'public');
+            $image_path = request('cover_photo')->store('uploads/portfolio', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            if($request->width ="full"){
-            $photos = Image::make($naked_path)->fit(990,495.36);
+            if($request->width =="full"){
+                $photos = Image::make($naked_path)->fit(1365,683);
             }else{
-            $photos = Image::make($naked_path)->fit(480,346.98);
+                $photos = Image::make($naked_path)->fit(644,480);
             }
             $photos->save();
             $file_path=env('IMAGE_PATH').$Portfolio->Portfolio;

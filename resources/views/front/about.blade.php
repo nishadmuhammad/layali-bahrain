@@ -52,24 +52,24 @@
 
         </div>
 
-
+        @foreach($staff_details as $staff)
+           <p>{{$staff->photo}}</p>
+           <h6>{{$staff->name}}</h6>
+           <p>{{$staff->position}}</p>
         <div class="our-team">
             <div class="container">
-                @foreach($staff as family)
-                <p>{{$family->photo}}</p>
-                <h6>{{$family->name}}</h6>
-                <p>{{$family->position}}</p>
                 <h5 data-aos="fade-right">Meet Our Team</h5>
                 <div class="team-row">
 
                     <div class="team-item" data-aos="fade-up">
                         <div class="team-image">
-                            <img src="/storage/{{asset('$family->photo')}}"class="img-fluid">
-                            <!-- <img src="{{asset('assets/img/rohithnew.png')}}" alt="rohith" class="img-fluid"> -->
+                        <a href="">
+                                    <img src="{{asset($staff->photo)}}" alt="manukaii" class="img-fluid">
+                         </a>
                         </div>
                         <div class="member-details">
-                            <h6>$family->name</h6>
-                            <p>$family->position</p>
+                            <h6>{{$family->name}}</h6>
+                            <p>{{$family->position}}</p>
                         </div>
                     </div>
             @endforeach
