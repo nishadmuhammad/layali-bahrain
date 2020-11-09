@@ -25,6 +25,8 @@ Route::get('/contact/',function (){return view('front.contact');})->name('contac
 Route::get('/services/{slug}','front\ServiceController@show')->name('servicesShow');
 Route::post('/subscribe','front\SubscriptionController@subscribe')->name('subscribe');
 Route::post('/application','front\CareerController@store')->name('application');
+Route::get('/portfolio','front\PortfolioController@index')->name('portfolio');
+Route::get('/portfolio/{slug}','front\PortfolioController@show')->name('portfolioShow');
 
 //Auth Routes
 Auth::routes();

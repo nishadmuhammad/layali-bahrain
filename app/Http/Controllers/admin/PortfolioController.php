@@ -21,7 +21,7 @@ class PortfolioController extends Controller
     {
 
         $portfolios=Portfolio::all()->sortBy('odr');
-        return view('admin.Portfolio.index',['portfolios'=>$portfolios]);
+        return view('admin.portfolio.index',['portfolios'=>$portfolios]);
     }
 
     /**
@@ -31,7 +31,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        return view('admin.Portfolio.create');
+        return view('admin.portfolio.create');
     }
 
     /**
@@ -58,7 +58,7 @@ class PortfolioController extends Controller
 
         //Uploading and saving outer image
         if($request->photo) {
-            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $image_path = request('photo')->store('uploads/portfolio/', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             if($request->width ="full"){
             $photos = Image::make($naked_path)->fit(990,495.36);
@@ -74,7 +74,7 @@ class PortfolioController extends Controller
     
         //storing
         Portfolio::create($data);
-        return redirect(route('Portfolio.index'))->with('success','Portfolio added successfully!');
+        return redirect(route('portfolio.index'))->with('success','Portfolio added successfully!');
     }
 
     /**
@@ -121,7 +121,7 @@ class PortfolioController extends Controller
         ]);
 
         if($request->photo) {
-            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $image_path = request('photo')->store('uploads', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             if($request->width ="full"){
             $photos = Image::make($naked_path)->fit(990,495.36);

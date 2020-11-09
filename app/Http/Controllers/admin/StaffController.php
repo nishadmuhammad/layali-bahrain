@@ -51,7 +51,7 @@ class StaffController extends Controller
 
         //Uploading and saving outer image
         if($request->photo) {
-            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $image_path = request('photo')->store('uploads/staff/', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             $photos = Image::make($naked_path)->fit(247.5,279.67);
             $photos->save();
@@ -107,7 +107,7 @@ class StaffController extends Controller
         ]);
 
         if($request->photo) {
-            $image_path = request('photo')->store('uploads/portfolio/portfolio', 'public');
+            $image_path = request('photo')->store('uploads/staff/', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             $photos = Image::make($naked_path)->fit(247.5,279.67);
             $photos->save();
