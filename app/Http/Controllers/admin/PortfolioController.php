@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 use App\Portfolio;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class PortfolioController extends Controller
 {
@@ -42,28 +43,27 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-          //dd('hii');
+          ($request);
           $data=$request->validate([
             'title'=>'required',
             'odr'=>'nullable',
             'photo'=>'nullable|image',
             'description'=>'required',
-            'width'=>'required',
             'status'=>'nullable',
-            
+
         ]);
 
         $data['status']='Published';
         // $data['slug']=Str::slug($data['title'], '-');
 
         //Uploading and saving outer image
-        if($request->photo) {
-            $image_path = request('photo')->store('uploads/portfolio/', 'public');
+        if($request->cover_photo) {
+            $image_path = request('cover_photo')->store('uploads/portfolio  ', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            if($request->width ="full"){
-            $photos = Image::make($naked_path)->fit(990,495.36);
+            if($request->width =="full"){
+            $photos = Image::make($naked_path)->fit(1365,683);
             }else{
-            $photos = Image::make($naked_path)->fit(480,346.98);
+            $photos = Image::make($naked_path)->fit(644,480);
             }
             $photos->save();
             $data['photo']=$image_path;
@@ -71,7 +71,7 @@ class PortfolioController extends Controller
         else{
             $data['photo']='';
         }
-    
+
         //storing
         Portfolio::create($data);
         return redirect(route('portfolio.index'))->with('success','Portfolio added successfully!');
@@ -96,10 +96,10 @@ class PortfolioController extends Controller
      */
     public function edit($id)
     {
-         $Portfolios=Portfolio::findOrFail($id);
-        return view('Portfolio.edit',['Portfolios'=>$portfolios]);
+         $portfolios=Portfolio::findOrFail($id);
+        return view('admin.portfolio.edit',['portfolios'=>$portfolios]);
     }
-    
+
 
     /**
      * Update the specified resource in storage.
@@ -117,7 +117,7 @@ class PortfolioController extends Controller
             'description'=>'required',
             'width'=>'required',
             'status'=>'required',
-            
+
         ]);
 
         if($request->photo) {
@@ -138,7 +138,7 @@ class PortfolioController extends Controller
 
         //updating
         $Portfolio->update($data);
-        return redirect(route('Portfolio.index'))->with('success','Portfolio updated successfully!');
+        return redirect(route('portfolio.index'))->with('success','Portfolio updated successfully!');
     }
 
     /**

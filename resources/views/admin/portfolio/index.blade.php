@@ -10,15 +10,14 @@
     <th>photo</th>
     <th>description</th>
     <th>width</th>
-    <!-- <th>Action</th> -->
+    <th>Action</th>
 @endsection
 @section('tableBody')
     @foreach($portfolios as $portfolio)
         <tr>
             <td></td>
-            <td>{{$portfolio->No}}</td>
             <td>{{$portfolio->title}}</td>
-            <td>{{$portfolio->photo}}</td>
+            <td><img src="{{asset($portfolio->photo)}}" width="100px"></td>
             <td>{{$portfolio->description}}</td>
             <td>{{$portfolio->width}}</td>
             <td>
@@ -28,7 +27,6 @@
                     <a href="#" onclick="return confirmation({{$portfolio->id}});"><i class="fa fa-trash"></i> </a>
                 </form>
                 <a href="{{route('portfolio.edit',$portfolio->id)}}"><i class="fa fa-edit"></i> </a>
-                <a href="{{route('application.index','id='.$portfolio->id)}}"><i class="fa fa-mail-bulk"></i> </a>
             </td>
         </tr>
     @endforeach
