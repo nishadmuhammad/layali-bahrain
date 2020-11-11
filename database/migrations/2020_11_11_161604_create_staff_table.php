@@ -15,10 +15,10 @@ class CreateStaffTable extends Migration
     {
         Schema::create('staffs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('photo')->nullable();
-            $table->string('name')->nullable();
-            $table->string('position')->nullable();
-            $table->string('status')->nullable();
+            $table->string('photo')->nullable;
+            $table->string('name')->nullable;
+            $table->string('position')->nullable;
+            $table->string('status')->nullable;
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateStaffTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staff');
+        Schema::dropIfExists('staffs');
     }
 }

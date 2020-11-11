@@ -43,7 +43,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('user','admin\UserRoleController')->only(['index','edit','update','create','store','destroy']);
     Route::resource('role', 'admin\RoleController')->only(['index', 'create', 'store', 'destroy', 'edit', 'update']);
     Route::resource('/admin/portfolio','admin\PortfolioController')->only(['index','create','store','edit','update','destroy']);
-    Route::resource('/admin/staff','admin\Staffcontroller')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('/admin/staff','admin\StaffController')->only(['index','create','store','edit','update','destroy']);
 
 });
 Route::resource('password','admin\PasswordController')->only(['edit','update']);

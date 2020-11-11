@@ -75,7 +75,7 @@ class PortfolioController extends Controller
 
         //storing
         Portfolio::create($data);
-        return redirect(route('admin.portfolio.index'))->with('success','Portfolio added successfully!');
+        return redirect(route('portfolio.index'))->with('success','Portfolio added successfully!');
     }
 
     /**
