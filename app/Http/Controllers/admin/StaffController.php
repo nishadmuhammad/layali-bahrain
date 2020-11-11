@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 use App\Staff;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class StaffController extends Controller
 {
@@ -16,7 +17,7 @@ class StaffController extends Controller
     {
 
         $staff_details=Staff::all()->sortBy('id');
-        return view('admin.Staff.index',['staff_details'=>$staff_details]);
+        return view('admin.staff.index',['staff_details'=>$staff_details]);
     }
 
     /**
@@ -50,10 +51,10 @@ class StaffController extends Controller
         // $data['slug']=Str::slug($data['title'], '-');
 
         //Uploading and saving outer image
-        if($request->photo) {
-            $image_path = request('photo')->store('uploads/staff/', 'public');
+        if($request->cover_photo) {
+            $image_path = request('cover_photo')->store('uploads/staff/', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            $photos = Image::make($naked_path)->fit(247.5,279.67);
+            $photos = Image::make($naked_path)->fit(279,320);
             $photos->save();
             $data['photo']=$image_path;
         }
@@ -73,7 +74,7 @@ class StaffController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -85,7 +86,7 @@ class StaffController extends Controller
     public function edit($id)
     {
          $staff_details=Staff::findOrFail($id);
-        return view('staff.edit',['staff_details'=>$staff_details]);
+        return view('admin.staff.edit',['staff_details'=>$staff_details]);
     }
     
 
@@ -98,6 +99,7 @@ class StaffController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $staff_deatils=Staff::findOrFail($id);
         $data=$request->validate([
             'name'=>'required',
             'photo'=>'nullable|image',
@@ -106,12 +108,13 @@ class StaffController extends Controller
             
         ]);
 
-        if($request->photo) {
-            $image_path = request('photo')->store('uploads/staff/', 'public');
+        if($request->cover_photo) {
+            $image_path = request('cover_photo')->store('uploads/staff/', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
-            $photos = Image::make($naked_path)->fit(247.5,279.67);
+            $photos = Image::make($naked_path)->fit(279,320);
             $photos->save();
-            $file_path=env('IMAGE_PATH').$staff_details->photo;
+            $data['photo']=$image_path;
+            $file_path=env('IMAGE_PATH').$staff_deatils->cover_photo;
             if(file_exists($file_path))
             {
                 @unlink($file_path);
@@ -119,7 +122,7 @@ class StaffController extends Controller
         }
 
         //updating
-        $Staff_deatils->update($data);
+        $staff_deatils->update($data);
         return redirect(route('staff.index'))->with('success','Staff updated successfully!');
     }
 

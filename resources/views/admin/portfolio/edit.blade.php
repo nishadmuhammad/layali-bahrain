@@ -16,25 +16,25 @@
 @endsection
 @section('formBody')
 
-title  photo width description status
 <input type="hidden" name="_method" value="PUT">
     <!-- ---------------------------- -->
     <div class="col-6">
         <div class="form-group">
-            <label for="title" class="control-label">Project</label>
+            <label for="title" class="control-label">Project </label>
+            <input type="text" id="title" name="title" required class="form-control {{$errors->has('title') ? 'is-invalid' : ''}}"value= "{{$portfolios->title}}">
             @if($errors->has('title'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('title')}}</strong>
                 </span>
             @endif
-           
         </div>
     </div>
+
 
     <div class="col-6">
         <div class="form-group">
             <label for="odr" class="control-label">Order No </label>
-            <input type="text" id="odr" name="odr" required class="form-control {{$errors->has('odr') ? 'is-invalid' : ''}}" value="{{$portfolios->odr}}">
+            <input type="number" id="odr" name="odr" required class="form-control {{$errors->has('odr') ? 'is-invalid' : ''}}" value="{{$portfolios->odr}}">
             @if($errors->has('odr'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('odr')}}</strong>
@@ -42,10 +42,12 @@ title  photo width description status
             @endif
         </div>
     </div>
-    <div class="col-6">
+
+    <div class="col-12">
         <div class="form-group">
-            <label for="description" class="control-label">Description </label>
-            <input type="text" id="description" name="description" required class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}" value="{{$portfolios->description}}">
+            <label for="description"rows="5" class="control-label">Description <small>(Do not capitalise entire sentence)</small></label>
+            <textarea id="descriptions" name="description"
+                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}" value="{{$portfolios->description}}"></textarea>
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('description')}}</strong>
@@ -53,7 +55,7 @@ title  photo width description status
             @endif
         </div>
     </div>
-  
+
     <div class="col-6">
         <div class="form-group">
             <label for="cover_photo">Cover Photo <small>(Not less than 926X494 px)</small></label>

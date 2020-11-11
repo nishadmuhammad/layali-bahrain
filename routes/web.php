@@ -14,9 +14,9 @@
 //Front end routes
 Route::get('/', 'front\HomeController@index')->name('home');
 Route::post('/enquiry','front\EnquiryController@store')->name('enquire');
-Route::get('/about-us',function (){return view('front.about');})->name('about');
 Route::get('/services',function (){return view('front.services.index');})->name('services');
 Route::get('/portfolio','front\HomeController@showPortfolios')->name('portfolio');
+Route::get('/about-us','front\StaffController@index')->name('about');
 Route::get('/blog','front\BlogController@index')->name('blog');
 Route::get('/blog/{slug}','front\BlogController@show')->name('showBlog');
 Route::get('/careers','front\CareerController@index')->name('careers');

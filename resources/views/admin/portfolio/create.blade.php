@@ -1,6 +1,7 @@
 @extends('admin.layouts.form')
 @section('additionalStyles')
     <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
+    
 @endsection
 @section('title','Add portfolio')
 @section('actionUrl')
@@ -39,10 +40,14 @@
         </div>
     </div>
 
-    <div class="col-6">
+
+
+    <div class="col-12">
         <div class="form-group">
-            <label for="description" class="control-label">description</label>
-            <input type="text" id="description" name="description" required class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}" value="{{old('description')}}">
+            <label for="description"rows="5" class="control-label">Description <small>(Do not capitalise entire sentence)</small></label>
+            <textarea id="descriptions" name="description"
+                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}">{{old('description')}}
+            </textarea>
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('description')}}</strong>
@@ -50,6 +55,7 @@
             @endif
         </div>
     </div>
+
    
     <div class="col-6">
         <div class="form-group">
@@ -105,4 +111,5 @@
             })
         })
     </script>
+   
 @endsection

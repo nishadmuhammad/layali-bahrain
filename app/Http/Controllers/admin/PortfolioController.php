@@ -43,12 +43,13 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-          ($request);
+         
           $data=$request->validate([
             'title'=>'required',
             'odr'=>'nullable',
             'photo'=>'nullable|image',
             'description'=>'required',
+            'width'=>'nullable',
             'status'=>'nullable',
 
         ]);
@@ -74,7 +75,7 @@ class PortfolioController extends Controller
 
         //storing
         Portfolio::create($data);
-        return redirect(route('portfolio.index'))->with('success','Portfolio added successfully!');
+        return redirect(route('admin.portfolio.index'))->with('success','Portfolio added successfully!');
     }
 
     /**
@@ -110,34 +111,35 @@ class PortfolioController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $portfolios=Portfolio::findOrFail($id);
         $data=$request->validate([
             'title'=>'required',
             'odr'=>'nullable',
-            'cover_photo'=>'nullable|image',
+            'photo'=>'nullable|image',
             'description'=>'required',
             'width'=>'required',
-            'status'=>'required',
 
         ]);
+        $data['status']='Published';
 
-        if($request->photo) {
+        if($request->cover_photo) {
             $image_path = request('cover_photo')->store('uploads/portfolio', 'public');
             $naked_path = env('IMAGE_PATH') . $image_path;
             if($request->width =="full"){
                 $photos = Image::make($naked_path)->fit(1365,683);
+                
             }else{
                 $photos = Image::make($naked_path)->fit(644,480);
             }
             $photos->save();
-            $file_path=env('IMAGE_PATH').$Portfolio->Portfolio;
+            $file_path=env('IMAGE_PATH').$portfolios->cover_photo;
             if(file_exists($file_path))
             {
                 @unlink($file_path);
             }
         }
-
         //updating
-        $Portfolio->update($data);
+        $portfolios->update($data);
         return redirect(route('portfolio.index'))->with('success','Portfolio updated successfully!');
     }
 
