@@ -23,10 +23,7 @@
                     <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
 
                     @foreach($portfolios as $portfolio)
-                    <p>{{$portfolio->photo}}</p>
-                    <h6>{{$portfolio->title}}</h6>
-                    <p>{{$portfolio->description}}</p>
-                    <p>{{$portfolio->width}}</p>
+                   
 
                     @if($portfolio->width ==='full')
                     <div class="col-sm-12">
@@ -58,8 +55,10 @@
                 @endif
                 @endforeach
     
-              </div>
-            </div>
+              
+           
+          </div>
+          </div>
           </div>
         </div>
 
