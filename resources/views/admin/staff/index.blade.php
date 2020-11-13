@@ -20,8 +20,8 @@
             <td>{{$staff->position}}</td>
             <td><img src="{{asset($staff->photo)}}" width="100px"></td>
 
-            
-       
+
+
             <td>
                 <form action="{{route('staff.destroy',$staff->id)}}" method="POST" id="delete-form-{{$staff->id}}">
                     {{csrf_field()}}
@@ -29,7 +29,6 @@
                     <a href="#" onclick="return confirmation({{$staff->id}});"><i class="fa fa-trash"></i> </a>
                 </form>
                 <a href="{{route('staff.edit',$staff->id)}}"><i class="fa fa-edit"></i> </a>
-                <a href="{{route('application.index','id='.$staff->id)}}"><i class="fa fa-mail-bulk"></i> </a>
             </td>
         </tr>
     @endforeach

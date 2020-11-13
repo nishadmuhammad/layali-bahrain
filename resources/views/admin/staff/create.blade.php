@@ -26,7 +26,7 @@
             @endif
         </div>
     </div>
-  
+
     <div class="col-6">
         <div class="form-group">
             <label for="position" class="control-label">Role</label>
@@ -41,6 +41,19 @@
 
     <div class="col-6">
         <div class="form-group">
+            <label for="odr" class="control-label">Position</label>
+            <input type="number" id="odr" name="odr" required
+                   class="form-control {{$errors->has('odr') ? 'is-invalid' : ''}}" value="{{old('odr')}}">
+            @if($errors->has('odr'))
+                <span class="help-block error invalid-feedback">
+                    <strong>{{$errors->first('odr')}}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-group">
             <label for="cover_photo">Cover Photo <small>(Not less than 926X494 px)</small></label>
             <div class="input-group">
                 <div class="custom-file">
@@ -48,7 +61,7 @@
                     <label class="custom-file-label" for="cover_photo">Choose file</label>
                 </div>
             </div>
-        
+
             @if($errors->has('cover_photo'))
                 <span class="help-block error invalid-feedback">
                     <strong>{{$errors->first('cover_photo')}}</strong>
@@ -57,8 +70,8 @@
         </div>
     </div>
 
-   
-   
+
+
 @endsection
 @section('additionalScripts')
     <script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>

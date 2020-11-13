@@ -44,7 +44,8 @@ class StaffController extends Controller
             'photo'=>'nullable|image',
             'position'=>'required',
             'status'=>'nullable',
-            
+              'odr'=>'required'
+
         ]);
 
         $data['status']='live';
@@ -74,7 +75,7 @@ class StaffController extends Controller
      */
     public function show($id)
     {
-        
+
     }
 
     /**
@@ -88,7 +89,7 @@ class StaffController extends Controller
          $staff_details=Staff::findOrFail($id);
         return view('admin.staff.edit',['staff_details'=>$staff_details]);
     }
-    
+
 
     /**
      * Update the specified resource in storage.
@@ -104,8 +105,8 @@ class StaffController extends Controller
             'name'=>'required',
             'photo'=>'nullable|image',
             'position'=>'required',
-          
-            
+            'odr'=>'required'
+
         ]);
 
         if($request->cover_photo) {

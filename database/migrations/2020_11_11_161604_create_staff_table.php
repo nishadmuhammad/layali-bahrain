@@ -18,6 +18,7 @@ class CreateStaffTable extends Migration
             $table->string('photo')->nullable;
             $table->string('name')->nullable;
             $table->string('position')->nullable;
+            $table->integer('odr');
             $table->string('status')->nullable;
             $table->timestamps();
         });

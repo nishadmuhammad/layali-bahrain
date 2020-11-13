@@ -31,7 +31,7 @@
 
     <div class="col-6">
         <div class="form-group">
-            <label for="odr" class="control-label">Order No </label>
+            <label for="odr" class="control-label">Position</label>
             <input type="number" id="odr" name="odr" required
                    class="form-control {{$errors->has('odr') ? 'is-invalid' : ''}}" value="{{$portfolios->odr}}">
             @if($errors->has('odr'))
