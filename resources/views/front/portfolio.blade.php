@@ -7,59 +7,43 @@
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
 @section('canonical','https://www.mapletechspace.com/portfolio')
 @section('content')
-<div class="portfolio page">
-    <div class="banner-common">
-        <div class="container">
-            <h1>Portfolio</h1>
+    <div class="portfolio page">
+        <div class="banner-common">
+            <div class="container">
+                <h1>Portfolio</h1>
+            </div>
         </div>
-    </div>
-    <div class="portfolio-inner">
-        <div class="container">
-            <h5>Portfolio</h5>
-            <h4>Our latest projects</h4>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and functionality.We value relationship with our clients and for every business, whether small or big we understand that customer satisfaction will sustain and help grow a business in the long term.</p>
-                    <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
-
-                    @foreach($portfolios as $portfolio)
-                   
-
-                    @if($portfolio->width ==='full')
+        <div class="portfolio-inner">
+            <div class="container">
+                <h5>Portfolio</h5>
+                <h4>Our latest projects</h4>
+                <div class="row">
                     <div class="col-sm-12">
-                        <div class="portfolio-block" data-aos="fade-up">
-                            <div class="portfolio-image">
-                                <a href="">
-                                    <img src="{{asset($portfolio->photo)}}" alt="manukaii" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="portfolio-block-details">
-                                <h6>{{$portfolio->title}}</h6>
-                                <p>{{$portfolio->description}}</p>
-                            </div>
-                        </div>
+                        <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and
+                            functionality.We value relationship with our clients and for every business, whether small
+                            or big we understand that customer satisfaction will sustain and help grow a business in the
+                            long term.</p>
+                        <p>Our effects on brand growth are proven. We offer a robust, creative portfolio that shows off
+                            the very best of what we do, Presenting to you, snapshots of our latest projects.</p>
                     </div>
-                    @else
-                    <div class="portfolio-block" data-aos="fade-up">
-                        <div class="portfolio-image">
-                            <a href="">
-                                <img src="{{asset($portfolio->photo)}}" alt="manukaii" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="portfolio-block-details">
-                            <h6>{{$portfolio->title}}</h6>
-                            <p>{{$portfolio->description}}</p>
-                        </div>
-                
-               
-                @endif
-                @endforeach
-    
-              
-           
-          </div>
-          </div>
-          </div>
+                        @foreach($portfolios as $portfolio)
+                            <div @if($portfolio->width ==='full') class="col-sm-12" @else class="col-sm-6" @endif>
+                                <div class="portfolio-block" data-aos="fade-up">
+                                    <div class="portfolio-image">
+                                        <a href="">
+                                            <img src="{{asset($portfolio->photo)}}" alt="manukaii"
+                                                 class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="portfolio-block-details">
+                                        <h6>{{$portfolio->title}}</h6>
+                                        <p>{{$portfolio->description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </div>
-
-        @endsection
+@endsection

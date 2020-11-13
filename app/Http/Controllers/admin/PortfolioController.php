@@ -43,13 +43,13 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-         
+
           $data=$request->validate([
             'title'=>'required',
             'odr'=>'nullable',
             'photo'=>'nullable|image',
             'description'=>'required',
-            'width'=>'nullable',
+            'width'=>'required',
             'status'=>'nullable',
 
         ]);
@@ -114,7 +114,7 @@ class PortfolioController extends Controller
         $portfolios=Portfolio::findOrFail($id);
         $data=$request->validate([
             'title'=>'required',
-            'odr'=>'nullable',
+            'odr'=>'required',
             'photo'=>'nullable|image',
             'description'=>'required',
             'width'=>'required',
@@ -127,11 +127,12 @@ class PortfolioController extends Controller
             $naked_path = env('IMAGE_PATH') . $image_path;
             if($request->width =="full"){
                 $photos = Image::make($naked_path)->fit(1365,683);
-                
+
             }else{
                 $photos = Image::make($naked_path)->fit(644,480);
             }
             $photos->save();
+            $data['photo']=$image_path;
             $file_path=env('IMAGE_PATH').$portfolios->cover_photo;
             if(file_exists($file_path))
             {

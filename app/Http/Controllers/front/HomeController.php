@@ -15,7 +15,7 @@ class HomeController extends Controller
         return view('front.home',['posts'=>$posts,'testimonials'=>$testimonials]);
     }
     public function showPortfolios(){
-        $portfolios=Portfolio::where('status','Published')->OrderBy('id', 'DESC')->get();
+        $portfolios=Portfolio::where('status','Published')->OrderBy('odr', 'ASC')->get();
         return view('front.portfolio',['portfolios'=>$portfolios]);
     }
 }
