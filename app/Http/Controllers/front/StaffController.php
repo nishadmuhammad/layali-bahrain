@@ -10,7 +10,7 @@ use App\Staff;
 class StaffController extends Controller
 {
     public function index(){
-        $staff_details=Staff::where('status','live')->OrderBy('id', 'DESC')->get();
+        $staff_details=Staff::where('status','live')->OrderBy('odr', 'ASC')->get();
         return view('front.about',['staff_details'=>$staff_details]);
     }
 }
