@@ -37,7 +37,8 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{env('MAIN_WEBSITE')}}" class="nav-link" target="_blank"><i class="fa fa-home"></i> Main Webisite</a>
+                <a href="{{env('MAIN_WEBSITE')}}" class="nav-link" target="_blank"><i class="fa fa-home"></i> Main
+                    Webisite</a>
             </li>
         </ul>
         <!-- Right navbar links -->
@@ -54,7 +55,8 @@
                         <i class="fa fa-key"></i> Reset Password
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <a href="{{ route('logout') }}" class="dropdown-item"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="fa fa-user"></i> Logout
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -77,7 +79,8 @@
         <div class="sidebar">
             <!-- Sidebar Menu -->
             <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
 
@@ -91,120 +94,120 @@
                     </li>
                     @if(Auth::user()->hasRole(['admin|Blogger']))
 
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-home"></i>
-                            <p>
-                                Posts
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('post.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('post.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>
+                                    Posts
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('post.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('post.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole('admin'))
-                    <li class="nav-item">
-                        <a href="{{route('enquiry.index')}}" class="nav-link">
-                            <i class="nav-icon fas fa-mail-bulk"></i>
-                            <p>
-                                Enquiry
-                            </p>
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a href="{{route('enquiry.index')}}" class="nav-link">
+                                <i class="nav-icon fas fa-mail-bulk"></i>
+                                <p>
+                                    Enquiry
+                                </p>
+                            </a>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole('admin'))
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                Testimonials
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('testimonial.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('testimonial.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Testimonials
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('testimonial.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('testimonial.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole(['admin|HR']))
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-user-circle"></i>
-                            <p>
-                                Openings
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('opening.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('opening.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('application.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Applications</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-circle"></i>
+                                <p>
+                                    Openings
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('opening.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('opening.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('application.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Applications</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole('admin'))
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-star"></i>
-                            <p>
-                                Services
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('service.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('service.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-star"></i>
+                                <p>
+                                    Services
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('service.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('service.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole('admin'))
                         <li class="nav-item has-treeview">
@@ -257,55 +260,55 @@
                         </li>
                     @endif
 
-  @if(Auth::user()->hasRole('admin'))
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                Portfolio
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('portfolio.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('portfolio.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    @if(Auth::user()->hasRole('admin'))
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-image"></i>
+                                <p>
+                                    Portfolio
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('portfolio.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('portfolio.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
                     @if(Auth::user()->hasRole('admin'))
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
-                            <p>
-                                Staff
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="{{route('staff.index')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>View all</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('staff.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Add New</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Staff
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('staff.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{route('staff.create')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add New</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     @endif
 
                 </ul>
@@ -329,7 +332,9 @@
                             <li class="breadcrumb-item"><a href="{{route('adminHome')}}">Dashboard</a></li>
                             @if(request()->segment(3))
                                 @if(Route::has(request()->segment(3).".index"))
-                                    <li class="breadcrumb-item"><a href="{{route(request()->segment(3).".index")}}">{{ucfirst(request()->segment(1))}}</a></li>
+                                    <li class="breadcrumb-item"><a
+                                            href="{{route(request()->segment(3).".index")}}">{{ucfirst(request()->segment(1))}}</a>
+                                    </li>
                                 @else
                                     <li class="breadcrumb-item active">{{ucfirst(request()->segment(3))}}</li>
                                 @endif
@@ -355,7 +360,8 @@
     <!-- /.content-wrapper -->
 
     <footer class="main-footer">
-        <strong>Copyright &copy; {{ now()->year }} <a href="https://spadika.com">Spadika Web Solutions</a>.</strong> All rights    reserved.
+        <strong>Copyright &copy; {{ now()->year }} <a href="https://spadika.com">Spadika Web Solutions</a>.</strong> All
+        rights reserved.
     </footer>
 </div>
 <!-- ./wrapper -->
@@ -373,35 +379,35 @@
     //Script to activate menu item based on current URL
     var url = window.location;
     // for sidebar menu entirely but not cover treeview
-    $('ul.nav-sidebar a').filter(function() {
+    $('ul.nav-sidebar a').filter(function () {
         return this.href == url;
     }).addClass('active');
 
     // for treeview
-    $('ul.nav-treeview a').filter(function() {
+    $('ul.nav-treeview a').filter(function () {
         return this.href == url;
     }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
 </script>
 <script type="text/javascript">
-    $(function() {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000
-            });
+    $(function () {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
 
         @if ($message = Session::get('success'))
-                Toast.fire({
-                    icon: 'success',
-                    title: '{{$message}}.'
-                })
-           @endif
-           @if ($message = Session::get('error'))
-           Toast.fire({
-               icon: 'error',
-               title: '{{$message}}.'
-           })
+        Toast.fire({
+            icon: 'success',
+            title: '{{$message}}.'
+        })
+        @endif
+        @if ($message = Session::get('error'))
+        Toast.fire({
+            icon: 'error',
+            title: '{{$message}}.'
+        })
         @endif
         @if ($message = Session::get('warning'))
         Toast.fire({
@@ -409,7 +415,7 @@
             title: '{{$message}}.'
         })
         @endif
-        });
+    });
 </script>
 @yield('additionalScripts')
 </body>

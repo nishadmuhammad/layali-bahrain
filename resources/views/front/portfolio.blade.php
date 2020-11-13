@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="portfolio-block-details">
                                         <h6>{{$portfolio->title}}</h6>
-                                        <p>{{$portfolio->description}}</p>
+                                        <p>{!! $portfolio->description !!}</p>
                                     </div>
                                 </div>
                             </div>

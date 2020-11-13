@@ -1,4 +1,7 @@
 @extends('admin.layouts.form')
+@section('additionalStyles')
+    <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.css')}}">
+@endsection
 @section('title','Add portfolio')
 @section('actionUrl')
     {{route('portfolio.store')}}
@@ -42,7 +45,7 @@
             <label for="description" rows="5" class="control-label">Description <small>(Do not capitalise entire
                     sentence)</small></label>
             <textarea id="descriptions" name="description"
-                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}}">{{old('description')}}
+                      class="form-control {{$errors->has('description') ? 'is-invalid' : ''}} textarea">{{old('description')}}
             </textarea>
             @if($errors->has('description'))
                 <span class="help-block error invalid-feedback">
@@ -83,6 +86,26 @@
         $(document).ready(function () {
             bsCustomFileInput.init();
         });
+    </script>
+    <script src="{{asset('plugins/summernote/summernote-bs4.min.js')}}"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('.textarea').summernote({
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['style', 'code']],
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['styleTags' ['p', 'h1', 'h2']]
+                        ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['link', 'picture', 'video','table']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ],
+                styleTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+            })
+        })
     </script>
 
 @endsection
