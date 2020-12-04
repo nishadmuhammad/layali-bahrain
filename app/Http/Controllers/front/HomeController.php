@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::where('status', 'Published')->OrderBy('id', 'DESC')->limit(4)->get();
-        $portfolios = Portfolio::where('status', 'Published')->OrderBy('odr', 'ASC')->get();
+        $portfolios = Portfolio::where([['status', 'Published'],['width','half']])->OrderBy('odr', 'ASC')->get();
         $testimonials = Testimonial::all();
         return view('front.home', ['posts' => $posts, 'testimonials' => $testimonials, 'portfolios' => $portfolios]);
     }
