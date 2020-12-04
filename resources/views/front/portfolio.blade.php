@@ -31,7 +31,7 @@
                                 <div class="portfolio-block" data-aos="fade-up">
                                     <div class="portfolio-image">
                                         <a href="">
-                                            <img src="{{asset($portfolio->photo)}}" alt="manukaii"
+                                            <img src="{{asset($portfolio->photo)}}" alt="{{$portfolio->title}}"
                                                  class="img-fluid">
                                         </a>
                                     </div>
