@@ -44,6 +44,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('role', 'admin\RoleController')->only(['index', 'create', 'store', 'destroy', 'edit', 'update']);
     Route::resource('/admin/portfolio','admin\PortfolioController')->only(['index','create','store','edit','update','destroy']);
     Route::resource('/admin/staff','admin\StaffController')->only(['index','create','store','edit','update','destroy']);
+    Route::resource('/admin/flayer','admin\FlayerController')->only(['index','create','store','edit','update','destroy']);
+
+    // Route::get('/flayer','admin\FlayerController@index')->name('flayer.create');
+    // Route::post('/flayer','admin\FlayerController@create')->name('flayer.store');
 
 });
 Route::resource('password','admin\PasswordController')->only(['edit','update']);
