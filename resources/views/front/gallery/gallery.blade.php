@@ -40,12 +40,12 @@
                 <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div align="center" class="filter-buttons">
                         <button class="btn btn-default filter-button active" data-filter="all">All</button>
-                        <button class="btn btn-default filter-button" data-filter="real-estate">real estate</button>
-                        <button class="btn btn-default filter-button" data-filter="mortgage">mortgage</button>
-                        <button class="btn btn-default filter-button" data-filter="handy-man-services">handy man
+                        <button class="btn btn-default filter-button" data-filter="real-estate">Real estate</button>
+                        <button class="btn btn-default filter-button" data-filter="mortgage">Mortgage</button>
+                        <button class="btn btn-default filter-button" data-filter="handy-man-services">Handy man
                             services
                         </button>
-                        <button class="btn btn-default filter-button" data-filter="car-rentals">car-rentals
+                        <button class="btn btn-default filter-button" data-filter="car-rentals">Car Rentals
                         </button>
                     </div>
                 </div>
