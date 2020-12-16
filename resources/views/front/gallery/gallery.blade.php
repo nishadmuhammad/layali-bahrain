@@ -58,22 +58,10 @@
 
                 @foreach($flayers as $flayer)
                 <div class="gallery_product col-lg-4 col-md-6 col-sm-4 col-xs-6 filter {{$flayer->type}}">
-                    <a class="popup-link" data-fancybox=" {{$flayer->type}}" href="">
-                    <img src="{{URL::asset($flayer->photo)}}" alt="" class="img-fluid">
-                    </a>
-                </div>
-
-                <!-- <div class="gallery_product col-lg-4 col-md-6 col-sm-4 col-xs-6 filter mortgage">
-                    <a class="popup-link" data-fancybox="mortgage" href="">
+                    <a class="popup-link" data-fancybox=" {{$flayer->type}}" href="{{asset($flayer->photo)}}">
                     <img src="{{asset($flayer->photo)}}" alt="" class="img-fluid">
                     </a>
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-4 col-xs-6 filter handy-man-services">
-                    <a class="popup-link" data-fancybox="car-rentals" href="">
-                    <img src="{{asset($flayer->photo)}}" alt="" class="img-fluid">
-                    </a>
-                </div> -->
                 @endforeach
 
 

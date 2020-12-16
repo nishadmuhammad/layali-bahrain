@@ -54,14 +54,14 @@ class FlayerController extends Controller
                     $naked_path = env('IMAGE_PATH') . $path;
 
                     Flayer::insert( [
-                        'photo'=> $naked_path,
+                        'photo'=> $path,
                         'type' =>$type,
                         'created_at' =>Carbon::now(),
                         'updated_at' =>Carbon::now(),
                     ]);
                 }
              return back()->with('success','Flayer added successfully!');
-                
+
             }
 
     }
@@ -78,4 +78,3 @@ class FlayerController extends Controller
         return back()->with('success','Flayer deleted successfully!');
     }
 }
-            
