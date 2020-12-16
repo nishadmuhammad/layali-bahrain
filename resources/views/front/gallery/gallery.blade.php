@@ -36,9 +36,6 @@
 <div class="gallery page">
     <div class="gallery-inner">
         <div class="container">
-            <h2 class="text-center">Photo Gallery</h2>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div align="center" class="filter-buttons">
