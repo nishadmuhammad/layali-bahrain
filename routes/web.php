@@ -25,7 +25,7 @@ Route::get('/contact/',function (){return view('front.contact');})->name('contac
 Route::get('/services/{slug}','front\ServiceController@show')->name('servicesShow');
 Route::post('/subscribe','front\SubscriptionController@subscribe')->name('subscribe');
 Route::post('/application','front\CareerController@store')->name('application');
-
+Route::get('/gallery','front\GalleryController@index')->name('gallery.index');
 //Auth Routes
 Auth::routes();
 
@@ -45,8 +45,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('/admin/portfolio','admin\PortfolioController')->only(['index','create','store','edit','update','destroy']);
     Route::resource('/admin/staff','admin\StaffController')->only(['index','create','store','edit','update','destroy']);
     Route::resource('/admin/flayer','admin\FlayerController')->only(['index','create','store','edit','update','destroy']);
-
-    Route::get('/gallery','front\GalleryController@index')->name('gallery.index');
 
 });
 Route::resource('password','admin\PasswordController')->only(['edit','update']);
