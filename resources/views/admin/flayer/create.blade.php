@@ -40,15 +40,15 @@
             <label for="type" class="control-label">Category</label>
             <select id="type" name="type" required class="form-control {{$errors->has('type') ? 'is-invalid' : ''}}">
                 <option value="">Select Category</option>
-                <option value="Real estate">Real estate </option>
-                <option value="Mortgage"> Mortgage </option>
-                <option value="Handy man services"> Handy man services </option>
-                <option value="Car rentals"> Car rentals </option>
-                <option value="Restaurants"> Restaurants </option>
-                <option value="Events"> Events </option>
-                <option value="Miscellaneous"> Miscellaneous </option>
-                <option value="Realtor"> Realtor </option>
-                <option value="Advertisement"> Advertisement </option>
+                <option value="real-estate">Real estate </option>
+                <option value="mortgage"> Mortgage </option>
+                <option value="handy-man-services"> Handy man services </option>
+                <option value="car-rentals"> Car rentals </option>
+                <option value="restaurants"> Restaurants </option>
+                <option value="events"> Events </option>
+                <option value="miscellaneous"> Miscellaneous </option>
+                <option value="realtor"> Realtor </option>
+                <option value="advertisement"> Advertisement </option>
               
             </select>
            

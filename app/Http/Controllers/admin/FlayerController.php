@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Flayer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
+
 use Intervention\Image\Facades\Image;
 
 
@@ -47,19 +49,33 @@ class FlayerController extends Controller
 
                 foreach($files as $file){
                     $name=$file->getClientOriginalName();
-                    $path = $file->store('uploads/flayer/', 'public');
+                    $path = $file->store('uploads/flayer', 'public');
                     $images[]=$name;
                     $naked_path = env('IMAGE_PATH') . $path;
 
                     Flayer::insert( [
                         'photo'=> $naked_path,
                         'type' =>$type,
+                        'created_at' =>Carbon::now(),
+                        'updated_at' =>Carbon::now(),
                     ]);
                 }
              return back()->with('success','Flayer added successfully!');
                 
             }
 
+    }
+    public function destroy($id)
+    {
+        $flayers=Flayer::findOrFail($id);
+        //removing  outer image
+        $file_path=env('IMAGE_PATH').$flayers->staff;
+        if(file_exists($file_path))
+        {
+            @unlink($file_path);
+        }
+        $flayers->delete();
+        return back()->with('success','Flayer deleted successfully!');
     }
 }
             

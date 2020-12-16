@@ -320,12 +320,20 @@
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
+
+                            <li class="nav-item">
+                                    <a href="{{route('flayer.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>View all</p>
+                                    </a>
+                                </li>
                                 <li class="nav-item">
                                     <a href="{{route('flayer.create')}}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Add New</p>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
                     @endif
