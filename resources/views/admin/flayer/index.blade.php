@@ -15,7 +15,6 @@
     @foreach($flayers as $flayer)
         <tr>
             <td></td>
-            <td>{{$flayer->name}}</td>
             <td>{{$flayer->type}}</td>
             <td><img src="{{asset($flayer->photo)}}" width="100px"></td>
 
