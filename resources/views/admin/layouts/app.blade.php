@@ -310,10 +310,11 @@
                             </ul>
                         </li>
                     @endif
-                    @if(Auth::user()->hasRole('admin'))
+                    @if(Auth::user()->hasRole(['admin|Blogger']))
+
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                                <i class="fas fa-image"></i>
                                 <p>
                                     Flayer
                                     <i class="fas fa-angle-left right"></i>

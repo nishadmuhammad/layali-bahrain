@@ -1,15 +1,14 @@
 @extends('admin.layouts.datatable')
-@section('title','staff')
-@section('tableTitle','staff')
+@section('title','Flayer')
+@section('tableTitle','Flayer')
 @section('createRoute')
     {{route('flayer.create')}}
 @endsection
 @section('tableHead')
     <th>No</th>
-    <th>name</th>
-    <th>type</th>
-    <th>photo</th>
-    <th>action</th>
+    <th>Type</th>
+    <th>Photo</th>
+    <th>Action</th>
     <!-- <th>Action</th> -->
 @endsection
 @section('tableBody')

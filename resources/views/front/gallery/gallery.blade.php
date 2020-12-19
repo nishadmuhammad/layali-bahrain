@@ -42,10 +42,15 @@
                         <button class="btn btn-default filter-button active" data-filter="all">All</button>
                         <button class="btn btn-default filter-button" data-filter="real-estate">Real estate</button>
                         <button class="btn btn-default filter-button" data-filter="mortgage">Mortgage</button>
-                        <button class="btn btn-default filter-button" data-filter="handy-man-services">Handy man
-                            services
-                        </button>
+                        <button class="btn btn-default filter-button" data-filter="handy-man-services">Handy man services
+                
                         <button class="btn btn-default filter-button" data-filter="car-rentals">Car Rentals
+                        <button class="btn btn-default filter-button" data-filter="restaurants">Restaurants
+                        </button>
+                        <button class="btn btn-default filter-button" data-filter="events">Events
+                        <button class="btn btn-default filter-button" data-filter="miscellaneous">Miscellaneous
+                        <button class="btn btn-default filter-button" data-filter="realtor">Realtor
+                        <button class="btn btn-default filter-button" data-filter="advertisment">Advertisment
                         </button>
                     </div>
                 </div>
