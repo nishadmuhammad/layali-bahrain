@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title', 'Maple Tech Space')
+@section('title', 'LAYALI BAHRAIN')
 @section('description','')
 @section('keywords','')
 @section('ogImage','')
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         {!! $opening->description !!}
-                        <h6>Drop your CVs to<a href="">hr@mapletechspace.ca</a></h6>
+                        <h6>Drop your CVs to<a href="">hr@LAYALI BAHRAIN.ca</a></h6>
                         <div class="apply-now-form">
                             <form action="{{route('application')}}" method="POST" enctype="multipart/form-data">
                                 {{csrf_field()}}

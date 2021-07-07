@@ -6,7 +6,7 @@
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
-@section('canonical','https://www.mapletechspace.com/about-us')
+@section('canonical','https://www.LAYALI BAHRAIN.com/about-us')
 @section('content')
 <div class="about-us page">
     <div class="banner-common">
@@ -16,21 +16,21 @@
     </div>
     <div class="about-inner" data-aos="fade-up">
         <div class="container">
-            <h4>Maple Tech Space</h4>
+            <h4>LAYALI BAHRAIN</h4>
             <h5 style="margin-top: -15px">Conceptualize, Collaborate, Elevate</h5>
             <div class="row">
                 <div class="col-sm-12">
-                    <p>At Maple Tech Space, we firmly believe that our mission statement “Conceptualize, Collaborate
+                    <p>At LAYALI BAHRAIN, we firmly believe that our mission statement “Conceptualize, Collaborate
                         and Elevate” helps us partner with our clients to consistently achieve their business
                         objectives in the Digital age. We help businesses online to understand and leverage the
                         unfathomable power of the Digital Space.</p>
                     <p>Having started our journey in India by launching the Website for Kannur Government
                         Engineering College in the year 2006, our dedicated and passionate team has grown over the
                         years by leaps and bounds , to gain recognition from the “Kerala Start-Up mission” in 2017.
-                        Maple Tech Space has forayed into the Canadian Market in the year 2020 and within a short
+                        LAYALI BAHRAIN has forayed into the Canadian Market in the year 2020 and within a short
                         span of time has managed to execute customized projects with prestigious clients.</p>
                     <p>Building a strong on-line presence is the mantra for good business today and the team at
-                        Maple Tech Space is well versed in executing targeted Digital Marketing campaigns and
+                        LAYALI BAHRAIN is well versed in executing targeted Digital Marketing campaigns and
                         providing Technological solutions in an ethical and efficient way.</p>
                 </div>
             </div>
@@ -50,25 +50,6 @@
         </div>
     </div>
 
-    <div class="our-team">
-        <div class="container">
-            <h5 data-aos="fade-right">Meet Our Team</h5>
-            <div class="team-row">
-                @foreach($staff_details as $staff)
-                <div class="team-item" data-aos="fade-up">
-                    <div class="team-image">
-                        <a href="">
-                            <img src="{{asset($staff->photo)}}" alt="manukaii" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="member-details">
-                        <h6>{{$staff->name}}</h6>
-                        <p>{{$staff->position}}</p>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
+   
 </div>
         @endsection

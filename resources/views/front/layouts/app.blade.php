@@ -66,8 +66,6 @@
                 <li class=""><a href="{{route('home')}}">Home</a></li>
                 <li class=""><a href="{{route('about')}}">About Us </a></li>
                 <li class=""><a href="{{route('services')}}">Services</a></li>
-                <li class=""><a href="{{route('portfolio')}}">Portfolio</a></li>
-                <li class=""><a href="{{route('blog')}}">Blog</a></li>
                 <li class=""><a href="{{route('contact')}}">Contact Us</a></li>
             </ul>
         </div>
@@ -77,27 +75,24 @@
         <ul class="contact-list list-inline">
             <li class="list-inline-item email">
                 <span>Email Us</span>
-                <a href="">info@mapletechspace.com</a>
+                <a href="">layalibahrain@gmail.com</a>
             </li>
             <li class="list-inline-item call">
                 <span>Reach Out</span>
-                <a href="+16473399023">+1 (647) 339-9023</a>
+                <a href="+16473399023">+(973) 353-485-20</a>
             </li>
-            <li class="list-inline-item place">
-                <span>Canada</span>
-                <a href="">191 Superior Blvd Mississauga, ON L5T 2L6</a>
-            </li>
+        
             <li class="list-inline-item place">
                 <span>India</span>
-                <a href="">14/554, Taxi Stand Shopping Complex, Chakkarakkal, Kannur, Kerala, 670613.</a>
+                <a href="">Building No 236,Road no 381 ,Block no 304,Muhammedia building,Near gold city,Manama</a>
             </li>
         </ul>
         <ul class="list-inline social-media-footer">
             <li class="list-inline-item">
-                <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt="MTS Facebook Account"></a>
+                <a href="https://www.facebook.com/LAYALI BAHRAIN/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt="MTS Facebook Account"></a>
             </li>
             <li class="list-inline-item">
-                <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt="MTS Instagram Account"></a>
+                <a href="https://www.instagram.com/LAYALI BAHRAIN/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt="MTS Instagram Account"></a>
             </li>
             <li class="list-inline-item">
                 <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt="MTS Linkedin Account"></a>
@@ -128,15 +123,11 @@
                 <li class="{{ (request()->is('services*')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('services')}}">services</a>
                 </li>
-                <li class="{{ (request()->is('portfolio')) ? 'active' : '' }} nav-item">
-                    <a class="nav-link" href="{{route('portfolio')}}">portfolio</a>
-                </li>
+               
                 <li class="{{ (request()->is('careers*')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('careers')}}">careers</a>
                 </li>
-                <li class="{{ (request()->is('blog')) ? 'active' : '' }} nav-item">
-                    <a class="nav-link" href="{{route('blog')}}">blog</a>
-                </li>
+              
                 <li class="{{ (request()->is('contact')) ? 'active' : '' }} nav-item">
                     <a class="nav-link" href="{{route('contact')}}">contact</a>
                 </li>
@@ -155,8 +146,8 @@
     <div class="social-media-inner">
         <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo" class="img-fluid side-logo"></a>
         <ul>
-            <li><a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt="Agency Facebook Account"></a></li>
-            <li><a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt="Agency Instagram Account"></a></li>
+            <li><a href="https://www.facebook.com/LAYALI BAHRAIN/" target="_blank"><img src="{{asset('assets/img/facebook.png')}}" alt="Agency Facebook Account"></a></li>
+            <li><a href="https://www.instagram.com/LAYALI BAHRAIN/" target="_blank"><img src="{{asset('assets/img/instagram.png')}}" alt="Agency Instagram Account"></a></li>
             <li><a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.png')}}" alt="Agency Linkedin Account"></a></li>
             <li><a href="" class="email-id"><img src="{{asset('assets/img/email-id.png')}}" alt="MTS Email"></a></li>
         </ul>
@@ -167,7 +158,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3" hidden    >
                     <a href="" class="footer-logo">
                         <img src="{{asset('assets/img/footer-logo.svg')}}" alt="Company Logo" class="img-fluid">
                     </a>
@@ -176,7 +167,6 @@
                     <div class="quick-links">
                         <ul>
                             <li><a href="{{route('about')}}">About</a></li>
-                            <li><a href="{{route('portfolio')}}">Portfolio</a></li>
                             <li><a href="{{route('services')}}">Services</a></li>
                         </ul>
                     </div>
@@ -185,45 +175,16 @@
                     <div class="quick-links">
                         <ul>
                             <li><a href="{{route('careers')}}">Careers</a></li>
-                            <li><a href="{{route('blog')}}">Blog</a></li>
                             <li><a href="{{route('contact')}}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <h4>Subscribe to our blog</h4>
-                    <div class="subscribe-form">
-                        <form action="{{route('subscribe')}}" method="post" class="php-email-form">
-                            @csrf
-                            <input type="email" class="form-control" id="usr" name="email"
-                                   placeholder="Enter your email id">
-                            <button type="submit"></button>
-                        </form>
-                    </div>
-
-                    <div class="response" style="display: none;color: white">
-                        Please wait <i class="fa fa-cog fa-spin"></i>
-                    </div>
-                    <div id="subscribed" style="color: white">
-
-                    </div>
-                    <ul class="list-inline social-media-footer">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/fb.svg')}}" alt="MTS Facebook Account"></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/mapletechspace/" target="_blank"><img src="{{asset('assets/img/instagram.svg')}}" alt="MTS Instagram Account"></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/company/56469535/" target="_blank"><img src="{{asset('assets/img/linkedin.svg')}}" alt="MTS Linkedin Account"></a>
-                        </li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <span>© Copyright <a href="#">Maple Tech Space.</a> All rights reserved</span>
+        <span>© Copyright <a href="#">LAYALI BAHRAIN.</a> All rights reserved</span>
     </div>
 </footer>
 <script src="{{asset('assets/js/php-email-form.js')}}"></script>

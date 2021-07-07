@@ -5,7 +5,7 @@
 @section('ogImage'){{asset('assets/img/logo.png')}}@endsection
 @section('navClass','index')
 @section('logo'){{asset('assets/img/logo.png')}}@endsection
-@section('canonical','https://www.mapletechspace.com')
+@section('canonical','https://www.LAYALI BAHRAIN.com')
 @section('content')
     <div class="index">
         <div class="owl-carousel owl-theme banner-slider">
@@ -24,10 +24,10 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <div class="banner-item">
                     <div class="banner-image">
-                        <img src="assets/img/web-design.png" alt="Website Design" class="img-fluid d-none d-sm-block">
+                        <img src="assets/img/business-strategy-3.png" alt="Website Design" class="img-fluid d-none d-sm-block">
                         <img src="assets/img/web-design2.png" alt="Website Design" class="img-fluid d-block d-sm-none">
                     </div>
                     <div class="banner-details">
@@ -47,7 +47,7 @@
                         <a href="{{route('servicesShow','search-engine-optimization')}}">More services</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="about">
             <div class="container">
@@ -55,7 +55,7 @@
 
                     <div class="col-sm-3">
                         <h2>About</h2>
-                        <p>Maple Tech Space</p>
+                        <p>LAYALI BAHRAIN</p>
                         <a href="{{route('about')}}" class="d-none d-sm-block">Read more</a>
                     </div>
                     <div class="col-sm-9">
@@ -111,7 +111,7 @@
                                              class="service-image img-fluid">
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
-                                            marketing and Business Strategy at Maple Tech Space.</p>
+                                            marketing and Business Strategy at LAYALI BAHRAIN.</p>
                                         <a href="{{route('servicesShow','digital-marketing')}}" class="read-more"><img
                                                 src="{{asset('assets/img/more-grey.png')}}"
                                                 alt="Read Digital Marketing"
@@ -184,7 +184,7 @@
                                              alt="Search Engine Optimization"
                                              class="service-image img-fluid">
                                         <h5>Search Engine Optimization</h5>
-                                        <p>At Maple Tech Space, we take care of all your business concerns regarding SEO
+                                        <p>At LAYALI BAHRAIN, we take care of all your business concerns regarding SEO
                                             and make sure that your website is coming on the first page of Google
                                             results.</p>
                                         <a href="{{route('servicesShow','search-engine-optimization')}}"
@@ -234,7 +234,7 @@
                                              class="service-image img-fluid">
                                         <h5>Digital Marketing</h5>
                                         <p>Attracting, Binding, Converting and Delighting.... The "ABCD " of Digital
-                                            marketing and Business Strategy at Maple Tech Space.</p>
+                                            marketing and Business Strategy at LAYALI BAHRAIN.</p>
                                         <a href="{{route('servicesShow','digital-marketing')}}" class="read-more"><img
                                                 src="{{asset('assets/img/more-grey.png')}}"
                                                 alt="Read Digital Marketing"
@@ -311,7 +311,7 @@
                                              alt="Search Engine Optimization"
                                              class="service-image img-fluid">
                                         <h5>Search Engine optimization</h5>
-                                        <p>At Maple Tech Space, we take care of all your business concerns regarding SEO
+                                        <p>At LAYALI BAHRAIN, we take care of all your business concerns regarding SEO
                                             and make sure that your website is coming on the first page of Google
                                             results.</p>
                                         <a href="{{route('servicesShow','search-engine-optimization')}}"
@@ -344,7 +344,7 @@
             </div>
         </div>
         <div class="our-clients">
-            <div class="container">
+            <!-- <div class="container">
                 <h3>Few <span style="font-weight: bolder; font-size: 35px">Big Names</span> Our Team Members Associated
                     in the Past</h3>
                 <div class="owl-carousel owl-theme clients">
@@ -469,46 +469,46 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="portfolios" data-aos="fade-up">
-            <div class="container">
-                <h6>Portfolio</h6>
-                <div class="row">
-                    <div class="col-sm-6 col-10">
-                        <h3>Our Latest Projects</h3>
+            <!-- <div class="portfolios" data-aos="fade-up">
+                <div class="container">
+                    <h6>Portfolio</h6>
+                    <div class="row">
+                        <div class="col-sm-6 col-10">
+                            <h3>Our Latest Projects</h3>
+                        </div>
+                        <div class="col-sm-6 col-2">
+                            <a href="{{route('portfolio')}}" class="text-right view-all"><span>View All Projects</span></a>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-2">
-                        <a href="{{route('portfolio')}}" class="text-right view-all"><span>View All Projects</span></a>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme portfolio-slider">
-                    @foreach($portfolios as $portfolio)
-                        <div class="item">
-                            <div class="portfolio">
-                                <a href="{{route('portfolio')}}" class="portfolio-image">
-                                    <img src="{{asset($portfolio->photo)}}" alt="{{$portfolio->title}}"
-                                         class="img-fluid">
-                                </a>
-                                <div class="portfolio-details">
-                                    <h4><a href="{{route('portfolio')}}">{{$portfolio->title}}</a></h4>
-                                    <a href="{{route('portfolio')}}" class="arrow"><img
-                                            src="{{asset('assets/img/arrow.png')}}" alt="Arrow" class="img-fluid"></a>
+                    <div class="owl-carousel owl-theme portfolio-slider">
+                        @foreach($portfolios as $portfolio)
+                            <div class="item">
+                                <div class="portfolio">
+                                    <a href="{{route('portfolio')}}" class="portfolio-image">
+                                        <img src="{{asset($portfolio->photo)}}" alt="{{$portfolio->title}}"
+                                            class="img-fluid">
+                                    </a>
+                                    <div class="portfolio-details">
+                                        <h4><a href="{{route('portfolio')}}">{{$portfolio->title}}</a></h4>
+                                        <a href="{{route('portfolio')}}" class="arrow"><img
+                                                src="{{asset('assets/img/arrow.png')}}" alt="Arrow" class="img-fluid"></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    <div class="slider-counter"></div>
                 </div>
-                <div class="slider-counter"></div>
-            </div>
-        </div>
-        <div class="testimonials" data-aos="fade-up">
+            </div> -->
+        <!-- <div class="testimonials" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5">
                         <h5>Client Testimonials</h5>
                         <h6>See what people are saying about us.</h6>
-                        <p>At Maple Tech Space, we consider the clients’ vision our utmost priority as we transform and
+                        <p>At LAYALI BAHRAIN, we consider the clients’ vision our utmost priority as we transform and
                             reflect it in the Digital space. We prioritize business needs at the center of all our work
                             and are constantly driven by results.</p>
                     </div>
@@ -539,9 +539,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="news-and-articles" data-aos="fade-up">
-            <h4>Maple Tech Space</h4>
+        </div> -->
+        <!-- <div class="news-and-articles" data-aos="fade-up">
+            <h4>LAYALI BAHRAIN</h4>
             <h5>News and articles</h5>
             <div class="owl-carousel owl-theme news-articles">
                 @foreach($posts as $post)
@@ -560,46 +560,12 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+        </div> -->
         <div class="locations" data-aos="fade-up">
             <div class="container">
                 <img src="assets/img/location.png" alt="Company Location" class="img-fluid">
             </div>
         </div>
     </div>
-    <div class="free-consultation" data-aos="fade-in">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="text-content">
-
-                        <h6>Get a Free</h6>
-                        <h4>30 Minutes<br>
-                            Consultation</h4>
-                        <p>Talk to our amazing team of IT Experts who have over 15 years of experience in Digital
-                            Marketing , IT Consulting , SEO ,Website development and Branding.</p>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <form action="{{route('enquire')}}" method="post" class="php-email-form" data-aos="zoom-in">
-                        @csrf
-                        <input type="text" id="name" placeholder="Name" name="name" class="form-control" required>
-                        <input type="email" id="email" placeholder="Email" name="email" class="form-control" required>
-                        <input type="tel" id="phone" placeholder="Phone" name="phone" class="form-control" required>
-                        <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-                        <button type="submit">Submit <img src="{{asset('assets/img/arrow.png')}}" alt="Arrow"></button>
-                        <div class="pt-2">
-                            <div id="thanks" style="display: none;text-align: center">
-                                Thank you for contacting us.<br/>We will get back to you soon!
-                            </div>
-                            <div class="response" style="display: none">
-                                Please wait <i class="fa fa-cog fa-spin"></i>
-                            </div>
-                            <div class="error-message mt-3"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
 @endsection

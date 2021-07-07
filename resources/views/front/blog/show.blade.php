@@ -1,5 +1,5 @@
 @extends('front.layouts.app')
-@section('title'){{$blog->title}} | Maple Tech Space @endsection
+@section('title'){{$blog->title}} | LAYALI BAHRAIN @endsection
 @section('description'){{$blog->description}}@endsection
 @section('keywords'){{$blog->keyword}}@endsection
 @section('ogImage'){{$blog->cover_photo}}@endsection

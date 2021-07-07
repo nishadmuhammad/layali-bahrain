@@ -388,7 +388,7 @@
     <!-- /.content-wrapper -->
 
     <footer class="main-footer">
-        <strong>Copyright &copy; {{ now()->year }} <a href="https://spadika.com">Spadika Web Solutions</a>.</strong> All
+        <strong>Copyright &copy; {{ now()->year }} <a href="www.layalibahrain.com">Spadika Web Solutions</a>.</strong> All
         rights reserved.
     </footer>
 </div>

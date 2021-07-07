@@ -1,11 +1,11 @@
 @extends('front.layouts.app')
 @section('title', 'Best Web Designing Company in Toronto | Creative Web Designs')
-@section('description','Maple Tech Space - Best Web designing company in Toronto. We build creative and customized web designs for a visually appealing online presence of your business.')
+@section('description','LAYALI BAHRAIN - Best Web designing company in Toronto. We build creative and customized web designs for a visually appealing online presence of your business.')
 @section('keywords','toronto seo experts,seo agency toronto,best seo toronto,toronto seo specialist,website designers toronto,web design companies toronto,website development toronto,web designers toronto,best digital marketing agency in GTA,digital agency toronto,internet marketing agency toronto,toronto internet marketing')
 @section('ogImage','')
 @section('navClass','inner')
 @section('logo'){{asset('assets/img/logo-inner.png')}}@endsection
-@section('canonical','https://www.mapletechspace.com/portfolio')
+@section('canonical','https://www.LAYALI BAHRAIN.com/portfolio')
 @section('content')
     <div class="portfolio page">
         <div class="banner-common">
@@ -19,7 +19,7 @@
                 <h4>Our latest projects</h4>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>Good design at Maple Tech Space is a blend of craft, science, storytelling, propaganda and
+                        <p>Good design at LAYALI BAHRAIN is a blend of craft, science, storytelling, propaganda and
                             functionality.We value relationship with our clients and for every business, whether small
                             or big we understand that customer satisfaction will sustain and help grow a business in the
                             long term.</p>
