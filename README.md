@@ -1,4 +1,4 @@
-<p align="center"><img src="http://spadika.com/logo.png"></p>
+<p align="center"><img src="http://www.layalibahrain.com/logo.png"></p>
 
 ## Welcome to Spadika Admin Panel
 
